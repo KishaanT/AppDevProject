@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\DataService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GradingSystem\\Services\\DataService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GradingSystem\\Model\\Assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GradingSystem\\Model\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GradingSystem\\Model\\Course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GradingSystem\\Model\\Teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GradingSystem\\Model\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GradingSystem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Services\\DataService.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\DataService.cs",
+              "RelativeToolTip": "GradingSystem\\Services\\DataService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowHgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T16:47:29.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Assignment.cs",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Assignment.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\Assignment.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Assignment.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\Assignment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T16:46:44.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Student.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\Student.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Student.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T16:45:27.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Course.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\Course.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Course.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T16:45:00.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Teacher.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\Teacher.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Teacher.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\Teacher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T16:44:34.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\User.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\User.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T16:43:35.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Program.cs",
+              "RelativeToolTip": "GradingSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T15:46:35.102Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
