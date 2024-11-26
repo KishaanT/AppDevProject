@@ -59,7 +59,10 @@
     <Compile Include="Model\Student.cs" />
     <Compile Include="Model\Teacher.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Services\DataBackupService.cs" />
     <Compile Include="Services\DataService.cs" />
+    <Compile Include="Services\GraphDataService.cs" />
+    <Compile Include="Services\SearchAndFilterService.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
