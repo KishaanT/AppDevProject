@@ -10,3 +10,15 @@ C:\Users\2388049\Downloads\AppDevProject-main\AppDevProject-main\GradingSystem\G
 C:\Users\2388049\Downloads\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.IdentifyForm.resources
 C:\Users\2388049\Downloads\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentSignInForm.resources
 C:\Users\2388049\Downloads\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherSignInForm.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\bin\Debug\GradingSystem.exe.config
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\bin\Debug\GradingSystem.exe
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\bin\Debug\GradingSystem.pdb
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.csproj.AssemblyReference.cache
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.IdentifyForm.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.Properties.Resources.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentSignInForm.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherSignInForm.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.csproj.GenerateResource.cache
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.csproj.CoreCompileInputs.cache
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.exe
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.pdb

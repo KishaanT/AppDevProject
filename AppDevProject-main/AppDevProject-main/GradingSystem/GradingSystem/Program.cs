@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GradingSystem.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,8 +14,12 @@ namespace GradingSystem
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        { 
+
             Application.Run(new IdentifyForm());
+
+          
+
         }
-    }
+}
 }

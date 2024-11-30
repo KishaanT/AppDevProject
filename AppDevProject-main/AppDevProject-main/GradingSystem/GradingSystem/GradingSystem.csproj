@@ -102,6 +102,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SavedData\StudentData.csv" />
+    <None Include="SavedData\TeachersData.csv" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
