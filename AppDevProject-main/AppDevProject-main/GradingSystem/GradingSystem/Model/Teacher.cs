@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace GradingSystem
 {
+    [Serializable]
     internal class Teacher : User
     {
         public List<Course> Courses { get; set; } = new List<Course>();
