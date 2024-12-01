@@ -11,10 +11,10 @@ namespace GradingSystem
     {
         public List<Course> Courses { get; set; } = new List<Course>();
 
-        public Teacher(int id, string name, string email, string password,List<Course> courses) :base(id,name,email,password) 
-        {
-            this.Courses = courses;   
-        }
+        //public Teacher(int id, string name, string email, string password,List<Course> courses) :base(id,name,email,password) 
+        //{
+        //    this.Courses = courses;   
+        //}
     }
 
 }

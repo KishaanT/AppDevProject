@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationLanguage.cs" />
+    <Compile Include="ChangeLanguage.cs" />
     <Compile Include="StudentSignInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +78,12 @@
     <Compile Include="Services\DataService.cs" />
     <Compile Include="Services\GraphDataService.cs" />
     <Compile Include="Services\SearchAndFilterService.cs" />
+    <EmbeddedResource Include="IdentifyForm.es.resx">
+      <DependentUpon>IdentifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentifyForm.fr-CA.resx">
+      <DependentUpon>IdentifyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IdentifyForm.resx">
       <DependentUpon>IdentifyForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,8 +96,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentSignInForm.es.resx">
+      <DependentUpon>StudentSignInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentSignInForm.fr-CA.resx">
+      <DependentUpon>StudentSignInForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentSignInForm.resx">
       <DependentUpon>StudentSignInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherSignInForm.es.resx">
+      <DependentUpon>TeacherSignInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherSignInForm.fr-CA.resx">
+      <DependentUpon>TeacherSignInForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherSignInForm.resx">
       <DependentUpon>TeacherSignInForm.cs</DependentUpon>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentSignInForm));
             this.studentSignInLabel = new System.Windows.Forms.Label();
             this.IDtextBox = new System.Windows.Forms.TextBox();
             this.studentIDlabel = new System.Windows.Forms.Label();
@@ -39,78 +40,47 @@
             // 
             // studentSignInLabel
             // 
-            this.studentSignInLabel.AutoSize = true;
-            this.studentSignInLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentSignInLabel.Location = new System.Drawing.Point(137, 22);
+            resources.ApplyResources(this.studentSignInLabel, "studentSignInLabel");
             this.studentSignInLabel.Name = "studentSignInLabel";
-            this.studentSignInLabel.Size = new System.Drawing.Size(235, 37);
-            this.studentSignInLabel.TabIndex = 0;
-            this.studentSignInLabel.Text = "Student Sign In";
             // 
             // IDtextBox
             // 
-            this.IDtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IDtextBox.Location = new System.Drawing.Point(192, 110);
+            resources.ApplyResources(this.IDtextBox, "IDtextBox");
             this.IDtextBox.Name = "IDtextBox";
-            this.IDtextBox.Size = new System.Drawing.Size(257, 29);
-            this.IDtextBox.TabIndex = 1;
             // 
             // studentIDlabel
             // 
-            this.studentIDlabel.AutoSize = true;
-            this.studentIDlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentIDlabel.Location = new System.Drawing.Point(56, 114);
+            resources.ApplyResources(this.studentIDlabel, "studentIDlabel");
             this.studentIDlabel.Name = "studentIDlabel";
-            this.studentIDlabel.Size = new System.Drawing.Size(112, 25);
-            this.studentIDlabel.TabIndex = 2;
-            this.studentIDlabel.Text = "Student ID";
             // 
             // passwordLabel
             // 
-            this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.Location = new System.Drawing.Point(56, 180);
+            resources.ApplyResources(this.passwordLabel, "passwordLabel");
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(106, 25);
-            this.passwordLabel.TabIndex = 3;
-            this.passwordLabel.Text = "Password";
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextBox.Location = new System.Drawing.Point(192, 180);
+            resources.ApplyResources(this.passwordTextBox, "passwordTextBox");
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.PasswordChar = '*';
-            this.passwordTextBox.Size = new System.Drawing.Size(257, 29);
-            this.passwordTextBox.TabIndex = 4;
             // 
             // backButton
             // 
-            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(61, 246);
+            resources.ApplyResources(this.backButton, "backButton");
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(143, 52);
-            this.backButton.TabIndex = 5;
-            this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // nextButton
             // 
-            this.nextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextButton.Location = new System.Drawing.Point(307, 246);
+            resources.ApplyResources(this.nextButton, "nextButton");
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(142, 52);
-            this.nextButton.TabIndex = 6;
-            this.nextButton.Text = "Sign In";
             this.nextButton.UseVisualStyleBackColor = true;
             this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // StudentSignInForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 320);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.passwordTextBox);
@@ -119,7 +89,6 @@
             this.Controls.Add(this.IDtextBox);
             this.Controls.Add(this.studentSignInLabel);
             this.Name = "StudentSignInForm";
-            this.Text = "TKB School Grading System - Student Sign In";
             this.ResumeLayout(false);
             this.PerformLayout();
 

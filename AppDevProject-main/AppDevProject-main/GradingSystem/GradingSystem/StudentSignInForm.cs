@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Globalization;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace GradingSystem
 {
     public partial class StudentSignInForm : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
+
         public StudentSignInForm()
         {
             InitializeComponent();
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
         }
 
         private void backButton_Click(object sender, EventArgs e)

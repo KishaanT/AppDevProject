@@ -22,3 +22,13 @@ C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-m
 C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.csproj.CoreCompileInputs.cache
 C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.exe
 C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.pdb
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.IdentifyForm.es.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.IdentifyForm.fr-CA.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\bin\Debug\es\GradingSystem.resources.dll
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\bin\Debug\fr-CA\GradingSystem.resources.dll
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\es\GradingSystem.resources.dll
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\fr-CA\GradingSystem.resources.dll
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentSignInForm.es.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentSignInForm.fr-CA.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherSignInForm.es.resources
+C:\Users\kisha\Documents\GitHub\AppDevProject\AppDevProject-main\AppDevProject-main\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherSignInForm.fr-CA.resources
