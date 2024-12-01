@@ -12,13 +12,12 @@ namespace GradingSystem
         public double Weight { get; set; }
         public Dictionary<int, double> StudentGrades { get; set; } = new Dictionary<int, double>();
 
-        public Assignment(string name,double Weight, Dictionary<int, double> studentGrades) 
-        {
-            this.Name = name;
-            this.Weight = Weight;
-            this.StudentGrades = studentGrades;
-
-        }
+        //public Assignment(string name,double Weight, Dictionary<int, double> studentGrades) 
+        //{
+        //    this.Name = name;
+        //    this.Weight = Weight;
+        //    this.StudentGrades = studentGrades;
+        //}
 
     }
 }
