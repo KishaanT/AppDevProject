@@ -1,54 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\gradingsystem\\gradingsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\gradingsystem\\gradingsystem\\studentslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\studentslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\model\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\model\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\gradingsystem\\gradingsystem\\services\\searchandfilterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\model\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\model\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\services\\searchandfilterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\services\\searchandfilterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\gradingsystem\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:GradingSystem\\Model\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\model\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\model\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\gradingsystem\\services\\databackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\services\\databackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\services\\databackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:GradingSystem\\Model\\Assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\gradingsystem\\services\\graphdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\services\\graphdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\services\\graphdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:GradingSystem\\Model\\Course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\teachersigninform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\teachersigninform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:GradingSystem\\Model\\Teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:GradingSystem\\Model\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\identifyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\identifyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:GradingSystem\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\identifyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\identifyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\teachersigninform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\teachersigninform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\kisha\\documents\\github\\appdevproject\\appdevproject-main\\appdevproject-main\\gradingsystem\\gradingsystem\\studentsigninform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\studentsigninform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,8 +70,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Assignment.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\Assignment.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\Assignment.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\Assignment.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\Assignment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:45:25.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\Student.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\Student.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\Student.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:33:34.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\Course.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\Course.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\Course.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:33:31.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\User.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\User.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\User.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:33:24.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\Teacher.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Model\\Teacher.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Model\\Teacher.cs",
+              "RelativeToolTip": "GradingSystem\\Model\\Teacher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:33:13.251Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -75,152 +152,129 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Form1.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Form1.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Form1.cs [Design]",
-              "RelativeToolTip": "GradingSystem\\Form1.cs [Design]",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Program.cs",
+              "RelativeToolTip": "GradingSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:16:17.017Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-30T07:29:27.443Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SearchAndFilterService.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\SearchAndFilterService.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Services\\SearchAndFilterService.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\SearchAndFilterService.cs",
-              "RelativeToolTip": "GradingSystem\\Services\\SearchAndFilterService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Services\\DataService.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Services\\DataService.cs",
+              "RelativeToolTip": "GradingSystem\\Services\\DataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T17:04:33.421Z",
+              "WhenOpened": "2024-11-30T07:21:36.976Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DataService.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\DataService.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Services\\DataService.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\DataService.cs",
-              "RelativeToolTip": "GradingSystem\\Services\\DataService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwHgAAAABAAAAAAAAAA==",
+              "Title": "SearchAndFilterService.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Services\\SearchAndFilterService.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Services\\SearchAndFilterService.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Services\\SearchAndFilterService.cs",
+              "RelativeToolTip": "GradingSystem\\Services\\SearchAndFilterService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:47:29.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentsLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\StudentsLogin.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\StudentsLogin.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\StudentsLogin.cs [Design]",
-              "RelativeToolTip": "GradingSystem\\StudentsLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:13:13.145Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Student.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Model\\Student.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Student.cs",
-              "RelativeToolTip": "GradingSystem\\Model\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:45:27.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GraphDataService.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\GraphDataService.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Services\\GraphDataService.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\GraphDataService.cs",
-              "RelativeToolTip": "GradingSystem\\Services\\GraphDataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T17:05:17.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataBackupService.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\DataBackupService.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Services\\DataBackupService.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Services\\DataBackupService.cs*",
-              "RelativeToolTip": "GradingSystem\\Services\\DataBackupService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T17:04:03.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Assignment.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Assignment.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Model\\Assignment.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Assignment.cs",
-              "RelativeToolTip": "GradingSystem\\Model\\Assignment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:46:44.564Z",
+              "WhenOpened": "2024-11-30T07:21:34.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Course.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Model\\Course.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Course.cs",
-              "RelativeToolTip": "GradingSystem\\Model\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Title": "GraphDataService.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Services\\GraphDataService.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Services\\GraphDataService.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Services\\GraphDataService.cs",
+              "RelativeToolTip": "GradingSystem\\Services\\GraphDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:45:00.647Z"
+              "WhenOpened": "2024-11-30T07:21:30.998Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Teacher.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Teacher.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Model\\Teacher.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\Teacher.cs",
-              "RelativeToolTip": "GradingSystem\\Model\\Teacher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "TeacherSignInForm.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\TeacherSignInForm.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\TeacherSignInForm.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\TeacherSignInForm.cs",
+              "RelativeToolTip": "GradingSystem\\TeacherSignInForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:44:34.521Z"
+              "WhenOpened": "2024-11-30T07:19:40.03Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\User.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Model\\User.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Model\\User.cs",
-              "RelativeToolTip": "GradingSystem\\Model\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "DataBackupService.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Services\\DataBackupService.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\Services\\DataBackupService.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\Services\\DataBackupService.cs",
+              "RelativeToolTip": "GradingSystem\\Services\\DataBackupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:43:35.369Z"
+              "WhenOpened": "2024-11-30T07:19:21.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Program.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\GradingSystem\\GradingSystem\\Program.cs",
-              "RelativeToolTip": "GradingSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Title": "IdentifyForm.cs",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\IdentifyForm.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\IdentifyForm.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\IdentifyForm.cs",
+              "RelativeToolTip": "GradingSystem\\IdentifyForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:46:35.102Z"
+              "WhenOpened": "2024-11-30T07:18:30.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IdentifyForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\IdentifyForm.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\IdentifyForm.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\IdentifyForm.cs [Design]",
+              "RelativeToolTip": "GradingSystem\\IdentifyForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:18:13.889Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TeacherSignInForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\TeacherSignInForm.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\TeacherSignInForm.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\TeacherSignInForm.cs [Design]",
+              "RelativeToolTip": "GradingSystem\\TeacherSignInForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:17:49.936Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StudentSignInForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\StudentSignInForm.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\StudentSignInForm.cs",
+              "ToolTip": "C:\\Users\\kisha\\Documents\\GitHub\\AppDevProject\\AppDevProject-main\\AppDevProject-main\\GradingSystem\\GradingSystem\\StudentSignInForm.cs [Design]",
+              "RelativeToolTip": "GradingSystem\\StudentSignInForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:17:49.314Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
