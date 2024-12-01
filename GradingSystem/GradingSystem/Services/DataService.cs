@@ -8,14 +8,14 @@ namespace GradingSystem.Services
 {
     internal class DataService
     {
-        private List<Teacher> teachers = new List<Teacher>();
-        private List<Student> students = new List<Student>();
-        private List<Course> courses = new List<Course>();
-        private int nextTeacherId = 1;
-        private int nextStudentId = 1;
-        private int nextCourseId = 1;
+        private static List<Teacher> teachers = new List<Teacher>();
+        private static List<Student> students = new List<Student>();
+        private static List<Course> courses = new List<Course>();
+        private static int nextTeacherId = 1;
+        private static int nextStudentId = 1;
+        private static int nextCourseId = 1;
 
-        public Teacher AddTeacher(string name, string email, string password)
+        public static Teacher AddTeacher(string name, string email, string password)
         {
             if (teachers.Any(t => t.Email == email)) throw new Exception("Teacher email already exists.");
             var teacher = new Teacher
@@ -29,7 +29,7 @@ namespace GradingSystem.Services
             return teacher;
         }
 
-        public Student AddStudent(string name, string email, string password)
+        public static Student AddStudent(string name, string email, string password)
         {
             if (students.Any(s => s.Email == email)) throw new Exception("Student email already exists.");
             var student = new Student
@@ -43,7 +43,7 @@ namespace GradingSystem.Services
             return student;
         }
 
-        public Course AddCourse(string courseName, int teacherId)
+        public static Course AddCourse(string courseName, int teacherId)
         {
             var teacher = teachers.FirstOrDefault(t => t.Id == teacherId);
             if (teacher == null) throw new Exception("Teacher not found.");
@@ -57,7 +57,7 @@ namespace GradingSystem.Services
             return course;
         }
 
-        public void AssignGrade(int studentId, int courseId, string assignmentName, double grade)
+        public static void AssignGrade(int studentId, int courseId, string assignmentName, double grade)
         {
             var student = students.FirstOrDefault(s => s.Id == studentId);
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
@@ -72,7 +72,7 @@ namespace GradingSystem.Services
             RecalculateStudentAverage(studentId, courseId);
         }
 
-        private void RecalculateStudentAverage(int studentId, int courseId)
+        private static void RecalculateStudentAverage(int studentId, int courseId)
         {
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
             if (course == null) return;
@@ -95,7 +95,7 @@ namespace GradingSystem.Services
             course.StudentAverages[studentId] = weightedSum;
         }
 
-        public void DropStudentFromCourse(int studentId, int courseId)
+        public static void DropStudentFromCourse(int studentId, int courseId)
         {
             var student = students.FirstOrDefault(s => s.Id == studentId);
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
@@ -111,7 +111,7 @@ namespace GradingSystem.Services
             }
         }
 
-        public void BackupData(string filePath)
+        public static void BackupData(string filePath)
         {
             // Export all data to CSV format
             // Teachers, students, and courses
