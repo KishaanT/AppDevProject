@@ -1,6 +1,9 @@
-﻿using System;
+﻿using GradingSystem.Services;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,6 +17,15 @@ namespace GradingSystem
         [STAThread]
         static void Main()
         {
+            var language = ConfigurationManager.AppSettings["language"];
+
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
+
+            Application.Run(new IdentifyForm());
+
+          
+
         }
-    }
+}
 }

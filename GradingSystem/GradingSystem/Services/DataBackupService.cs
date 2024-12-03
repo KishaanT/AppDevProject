@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -49,4 +50,74 @@ namespace GradingSystem.Services
             }
             Console.WriteLine("Student data backed up successfully.");
         }
+
+        public static bool checkStudent(int Id, string password)
+        {
+            List<Student> students = DeserializeStudentFile();
+
+            foreach(var student in students)
+            {
+                if(student.Id == 0 && student.Password.Equals(password))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool checkTeacher(int Id, string password)
+        {
+            List<Teacher> teachers = DeserializeTeacherFile();
+
+            foreach (var teacher in teachers)
+            {
+                if (teacher.Id == 0 && teacher.Password.Equals(password))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+        public static List<Student> DeserializeStudentFile()
+        {
+            string file = "\\SavedData\\StudentData.csv";
+            List<Student> students = new List<Student>();
+
+            if (File.Exists(file))
+            {
+                using (FileStream stream = new FileStream(file, FileMode.Open, FileAccess.Read))
+                {
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    students = (List<Student>)formatter.Deserialize(stream);
+                }
+            }
+            else
+            {
+                return null;
+            }
+            return students;
+        }
+
+        public static List<Teacher> DeserializeTeacherFile()
+        {
+            string file = "\\SavedData\\TeachersData.csv";
+            List<Teacher> teachers = new List<Teacher>();
+
+            if (File.Exists(file))
+            {
+                using (FileStream stream = new FileStream(file, FileMode.Open, FileAccess.Read))
+                {
+                    BinaryFormatter formatter = new BinaryFormatter();
+                    teachers = (List<Teacher>)formatter.Deserialize(stream);
+                }
+            }
+            else
+            {
+                return null;
+            }
+            return teachers;
+        }
     }
+}
