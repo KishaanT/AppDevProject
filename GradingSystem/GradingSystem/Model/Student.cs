@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace GradingSystem
 {
+    [Serializable]
     internal class Student : User
     {
         public Dictionary<int, double> Grades { get; set; } = new Dictionary<int, double>();
