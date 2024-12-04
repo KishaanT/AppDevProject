@@ -9,14 +9,19 @@ namespace GradingSystem
     [Serializable]
     internal class Student : User
     {
-        public Dictionary<int, double> Grades { get; set; } = new Dictionary<int, double>();
-        public List<int> EnrolledCourses { get; set; } = new List<int>();
+        private string name;
+        private int id;
+        private double average;
+        private string teacherID; // change field locations if necessary
+        private string password;
+        public double Average { get; set; }
 
-        //public Student(int id, string name, string email, string password, List<int> enrolledCourses,Dictionary<int,double> grades) : base(id, name, email, password)
-        //{
-        //    this.Grades = grades;
-        //    this.EnrolledCourses = enrolledCourses;
-        //}
+        public Dictionary<int, double> Grades { get; set; } = new Dictionary<int, double>(); // we gotta link the grades with the assignments. This might be subject to deletion.
+        
+        public List<Assignment> Assignments { get; set; } = new List<Assignment>(); // when teacher creates a new assignment, the student will receive a new assignment in the assignment list.
+
+        public List<int> EnrolledCourses { get; set; } = new List<int>(); // students are added enrolled to a course (Kishaan you gotta link this with the csv)
+
     }
 
 }

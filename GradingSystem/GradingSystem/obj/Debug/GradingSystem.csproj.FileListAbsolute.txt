@@ -54,3 +54,9 @@ C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\es\
 C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\fr-CA\GradingSystem.resources.dll
 C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.exe
 C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.pdb
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.teacherMainMenu.resources
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherGUI.resources
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.SeeStudentStatus.resources
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.AddModifyGrades.resources
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherOperation.resources
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.AssignmentGUI.resources

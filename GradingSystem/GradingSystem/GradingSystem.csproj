@@ -49,6 +49,42 @@
   <ItemGroup>
     <Compile Include="ApplicationLanguage.cs" />
     <Compile Include="ChangeLanguage.cs" />
+    <Compile Include="AddModifyGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddModifyGrades.Designer.cs">
+      <DependentUpon>AddModifyGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignmentGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignmentGUI.Designer.cs">
+      <DependentUpon>AssignmentGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherOperation.Designer.cs">
+      <DependentUpon>TeacherOperation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeStudentStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeStudentStatus.Designer.cs">
+      <DependentUpon>SeeStudentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherGUI.Designer.cs">
+      <DependentUpon>TeacherGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherMainMenu.Designer.cs">
+      <DependentUpon>TeacherMainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentSignInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +114,21 @@
     <Compile Include="Services\DataService.cs" />
     <Compile Include="Services\GraphDataService.cs" />
     <Compile Include="Services\SearchAndFilterService.cs" />
+    <EmbeddedResource Include="AddModifyGrades.resx">
+      <DependentUpon>AddModifyGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignmentGUI.resx">
+      <DependentUpon>AssignmentGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeStudentStatus.resx">
+      <DependentUpon>SeeStudentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherGUI.resx">
+      <DependentUpon>TeacherGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherMainMenu.resx">
+      <DependentUpon>TeacherMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IdentifyForm.es.resx">
       <DependentUpon>IdentifyForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentSignInForm.resx">
       <DependentUpon>StudentSignInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherOperation.resx">
+      <DependentUpon>TeacherOperation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherSignInForm.es.resx">
       <DependentUpon>TeacherSignInForm.cs</DependentUpon>

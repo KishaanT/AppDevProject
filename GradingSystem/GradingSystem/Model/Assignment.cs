@@ -8,17 +8,17 @@ namespace GradingSystem
 {
     internal class Assignment
     {
-        public string Name { get; set; }
-        public double Weight { get; set; }
+        public string Name { get; set; } // the name given to the assignment
+        public double Weight { get; set; } // the ponderation given to the assignment
+        public double Grade { get; set; } // the grade given to the assignment (one grade per assignment)
         public Dictionary<int, double> StudentGrades { get; set; } = new Dictionary<int, double>();
 
-        //public Assignment(string name,double Weight, Dictionary<int, double> studentGrades) 
-        //{
-        //    this.Name = name;
-        //    this.Weight = Weight;
-        //    this.StudentGrades = studentGrades;
-
-        //}
+        public Assignment(string name, double weight, double grade) 
+        {
+            Name = name;
+            Weight = weight;
+            Grade = grade;
+        }
 
     }
 }

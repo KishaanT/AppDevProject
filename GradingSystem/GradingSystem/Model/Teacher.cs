@@ -9,12 +9,11 @@ namespace GradingSystem
     [Serializable]
     internal class Teacher : User
     {
+        private string teacherID; // change field locations if necessary
+        private string password;
         public List<Course> Courses { get; set; } = new List<Course>();
+        public List<Assignment> assignments { get; set; } = new List<Assignment>();
 
-        //public Teacher(int id, string name, string email, string password,List<Course> courses) :base(id,name,email,password) 
-        //{
-        //    this.Courses = courses;   
-        //}
     }
 
 }

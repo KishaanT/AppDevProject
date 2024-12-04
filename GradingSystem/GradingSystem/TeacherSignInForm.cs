@@ -30,7 +30,11 @@ namespace GradingSystem
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            // Go to the Student GUI
+            // Go to the Teacher GUI
+            Hide();
+            var teacherGUI = new teacherMainMenu();
+            teacherGUI.Closed += (s, args) => Close();
+            teacherGUI.Show();
         }
     }
 }
