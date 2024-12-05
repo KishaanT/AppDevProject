@@ -52,120 +52,119 @@
   <ItemGroup>
     <Compile Include="ApplicationLanguage.cs" />
     <Compile Include="ChangeLanguage.cs" />
-    <Compile Include="AddModifyGrades.cs">
+    <Compile Include="View\AddModifyGrades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddModifyGrades.Designer.cs">
+    <Compile Include="View\AddModifyGrades.Designer.cs">
       <DependentUpon>AddModifyGrades.cs</DependentUpon>
     </Compile>
-    <Compile Include="AssignmentGUI.cs">
+    <Compile Include="View\AssignmentGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AssignmentGUI.Designer.cs">
+    <Compile Include="View\AssignmentGUI.Designer.cs">
       <DependentUpon>AssignmentGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="SeeClassStatus.cs">
+    <Compile Include="View\SeeClassStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SeeClassStatus.Designer.cs">
+    <Compile Include="View\SeeClassStatus.Designer.cs">
       <DependentUpon>SeeClassStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentGrades.cs">
+    <Compile Include="View\StudentGrades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentGrades.Designer.cs">
+    <Compile Include="View\StudentGrades.Designer.cs">
       <DependentUpon>StudentGrades.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentMainMenu.cs">
+    <Compile Include="View\StudentMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentMainMenu.Designer.cs">
+    <Compile Include="View\StudentMainMenu.Designer.cs">
       <DependentUpon>StudentMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherOperation.cs">
+    <Compile Include="View\TeacherOperation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherOperation.Designer.cs">
+    <Compile Include="View\TeacherOperation.Designer.cs">
       <DependentUpon>TeacherOperation.cs</DependentUpon>
     </Compile>
-    <Compile Include="SeeStudentStatus.cs">
+    <Compile Include="View\SeeStudentStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SeeStudentStatus.Designer.cs">
+    <Compile Include="View\SeeStudentStatus.Designer.cs">
       <DependentUpon>SeeStudentStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherGUI.cs">
+    <Compile Include="View\TeacherGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherGUI.Designer.cs">
+    <Compile Include="View\TeacherGUI.Designer.cs">
       <DependentUpon>TeacherGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherMainMenu.cs">
+    <Compile Include="View\TeacherMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherMainMenu.Designer.cs">
+    <Compile Include="View\TeacherMainMenu.Designer.cs">
       <DependentUpon>TeacherMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentSignInForm.cs">
+    <Compile Include="View\StudentSignInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentSignInForm.Designer.cs">
+    <Compile Include="View\StudentSignInForm.Designer.cs">
       <DependentUpon>StudentSignInForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherSignInForm.cs">
+    <Compile Include="View\TeacherSignInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherSignInForm.Designer.cs">
+    <Compile Include="View\TeacherSignInForm.Designer.cs">
       <DependentUpon>TeacherSignInForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Assignment.cs" />
     <Compile Include="Model\Course.cs" />
-    <Compile Include="IdentifyForm.cs">
+    <Compile Include="View\IdentifyForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IdentifyForm.Designer.cs">
+    <Compile Include="View\IdentifyForm.Designer.cs">
       <DependentUpon>IdentifyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Model\Teacher.cs" />
-    <Compile Include="Model\User.cs" />
-    <Compile Include="Services\DataBackupService.cs" />
-    <Compile Include="Services\DataService.cs" />
-    <Compile Include="Services\GraphDataService.cs" />
-    <Compile Include="Services\SearchAndFilterService.cs" />
-    <EmbeddedResource Include="AddModifyGrades.resx">
+    <Compile Include="Controller\DataBackupService.cs" />
+    <Compile Include="Controller\DataService.cs" />
+    <Compile Include="Controller\GraphDataService.cs" />
+    <Compile Include="Controller\SearchAndFilterService.cs" />
+    <EmbeddedResource Include="View\AddModifyGrades.resx">
       <DependentUpon>AddModifyGrades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AssignmentGUI.resx">
+    <EmbeddedResource Include="View\AssignmentGUI.resx">
       <DependentUpon>AssignmentGUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SeeClassStatus.resx">
+    <EmbeddedResource Include="View\SeeClassStatus.resx">
       <DependentUpon>SeeClassStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentGrades.resx">
+    <EmbeddedResource Include="View\StudentGrades.resx">
       <DependentUpon>StudentGrades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SeeStudentStatus.resx">
+    <EmbeddedResource Include="View\SeeStudentStatus.resx">
       <DependentUpon>SeeStudentStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentMainMenu.resx">
+    <EmbeddedResource Include="View\StudentMainMenu.resx">
       <DependentUpon>StudentMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherGUI.resx">
+    <EmbeddedResource Include="View\TeacherGUI.resx">
       <DependentUpon>TeacherGUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherMainMenu.resx">
+    <EmbeddedResource Include="View\TeacherMainMenu.resx">
       <DependentUpon>TeacherMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IdentifyForm.es.resx">
+    <EmbeddedResource Include="View\IdentifyForm.es.resx">
       <DependentUpon>IdentifyForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IdentifyForm.fr-CA.resx">
+    <EmbeddedResource Include="View\IdentifyForm.fr-CA.resx">
       <DependentUpon>IdentifyForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IdentifyForm.resx">
+    <EmbeddedResource Include="View\IdentifyForm.resx">
       <DependentUpon>IdentifyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -177,25 +176,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="StudentSignInForm.es.resx">
+    <EmbeddedResource Include="View\StudentSignInForm.es.resx">
       <DependentUpon>StudentSignInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentSignInForm.fr-CA.resx">
+    <EmbeddedResource Include="View\StudentSignInForm.fr-CA.resx">
       <DependentUpon>StudentSignInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentSignInForm.resx">
+    <EmbeddedResource Include="View\StudentSignInForm.resx">
       <DependentUpon>StudentSignInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherOperation.resx">
+    <EmbeddedResource Include="View\TeacherOperation.resx">
       <DependentUpon>TeacherOperation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherSignInForm.es.resx">
+    <EmbeddedResource Include="View\TeacherSignInForm.es.resx">
       <DependentUpon>TeacherSignInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherSignInForm.fr-CA.resx">
+    <EmbeddedResource Include="View\TeacherSignInForm.fr-CA.resx">
       <DependentUpon>TeacherSignInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherSignInForm.resx">
+    <EmbeddedResource Include="View\TeacherSignInForm.resx">
       <DependentUpon>TeacherSignInForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
