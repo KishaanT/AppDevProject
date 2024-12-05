@@ -32,7 +32,6 @@
             this.nameColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.weightColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gradeColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.statusColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gradingSystemLabel = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
             this.seeAverageButton = new System.Windows.Forms.Button();
@@ -48,15 +47,14 @@
             this.assignmentListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.nameColumn,
             this.weightColumn,
-            this.gradeColumn,
-            this.statusColumn});
+            this.gradeColumn});
             this.assignmentListView.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.assignmentListView.FullRowSelect = true;
             this.assignmentListView.HideSelection = false;
             this.assignmentListView.Location = new System.Drawing.Point(185, 75);
             this.assignmentListView.MultiSelect = false;
             this.assignmentListView.Name = "assignmentListView";
-            this.assignmentListView.Size = new System.Drawing.Size(551, 656);
+            this.assignmentListView.Size = new System.Drawing.Size(462, 656);
             this.assignmentListView.TabIndex = 2;
             this.assignmentListView.UseCompatibleStateImageBehavior = false;
             this.assignmentListView.View = System.Windows.Forms.View.Details;
@@ -77,12 +75,6 @@
             this.gradeColumn.Text = "Grade";
             this.gradeColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gradeColumn.Width = 100;
-            // 
-            // statusColumn
-            // 
-            this.statusColumn.Text = "Status";
-            this.statusColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.statusColumn.Width = 100;
             // 
             // gradingSystemLabel
             // 
@@ -182,7 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 727);
+            this.ClientSize = new System.Drawing.Size(660, 727);
             this.Controls.Add(this.dropOutButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.searchButton);
@@ -207,7 +199,6 @@
         private System.Windows.Forms.Label gradingSystemLabel;
         private System.Windows.Forms.ColumnHeader gradeColumn;
         private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.ColumnHeader statusColumn;
         private System.Windows.Forms.Button seeAverageButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button searchButton;

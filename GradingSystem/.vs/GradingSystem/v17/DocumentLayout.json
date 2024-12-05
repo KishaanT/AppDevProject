@@ -1,12 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\brian\\Downloads\\AppDevProject\\GradingSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\brian\\downloads\\appdevproject\\gradingsystem\\gradingsystem\\studentgrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\studentgrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentGrades.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\brian\\Downloads\\AppDevProject\\GradingSystem\\GradingSystem\\StudentGrades.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\StudentGrades.cs",
+              "ToolTip": "C:\\Users\\brian\\Downloads\\AppDevProject\\GradingSystem\\GradingSystem\\StudentGrades.cs [Design]",
+              "RelativeToolTip": "GradingSystem\\StudentGrades.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T01:29:04.124Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
