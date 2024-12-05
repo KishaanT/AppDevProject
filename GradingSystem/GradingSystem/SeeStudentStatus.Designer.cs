@@ -51,7 +51,7 @@
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(247, 9);
+            this.titleLabel.Location = new System.Drawing.Point(68, 9);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(191, 37);
             this.titleLabel.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             this.statusLabel.AutoSize = true;
             this.statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusLabel.Location = new System.Drawing.Point(32, 93);
+            this.statusLabel.Location = new System.Drawing.Point(30, 68);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(117, 37);
             this.statusLabel.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             this.averageLabel.AutoSize = true;
             this.averageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.averageLabel.Location = new System.Drawing.Point(32, 151);
+            this.averageLabel.Location = new System.Drawing.Point(30, 126);
             this.averageLabel.Name = "averageLabel";
             this.averageLabel.Size = new System.Drawing.Size(144, 37);
             this.averageLabel.TabIndex = 3;
@@ -80,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(211, 111);
+            this.label2.Location = new System.Drawing.Point(209, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 4;
@@ -90,7 +90,7 @@
             this.passingLabel.AutoSize = true;
             this.passingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passingLabel.ForeColor = System.Drawing.Color.SpringGreen;
-            this.passingLabel.Location = new System.Drawing.Point(155, 93);
+            this.passingLabel.Location = new System.Drawing.Point(153, 68);
             this.passingLabel.Name = "passingLabel";
             this.passingLabel.Size = new System.Drawing.Size(131, 37);
             this.passingLabel.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             this.gradeLabel.AutoSize = true;
             this.gradeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gradeLabel.Location = new System.Drawing.Point(185, 151);
+            this.gradeLabel.Location = new System.Drawing.Point(183, 126);
             this.gradeLabel.Name = "gradeLabel";
             this.gradeLabel.Size = new System.Drawing.Size(63, 37);
             this.gradeLabel.TabIndex = 6;
@@ -112,16 +112,15 @@
             this.tempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempLabel.Location = new System.Drawing.Point(429, 175);
             this.tempLabel.Name = "tempLabel";
-            this.tempLabel.Size = new System.Drawing.Size(173, 25);
+            this.tempLabel.Size = new System.Drawing.Size(0, 25);
             this.tempLabel.TabIndex = 7;
-            this.tempLabel.Text = "Graph goes here";
             // 
             // closeButton
             // 
             this.closeButton.BackColor = System.Drawing.Color.IndianRed;
             this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.closeButton.Location = new System.Drawing.Point(24, 267);
+            this.closeButton.Location = new System.Drawing.Point(22, 180);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(125, 46);
             this.closeButton.TabIndex = 8;
@@ -133,7 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 325);
+            this.ClientSize = new System.Drawing.Size(326, 243);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.tempLabel);
             this.Controls.Add(this.gradeLabel);

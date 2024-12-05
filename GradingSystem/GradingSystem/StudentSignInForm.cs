@@ -31,7 +31,10 @@ namespace GradingSystem
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            // Go to the Student GUI
+            Hide();
+            var form = new StudentMainMenu();
+            form.Closed += (s, args) => Close();
+            form.Show();
         }
     }
 }

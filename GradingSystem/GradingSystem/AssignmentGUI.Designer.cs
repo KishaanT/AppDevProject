@@ -43,6 +43,7 @@
             this.selectAndModifyLabel = new System.Windows.Forms.Label();
             this.weightLabelModify = new System.Windows.Forms.Label();
             this.modifyButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.weightUpDownCreate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weightUpDownModify)).BeginInit();
             this.SuspendLayout();
@@ -195,11 +196,25 @@
             this.modifyButton.UseVisualStyleBackColor = false;
             this.modifyButton.Click += new System.EventHandler(this.modifyButton_Click);
             // 
+            // deleteButton
+            // 
+            this.deleteButton.BackColor = System.Drawing.Color.OrangeRed;
+            this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.deleteButton.Location = new System.Drawing.Point(121, 309);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(103, 43);
+            this.deleteButton.TabIndex = 16;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
             // AssignmentGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.modifyButton);
             this.Controls.Add(this.weightLabelModify);
             this.Controls.Add(this.selectAndModifyLabel);
@@ -239,5 +254,6 @@
         private System.Windows.Forms.Button modifyButton;
         private System.Windows.Forms.ColumnHeader nameColumn;
         private System.Windows.Forms.ColumnHeader weight;
+        private System.Windows.Forms.Button deleteButton;
     }
 }

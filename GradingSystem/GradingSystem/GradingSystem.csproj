@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -60,6 +63,24 @@
     </Compile>
     <Compile Include="AssignmentGUI.Designer.cs">
       <DependentUpon>AssignmentGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeClassStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeClassStatus.Designer.cs">
+      <DependentUpon>SeeClassStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentGrades.Designer.cs">
+      <DependentUpon>StudentGrades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainMenu.Designer.cs">
+      <DependentUpon>StudentMainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherOperation.cs">
       <SubType>Form</SubType>
@@ -120,8 +141,17 @@
     <EmbeddedResource Include="AssignmentGUI.resx">
       <DependentUpon>AssignmentGUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SeeClassStatus.resx">
+      <DependentUpon>SeeClassStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentGrades.resx">
+      <DependentUpon>StudentGrades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SeeStudentStatus.resx">
       <DependentUpon>SeeStudentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainMenu.resx">
+      <DependentUpon>StudentMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherGUI.resx">
       <DependentUpon>TeacherGUI.cs</DependentUpon>

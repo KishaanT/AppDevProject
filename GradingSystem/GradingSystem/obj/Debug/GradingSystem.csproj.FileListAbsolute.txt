@@ -60,3 +60,6 @@ C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\Gra
 C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.AddModifyGrades.resources
 C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.TeacherOperation.resources
 C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.AssignmentGUI.resources
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentMainMenu.resources
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentGrades.resources
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.SeeClassStatus.resources
