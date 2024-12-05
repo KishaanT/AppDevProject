@@ -51,15 +51,15 @@ namespace GradingSystem.Services
         }
 
         // Enhanced: Get students with top N averages
-        public List<Student> GetTopStudentsByAverage(Dictionary<int, double> averages, int topN)
-        {
-            if (averages == null || topN <= 0) return new List<Student>();
+        //public List<Student> GetTopStudentsByAverage(Dictionary<int, double> averages, int topN)
+        //{
+        //    if (averages == null || topN <= 0) return new List<Student>();
 
-            return averages.OrderByDescending(pair => pair.Value)
-                           .Take(topN)
-                           .Select(pair => new Student { Id = pair.Key, Average = pair.Value }) // Assuming `Student` has an `Average` property
-                           .ToList();
-        }
+        //    return averages.OrderByDescending(pair => pair.Value)
+        //                   .Take(topN)
+        //                   .Select(pair => new Student { Id = pair.Key, Average = pair.Value }) // Assuming `Student` has an `Average` property
+        //                   .ToList();
+        //}
 
         // Enhanced: Get assignments with grades in a specific range
         public List<Assignment> FilterAssignmentsByGradeRange(List<Assignment> assignments, double minGrade, double maxGrade)

@@ -14,7 +14,6 @@ namespace GradingSystem
     public partial class StudentSignInForm : Form
     {
         ChangeLanguage changeLanguage = new ChangeLanguage();
-
         public StudentSignInForm()
         {
             InitializeComponent();
@@ -36,5 +35,6 @@ namespace GradingSystem
             form.Closed += (s, args) => Close();
             form.Show();
         }
+
     }
 }

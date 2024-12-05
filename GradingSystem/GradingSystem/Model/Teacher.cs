@@ -12,6 +12,18 @@ namespace GradingSystem
         public string Password { get; set; }
 
         public List<Course> Courses { get; set; } = new List<Course>();
+        
+        public Teacher()
+        {
+
+        }
+
+        public Teacher(int ID, string name, string email, string password) {
+            Id = ID;
+            Name = name;
+            Email = email;
+            Password = password;
+        }
 
         // Load courses assigned to the teacher
         public void LoadCourses(List<Course> allCourses)

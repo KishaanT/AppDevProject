@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GradingSystem.Services;
 
 namespace GradingSystem
 {
     public partial class teacherMainMenu : Form
     {
+        private Teacher teacher = DataService.Teacher;
+
         public teacherMainMenu()
         {
             InitializeComponent();
+            //comboBoxClasses.Text = teacher.Courses.
         }
 
         private void gotoclassButton_Click(object sender, EventArgs e)

@@ -9,38 +9,23 @@ namespace GradingSystem
         public int CourseId { get; set; }
         public string CourseName { get; set; }
         public int TeacherId { get; set; }
-        public List<Assignment> Assignments { get; set; } = new List<Assignment>();
+        public List<Assignment> Assignments { get; set; }
         public Dictionary<int, double> StudentAverages { get; set; } = new Dictionary<int, double>();
 
-        // Enroll a student in the course
-        public void EnrollStudent(int studentId)
+        public Course() 
         {
-            if (StudentAverages.ContainsKey(studentId))
-            {
-                Console.WriteLine($"Student {studentId} is already enrolled in the course.");
-                return;
-            }
 
-            StudentAverages[studentId] = 0; // Initialize average as 0
-            Console.WriteLine($"Student {studentId} enrolled in course {CourseName}.");
         }
 
-        // Remove a student from the course
-        public void RemoveStudent(int studentId)
+        public Course(int courseId, string courseName, int teacherid, List<Assignment> assignments)
         {
-            if (StudentAverages.Remove(studentId))
-            {
-                foreach (var assignment in Assignments)
-                {
-                    assignment.StudentGrades.Remove(studentId);
-                }
-                Console.WriteLine($"Student {studentId} removed from course {CourseName}.");
-            }
-            else
-            {
-                Console.WriteLine($"Student {studentId} is not enrolled in the course.");
-            }
+            CourseId = courseId;
+            CourseName = courseName;
+            TeacherId = teacherid;
+            Assignments = assignments;
         }
+
+
 
         // Add a new assignment to the course
         public void AddAssignment(string name, double weight)
