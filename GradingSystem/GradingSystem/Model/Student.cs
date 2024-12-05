@@ -1,28 +1,91 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GradingSystem
 {
     [Serializable]
-    internal class Student : User
+    internal class Student
     {
-        private string name;
-        private int id;
-        private double average;
-        private string teacherID; // change field locations if necessary
-        private string password;
-        public double Average { get; set; }
-        public Dictionary<Assignment, double> GradesForAssignments { get; set; } = new Dictionary<Assignment, double>();
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
 
-        public Dictionary<int, double> Grades { get; set; } = new Dictionary<int, double>(); // we gotta link the grades with the assignments. This might be subject to deletion.
-        
-        public List<Assignment> Assignments { get; set; } = new List<Assignment>(); // when teacher creates a new assignment, the student will receive a new assignment in the assignment list.
+        public double Average { get; private set; }
+        public List<int> EnrolledCourses { get; set; } = new List<int>();
+        public Dictionary<int, double> Grades { get; set; } = new Dictionary<int, double>();
 
-        public List<int> EnrolledCourses { get; set; } = new List<int>(); // students are added enrolled to a course (Kishaan you gotta link this with the csv)
+        // Enroll in a course
+        public void EnrollInCourse(int courseId)
+        {
+            if (EnrolledCourses.Contains(courseId))
+            {
+                Console.WriteLine($"Already enrolled in course {courseId}.");
+                return;
+            }
 
+            EnrolledCourses.Add(courseId);
+            Console.WriteLine($"Successfully enrolled in course {courseId}.");
+        }
+
+        // Drop a course
+        public void DropCourse(int courseId)
+        {
+            if (EnrolledCourses.Remove(courseId))
+            {
+                Grades.Remove(courseId);
+                Console.WriteLine($"Successfully dropped course {courseId}.");
+            }
+            else
+            {
+                Console.WriteLine($"Course {courseId} not found in enrolled list.");
+            }
+        }
+
+        // Calculate average from assignment grades
+        public void CalculateAverage(Dictionary<int, double> assignments)
+        {
+            if (assignments == null || assignments.Count == 0)
+            {
+                Average = 0;
+                Console.WriteLine("No assignments available to calculate average.");
+                return;
+            }
+
+            double total = assignments.Sum(a => a.Value * (a.Key / 100.0));
+            double totalWeight = assignments.Sum(a => a.Key);
+
+            if (Math.Abs(totalWeight - 100) > 0.01)
+            {
+                Console.WriteLine("Warning: Total assignment weights do not sum to 100%. Adjust calculations accordingly.");
+            }
+
+            Average = totalWeight > 0 ? total : 0;
+            Console.WriteLine($"New average calculated: {Average:F2}");
+        }
+
+        // Get pass/fail status
+        public string GetStatus()
+        {
+            return Average >= 50 ? "Passing" : "Failing";
+        }
+
+        // Fetch detailed performance per course
+        public void DisplayPerformance()
+        {
+            if (Grades.Count == 0)
+            {
+                Console.WriteLine("No grades available to display performance.");
+                return;
+            }
+
+            Console.WriteLine($"Performance for Student {Name} (ID: {Id}):");
+            foreach (var grade in Grades)
+            {
+                Console.WriteLine($"- Course {grade.Key}: {grade.Value:F2}%");
+            }
+            Console.WriteLine($"Overall Average: {Average:F2}% ({GetStatus()})");
+        }
     }
-
 }
