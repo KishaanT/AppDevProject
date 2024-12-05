@@ -68,7 +68,7 @@ namespace GradingSystem
         // Get pass/fail status
         public string GetStatus()
         {
-            return Average >= 50 ? "Passing" : "Failing";
+            return Average >= 60 ? "Passing" : "Failing";
         }
 
         // Fetch detailed performance per course
