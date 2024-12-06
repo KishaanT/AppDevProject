@@ -130,21 +130,21 @@
   <data name="dropOutButton.Text" xml:space="preserve">
     <value>Dropout!!!</value>
   </data>
+  <data name="&gt;&gt;weightColumn.Name" xml:space="preserve">
+    <value>weightColumn</value>
+  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="gradingSystemLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt</value>
-  </data>
-  <data name="&gt;&gt;searchBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;searchBox.Name" xml:space="preserve">
+    <value>searchBox</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="seeAverageButton.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="dropOutButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 644</value>
+  <data name="gradingSystemLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="seeAverageButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20.25pt</value>
@@ -159,6 +159,9 @@
   <data name="gradeColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Center</value>
   </data>
+  <data name="&gt;&gt;gradingSystemLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="seeAverageButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 128</value>
   </data>
@@ -168,17 +171,11 @@
   <data name="&gt;&gt;weightColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="gradingSystemLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
   <data name="gradingSystemLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="nameColumn.Width" type="System.Int32, mscorlib">
     <value>260</value>
-  </data>
-  <data name="gradeColumn.Text" xml:space="preserve">
-    <value>Grade</value>
   </data>
   <data name="&gt;&gt;assignmentListView.Name" xml:space="preserve">
     <value>assignmentListView</value>
@@ -188,6 +185,9 @@
   </data>
   <data name="searchLabel.Text" xml:space="preserve">
     <value>Search:</value>
+  </data>
+  <data name="&gt;&gt;nameColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;nameColumn.Name" xml:space="preserve">
     <value>nameColumn</value>
@@ -204,9 +204,6 @@
   <data name="searchButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 33</value>
   </data>
-  <data name="&gt;&gt;clearButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="clearButton.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
@@ -219,8 +216,8 @@
   <data name="backButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;nameColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="backButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 83</value>
   </data>
   <data name="statusColumn.Width" type="System.Int32, mscorlib">
     <value>100</value>
@@ -237,14 +234,17 @@
   <data name="&gt;&gt;clearButton.Name" xml:space="preserve">
     <value>clearButton</value>
   </data>
+  <data name="searchButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
   <data name="searchLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;gradingSystemLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;weightColumn.Name" xml:space="preserve">
-    <value>weightColumn</value>
+  <data name="gradeColumn.Text" xml:space="preserve">
+    <value>Grade</value>
   </data>
   <data name="backButton.Text" xml:space="preserve">
     <value>Back</value>
@@ -252,14 +252,14 @@
   <data name="assignmentListView.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="clearButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 33</value>
+  <data name="&gt;&gt;searchBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="searchButton.Text" xml:space="preserve">
     <value>Search</value>
   </data>
-  <data name="gradingSystemLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 42</value>
+  <data name="&gt;&gt;searchButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="searchButton.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -267,8 +267,8 @@
   <data name="searchBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
-  <data name="&gt;&gt;searchBox.Name" xml:space="preserve">
-    <value>searchBox</value>
+  <data name="searchLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 334</value>
   </data>
   <data name="searchLabel.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -294,6 +294,9 @@
   <data name="&gt;&gt;searchLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="dropOutButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 644</value>
+  </data>
   <data name="weightColumn.Text" xml:space="preserve">
     <value>Weight</value>
   </data>
@@ -303,20 +306,20 @@
   <data name="&gt;&gt;dropOutButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="searchLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 334</value>
+  <data name="gradingSystemLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 42</value>
   </data>
-  <data name="&gt;&gt;searchLabel.Name" xml:space="preserve">
-    <value>searchLabel</value>
+  <data name="clearButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 33</value>
   </data>
-  <data name="&gt;&gt;gradeColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="statusColumn.Text" xml:space="preserve">
+    <value>Status</value>
   </data>
   <data name="gradeColumn.Width" type="System.Int32, mscorlib">
     <value>100</value>
   </data>
-  <data name="&gt;&gt;gradingSystemLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;seeAverageButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="assignmentListView.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -324,22 +327,19 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>745, 727</value>
   </data>
-  <data name="weightColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
+  <data name="&gt;&gt;clearButton.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="searchButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="gradingSystemLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 27.75pt</value>
   </data>
   <data name="clearButton.Text" xml:space="preserve">
     <value>Clear</value>
   </data>
-  <data name="&gt;&gt;searchButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="&gt;&gt;backButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;seeAverageButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="dropOutButton.Font" type="System.Drawing.Font, System.Drawing">
@@ -363,20 +363,20 @@
   <data name="&gt;&gt;clearButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="statusColumn.Text" xml:space="preserve">
-    <value>Status</value>
+  <data name="weightColumn.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
   </data>
-  <data name="searchLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+  <data name="&gt;&gt;gradeColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>StudentGrades</value>
   </data>
+  <data name="&gt;&gt;searchLabel.Name" xml:space="preserve">
+    <value>searchLabel</value>
+  </data>
   <data name="assignmentListView.Location" type="System.Drawing.Point, System.Drawing">
     <value>185, 75</value>
-  </data>
-  <data name="backButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 83</value>
   </data>
   <data name="&gt;&gt;dropOutButton.Name" xml:space="preserve">
     <value>dropOutButton</value>
@@ -387,11 +387,14 @@
   <data name="backButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20.25pt</value>
   </data>
-  <data name="&gt;&gt;dropOutButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="searchLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
   </data>
   <data name="searchButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 406</value>
+  </data>
+  <data name="&gt;&gt;dropOutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="searchBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 362</value>
@@ -410,9 +413,6 @@
   </data>
   <data name="&gt;&gt;assignmentListView.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
   </data>
   <data name="&gt;&gt;backButton.Name" xml:space="preserve">
     <value>backButton</value>

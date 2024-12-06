@@ -67,6 +67,9 @@ namespace GradingSystem
                 Console.WriteLine("Empty");
             }
 
+            DataBackupService.BackupTeacherData(DataService.Teachers);
+            
+
             Application.Run(new IdentifyForm());
 
         }

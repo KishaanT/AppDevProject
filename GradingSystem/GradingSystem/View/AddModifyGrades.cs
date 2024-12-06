@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Globalization;
 using GradingSystem.Services;
 
 namespace GradingSystem
 {
     public partial class AddModifyGrades : Form
     {
+        ChangeLanguage changeLanguage;
         public AddModifyGrades()
         {
             InitializeComponent();
             changeStudentLabel();
             loadData();
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -28,6 +31,7 @@ namespace GradingSystem
         private void changeStudentLabel()
         {
             studentLabel.Text = DataService.Student.Name;
+            
         }
 
         private void loadData()
@@ -53,5 +57,7 @@ namespace GradingSystem
                 }
             }
         }
+
+       
     }
 }

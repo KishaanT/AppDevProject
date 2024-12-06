@@ -1,36 +1,60 @@
-﻿using System;
+﻿using GradingSystem;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace GradingSystem.Services
 {
     internal class DataBackupService
     {
-        private const string SavedDataPath = "SavedData";
+        private const string SavedDataPath = "..\\..\\SavedData";
+        private BinaryFormatter formatter = new BinaryFormatter();
+        private FileStream output;
 
         // Backup teacher data to a CSV file
-        public void BackupTeacherData(List<Teacher> teachers, string filePath)
+        //public void BackupTeacherData(List<Teacher> teachers, string filePath)
+        //{
+        //    try
+        //    {
+        //        using (var writer = new StreamWriter(filePath))
+        //        {
+        //            writer.WriteLine("Teacher ID,Teacher Name,Email,Course Name,Student ID,Student Average");
+
+        //            foreach (var teacher in teachers)
+        //            {
+        //                foreach (var course in teacher.Courses)
+        //                {
+        //                    foreach (var studentAverage in course.StudentAverages)
+        //                    {
+        //                        writer.WriteLine($"{teacher.Id},{EscapeCsv(teacher.Name)},{EscapeCsv(teacher.Email)}," +
+        //                                         $"{EscapeCsv(course.CourseName)},{studentAverage.Key},{studentAverage.Value:F2}");
+        //                    }
+        //                }
+        //            }
+        //        }
+        //        Console.WriteLine("Teacher data backed up successfully.");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Error backing up teacher data: {ex.Message}");
+        //    }
+        //}
+
+        public static  void BackupTeacherData(List<Teacher> teachers)
         {
             try
             {
-                using (var writer = new StreamWriter(filePath))
+                BinaryFormatter formatter = new BinaryFormatter();
+
+                using (FileStream stream = new FileStream(Path.Combine(SavedDataPath, "TeachersData.ser"), FileMode.Create, FileAccess.Write))
                 {
-                    writer.WriteLine("Teacher ID,Teacher Name,Email,Course Name,Student ID,Student Average");
-                    
-                    foreach (var teacher in teachers)
-                    {
-                        foreach (var course in teacher.Courses)
-                        {
-                            foreach (var studentAverage in course.StudentAverages)
-                            {
-                                writer.WriteLine($"{teacher.Id},{EscapeCsv(teacher.Name)},{EscapeCsv(teacher.Email)}," +
-                                                 $"{EscapeCsv(course.CourseName)},{studentAverage.Key},{studentAverage.Value:F2}");
-                            }
-                        }
-                    }
+                    formatter.Serialize(stream, teachers);
                 }
+
                 Console.WriteLine("Teacher data backed up successfully.");
             }
             catch (Exception ex)
@@ -76,10 +100,19 @@ namespace GradingSystem.Services
             return students.Any(student => student.Id == id && student.Password.Equals(password, StringComparison.OrdinalIgnoreCase));
         }
 
-        // Check teacher credentials
+        //Check teacher credentials
+        //public static bool CheckTeacher(int id, string password)
+        //{
+        //    var teachers = DeserializeTeacherFile();
+        //    if (teachers == null) return false;
+
+        //    return teachers.Any(teacher => teacher.Id == id && teacher.Password.Equals(password, StringComparison.OrdinalIgnoreCase));
+        //}
+
+       
         public static bool CheckTeacher(int id, string password)
         {
-            var teachers = DeserializeTeacherFile();
+            var teachers = RestoreTeacherData();
             if (teachers == null) return false;
 
             return teachers.Any(teacher => teacher.Id == id && teacher.Password.Equals(password, StringComparison.OrdinalIgnoreCase));
@@ -125,43 +158,66 @@ namespace GradingSystem.Services
         }
 
         // Deserialize teacher data from CSV
-        public static List<Teacher> DeserializeTeacherFile()
+        //public static List<Teacher> DeserializeTeacherFile()
+        //{
+        //    string filePath = Path.Combine(SavedDataPath, "TeachersData.csv");
+        //    var teachers = new List<Teacher>();
+
+        //    if (!File.Exists(filePath)) return null;
+
+        //    try
+        //    {
+        //        using (var reader = new StreamReader(filePath))
+        //        {
+        //            // Skip the header line
+        //            reader.ReadLine();
+
+        //            while (!reader.EndOfStream)
+        //            {
+        //                var line = reader.ReadLine();
+        //                if (line == null) continue;
+
+        //                var values = ParseCsvLine(line);
+        //                var teacher = new Teacher
+        //                {
+        //                    Id = int.Parse(values[0]),
+        //                    Name = values[1],
+        //                    Email = values[2],
+        //                    Password = values[3]
+        //                };
+        //                teachers.Add(teacher);
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine($"Error reading teacher file: {ex.Message}");
+        //    }
+        //    return teachers;
+        //}
+
+        public static List<Teacher> RestoreTeacherData()
         {
-            string filePath = Path.Combine(SavedDataPath, "TeachersData.csv");
-            var teachers = new List<Teacher>();
-
-            if (!File.Exists(filePath)) return null;
-
             try
             {
-                using (var reader = new StreamReader(filePath))
+                BinaryFormatter formatter = new BinaryFormatter();
+                List<Teacher> teachers;
+
+                using (FileStream stream = new FileStream(Path.Combine(SavedDataPath, "TeachersData.ser"), FileMode.Open, FileAccess.Read))
                 {
-                    // Skip the header line
-                    reader.ReadLine();
-
-                    while (!reader.EndOfStream)
-                    {
-                        var line = reader.ReadLine();
-                        if (line == null) continue;
-
-                        var values = ParseCsvLine(line);
-                        var teacher = new Teacher
-                        {
-                            Id = int.Parse(values[0]),
-                            Name = values[1],
-                            Email = values[2],
-                            Password = values[3]
-                        };
-                        teachers.Add(teacher);
-                    }
+                    teachers = (List<Teacher>)formatter.Deserialize(stream);
                 }
+
+                Console.WriteLine("Teacher data restored successfully.");
+                return teachers;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error reading teacher file: {ex.Message}");
+                Console.WriteLine($"Error restoring teacher data: {ex.Message}");
+                return null;
             }
-            return teachers;
         }
+
 
         // Helper method to escape CSV values
         private static string EscapeCsv(string value)
@@ -206,3 +262,6 @@ namespace GradingSystem.Services
         }
     }
 }
+
+
+

@@ -7,16 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Globalization;
 using GradingSystem.Services;
 
 namespace GradingSystem
 {
     public partial class teacherMainMenu : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         private Teacher teacher = DataService.Teacher;
 
         public teacherMainMenu()
         {
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
             InitializeComponent();
             foreach (Course course in DataService.Teacher.Courses)
             {

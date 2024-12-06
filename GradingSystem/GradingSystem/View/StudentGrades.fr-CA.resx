@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="nameColumn.Text" xml:space="preserve">
+    <value>Nom du Devoir</value>
+  </data>
+  <data name="weightColumn.Text" xml:space="preserve">
+    <value>Pondération</value>
+  </data>
+  <data name="gradeColumn.Text" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="statusColumn.Text" xml:space="preserve">
+    <value>État</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="gradingSystemLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>314, 20</value>

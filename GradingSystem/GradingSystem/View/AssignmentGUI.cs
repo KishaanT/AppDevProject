@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Globalization;
 using GradingSystem.Services;
 
 namespace GradingSystem
 {
     public partial class AssignmentGUI : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         public AssignmentGUI()
-        {
+        {            
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
             InitializeComponent();
         }
 
@@ -79,5 +82,7 @@ namespace GradingSystem
                 }
             }
         }
+
+        
     }
 }

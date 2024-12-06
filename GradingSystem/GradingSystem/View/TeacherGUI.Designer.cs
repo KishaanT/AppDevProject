@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherGUI));
             this.gradingSystemLabel = new System.Windows.Forms.Label();
             this.studentListView = new System.Windows.Forms.ListView();
             this.studentColumn = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -43,130 +44,90 @@
             // 
             // gradingSystemLabel
             // 
-            this.gradingSystemLabel.AutoSize = true;
-            this.gradingSystemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gradingSystemLabel.Location = new System.Drawing.Point(193, 9);
+            resources.ApplyResources(this.gradingSystemLabel, "gradingSystemLabel");
             this.gradingSystemLabel.Name = "gradingSystemLabel";
-            this.gradingSystemLabel.Size = new System.Drawing.Size(285, 42);
-            this.gradingSystemLabel.TabIndex = 0;
-            this.gradingSystemLabel.Text = "Grading System";
             // 
             // studentListView
             // 
             this.studentListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.studentColumn,
             this.studentIDcolumn});
-            this.studentListView.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.studentListView, "studentListView");
             this.studentListView.FullRowSelect = true;
             this.studentListView.HideSelection = false;
-            this.studentListView.Location = new System.Drawing.Point(200, 70);
             this.studentListView.MultiSelect = false;
             this.studentListView.Name = "studentListView";
-            this.studentListView.Size = new System.Drawing.Size(455, 591);
-            this.studentListView.TabIndex = 1;
             this.studentListView.UseCompatibleStateImageBehavior = false;
             this.studentListView.View = System.Windows.Forms.View.Details;
             // 
             // studentColumn
             // 
-            this.studentColumn.Text = "Student";
-            this.studentColumn.Width = 225;
+            resources.ApplyResources(this.studentColumn, "studentColumn");
             // 
             // studentIDcolumn
             // 
-            this.studentIDcolumn.Text = "Student ID";
-            this.studentIDcolumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.studentIDcolumn.Width = 225;
+            resources.ApplyResources(this.studentIDcolumn, "studentIDcolumn");
             // 
             // backButton
             // 
             this.backButton.BackColor = System.Drawing.Color.IndianRed;
-            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.backButton, "backButton");
             this.backButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.backButton.Location = new System.Drawing.Point(12, 70);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(148, 51);
-            this.backButton.TabIndex = 2;
-            this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // seeStatusButton
             // 
             this.seeStatusButton.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.seeStatusButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.seeStatusButton, "seeStatusButton");
             this.seeStatusButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.seeStatusButton.Location = new System.Drawing.Point(12, 162);
             this.seeStatusButton.Name = "seeStatusButton";
-            this.seeStatusButton.Size = new System.Drawing.Size(148, 78);
-            this.seeStatusButton.TabIndex = 3;
-            this.seeStatusButton.Text = "See Status";
             this.seeStatusButton.UseVisualStyleBackColor = false;
             this.seeStatusButton.Click += new System.EventHandler(this.seeStatusButton_Click);
             // 
             // addModifyGradeButton
             // 
             this.addModifyGradeButton.BackColor = System.Drawing.Color.SteelBlue;
-            this.addModifyGradeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.addModifyGradeButton, "addModifyGradeButton");
             this.addModifyGradeButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.addModifyGradeButton.Location = new System.Drawing.Point(12, 280);
             this.addModifyGradeButton.Name = "addModifyGradeButton";
-            this.addModifyGradeButton.Size = new System.Drawing.Size(169, 81);
-            this.addModifyGradeButton.TabIndex = 4;
-            this.addModifyGradeButton.Text = "Add/Modify Grade";
             this.addModifyGradeButton.UseVisualStyleBackColor = false;
             this.addModifyGradeButton.Click += new System.EventHandler(this.addModifyGradeButton_Click);
             // 
             // searchLabel
             // 
-            this.searchLabel.AutoSize = true;
-            this.searchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchLabel.Location = new System.Drawing.Point(12, 501);
+            resources.ApplyResources(this.searchLabel, "searchLabel");
             this.searchLabel.Name = "searchLabel";
-            this.searchLabel.Size = new System.Drawing.Size(86, 25);
-            this.searchLabel.TabIndex = 5;
-            this.searchLabel.Text = "Search:";
             // 
             // searchBox
             // 
             this.searchBox.BackColor = System.Drawing.Color.SkyBlue;
-            this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchBox.Location = new System.Drawing.Point(12, 529);
+            resources.ApplyResources(this.searchBox, "searchBox");
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(169, 38);
-            this.searchBox.TabIndex = 6;
             // 
             // searchButton
             // 
             this.searchButton.BackColor = System.Drawing.Color.CadetBlue;
-            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.searchButton.Location = new System.Drawing.Point(12, 573);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(113, 33);
-            this.searchButton.TabIndex = 7;
-            this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = false;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // clearButton
             // 
             this.clearButton.BackColor = System.Drawing.Color.CadetBlue;
-            this.clearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.clearButton, "clearButton");
             this.clearButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.clearButton.Location = new System.Drawing.Point(12, 612);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(113, 33);
-            this.clearButton.TabIndex = 8;
-            this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // TeacherGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 688);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchBox);
@@ -177,7 +138,6 @@
             this.Controls.Add(this.studentListView);
             this.Controls.Add(this.gradingSystemLabel);
             this.Name = "TeacherGUI";
-            this.Text = "TKB Grading System - Teacher GUI";
             this.ResumeLayout(false);
             this.PerformLayout();
 

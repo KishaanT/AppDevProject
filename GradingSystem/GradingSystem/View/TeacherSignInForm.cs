@@ -36,29 +36,45 @@ namespace GradingSystem
         {
             try
             {
-                // Go to the Teacher GUI
-                List<Teacher> teachers = DataService.Teachers;
-                bool valid = false;
-                foreach (Teacher t in teachers)
+                //// Go to the Teacher GUI
+                //List<Teacher> teachers = DataService.Teachers;
+                //bool valid = false;
+                //foreach (Teacher t in teachers)
+                //{
+
+                //    if (t.Id == int.Parse(IDtextBox.Text) && t.Password == passwordTextBox.Text)
+                //    {
+                //        DataService.Teacher = t;
+                //        valid = true;
+
+                //        Hide();
+                //        var form = new teacherMainMenu();
+                //        form.Closed += (s, args) => Close();
+                //        form.Show();
+                //        break;
+                //    }
+                //    else
+                //    {
+                //        // Do nothing
+                //    }
+                //}
+                //if (!valid)
+                //{
+                //    MessageBox.Show("Teacher ID or Password is incorrect", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //}
+                bool check = DataBackupService.CheckTeacher(int.Parse(IDtextBox.Text), passwordTextBox.Text);
+                if (check) 
                 {
+                    int id = int.Parse(IDtextBox.Text);
+                    DataService.Teacher = DataBackupService.RestoreTeacherData().FirstOrDefault(t => t.Id == id);
 
-                    if (t.Id == int.Parse(IDtextBox.Text) && t.Password == passwordTextBox.Text)
-                    {
-                        DataService.Teacher = t;
-                        valid = true;
-
-                        Hide();
-                        var form = new teacherMainMenu();
-                        form.Closed += (s, args) => Close();
-                        form.Show();
-                        break;
-                    }
-                    else
-                    {
-                        // Do nothing
-                    }
+                      Hide();
+                      var form = new teacherMainMenu();
+                      form.Closed += (s, args) => Close();
+                      form.Show();
+                      
                 }
-                if (!valid)
+                else
                 {
                     MessageBox.Show("Teacher ID or Password is incorrect", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }

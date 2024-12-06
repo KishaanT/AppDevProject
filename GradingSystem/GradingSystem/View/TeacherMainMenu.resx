@@ -117,4 +117,162 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="selectLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="&gt;&gt;teacherMenuLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="signOutButton.Text" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="&gt;&gt;signOutButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;signOutButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;signOutButton.Name" xml:space="preserve">
+    <value>signOutButton</value>
+  </data>
+  <data name="&gt;&gt;gotoclassButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gotoclassButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="teacherMenuLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 9</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxClasses.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="teacherMenuLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;selectLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxClasses.Name" xml:space="preserve">
+    <value>comboBoxClasses</value>
+  </data>
+  <data name="&gt;&gt;comboBoxClasses.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="signOutButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TKB Grading System - Teacher Main Menu</value>
+  </data>
+  <data name="&gt;&gt;gotoclassButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxClasses.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 32</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>teacherMainMenu</value>
+  </data>
+  <data name="gotoclassButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 114</value>
+  </data>
+  <data name="&gt;&gt;signOutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;teacherMenuLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;selectLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="teacherMenuLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 27.75pt</value>
+  </data>
+  <data name="signOutButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>376, 9</value>
+  </data>
+  <data name="&gt;&gt;selectLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxClasses.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="teacherMenuLabel.Text" xml:space="preserve">
+    <value>Teacher Menu</value>
+  </data>
+  <data name="gotoclassButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 50</value>
+  </data>
+  <data name="selectLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;teacherMenuLabel.Name" xml:space="preserve">
+    <value>teacherMenuLabel</value>
+  </data>
+  <data name="teacherMenuLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="selectLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 85</value>
+  </data>
+  <data name="teacherMenuLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 42</value>
+  </data>
+  <data name="comboBoxClasses.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="signOutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 39</value>
+  </data>
+  <data name="gotoclassButton.Text" xml:space="preserve">
+    <value>Go to class</value>
+  </data>
+  <data name="&gt;&gt;gotoclassButton.Name" xml:space="preserve">
+    <value>gotoclassButton</value>
+  </data>
+  <data name="comboBoxClasses.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 123</value>
+  </data>
+  <data name="selectLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 25</value>
+  </data>
+  <data name="&gt;&gt;selectLabel.Name" xml:space="preserve">
+    <value>selectLabel</value>
+  </data>
+  <data name="selectLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gotoclassButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>481, 179</value>
+  </data>
+  <data name="&gt;&gt;comboBoxClasses.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="selectLabel.Text" xml:space="preserve">
+    <value>Select a class that you teach</value>
+  </data>
+  <data name="&gt;&gt;teacherMenuLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="signOutButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold, Italic</value>
+  </data>
+  <data name="gotoclassButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold, Italic</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

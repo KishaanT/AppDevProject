@@ -121,17 +121,14 @@
     <value>$this</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 91</value>
-  </data>
-  <data name="&gt;&gt;gradeLabel.Name" xml:space="preserve">
-    <value>gradeLabel</value>
+  <data name="passingLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="titleLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 18</value>
   </data>
-  <data name="&gt;&gt;statusLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="titleLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 24pt</value>
@@ -142,6 +139,9 @@
   </data>
   <data name="averageLabel.Text" xml:space="preserve">
     <value>Average:</value>
+  </data>
+  <data name="&gt;&gt;statusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;statusLabel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -194,6 +194,9 @@
   <data name="statusLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 37</value>
   </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 91</value>
+  </data>
   <data name="titleLabel.Text" xml:space="preserve">
     <value>See Class Status</value>
   </data>
@@ -206,9 +209,6 @@
   <data name="statusLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 73</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;averageLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -217,9 +217,6 @@
   </data>
   <data name="&gt;&gt;passingLabel.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="passingLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="averageLabel.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -236,8 +233,8 @@
   <data name="&gt;&gt;statusLabel.Name" xml:space="preserve">
     <value>statusLabel</value>
   </data>
-  <data name="gradeLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;gradeLabel.Name" xml:space="preserve">
+    <value>gradeLabel</value>
   </data>
   <data name="&gt;&gt;gradeLabel.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -247,6 +244,9 @@
   </data>
   <data name="gradeLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 24pt</value>
+  </data>
+  <data name="&gt;&gt;titleLabel.Name" xml:space="preserve">
+    <value>titleLabel</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>314, 246</value>
@@ -299,9 +299,6 @@
   <data name="&gt;&gt;gradeLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;titleLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="passingLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 73</value>
   </data>
@@ -311,8 +308,8 @@
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;titleLabel.Name" xml:space="preserve">
-    <value>titleLabel</value>
+  <data name="&gt;&gt;titleLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;statusLabel.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -320,7 +317,7 @@
   <data name="titleLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>261, 37</value>
   </data>
-  <data name="averageLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="gradeLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
@@ -328,6 +325,9 @@
   </data>
   <data name="averageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 37</value>
+  </data>
+  <data name="averageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="averageLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 131</value>
@@ -337,5 +337,8 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr-CA</value>
   </metadata>
 </root>
