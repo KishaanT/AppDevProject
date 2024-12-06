@@ -77,6 +77,7 @@
             // 
             // gradeColumn
             // 
+            this.gradeColumn.Text = "Attributed Grade";
             this.gradeColumn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gradeColumn.Width = 150;
             // 

@@ -117,132 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="signOutButton.Text" xml:space="preserve">
-    <value>Sign Out</value>
-  </data>
-  <data name="&gt;&gt;signOutButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;signOutButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="studentMenuLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 42</value>
   </data>
   <data name="studentMenuLabel.Text" xml:space="preserve">
-    <value>Student Menu</value>
-  </data>
-  <data name="&gt;&gt;gotoclassButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gotoclassButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="studentMenuLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 9</value>
-  </data>
-  <data name="&gt;&gt;comboBoxClasses.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;signOutButton.Name" xml:space="preserve">
-    <value>signOutButton</value>
-  </data>
-  <data name="&gt;&gt;studentMenuLabel.Name" xml:space="preserve">
-    <value>studentMenuLabel</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="studentMenuLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;studentMenuLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxClasses.Name" xml:space="preserve">
-    <value>comboBoxClasses</value>
-  </data>
-  <data name="&gt;&gt;comboBoxClasses.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="signOutButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="gotoclassButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 76</value>
-  </data>
-  <data name="&gt;&gt;gotoclassButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBoxClasses.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 32</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>TKB Grading System - Student Main Menu</value>
-  </data>
-  <data name="&gt;&gt;signOutButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Menu Étudiant</value>
   </data>
   <data name="signOutButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 5</value>
-  </data>
-  <data name="signOutButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold, Italic</value>
-  </data>
-  <data name="comboBoxClasses.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="gotoclassButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 50</value>
-  </data>
-  <data name="&gt;&gt;studentMenuLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="studentMenuLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="comboBoxClasses.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 14.25pt</value>
+    <value>365, 9</value>
   </data>
   <data name="signOutButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 39</value>
+    <value>126, 39</value>
+  </data>
+  <data name="signOutButton.Text" xml:space="preserve">
+    <value>Déconnexion</value>
+  </data>
+  <data name="gotoclassButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 76</value>
   </data>
   <data name="gotoclassButton.Text" xml:space="preserve">
-    <value>Go to class</value>
-  </data>
-  <data name="studentMenuLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27.75pt</value>
-  </data>
-  <data name="comboBoxClasses.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 85</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>StudentMainMenu</value>
-  </data>
-  <data name="gotoclassButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold, Italic</value>
-  </data>
-  <data name="&gt;&gt;gotoclassButton.Name" xml:space="preserve">
-    <value>gotoclassButton</value>
-  </data>
-  <data name="gotoclassButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="studentMenuLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 42</value>
+    <value>Accéder à la classe</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>471, 151</value>
+    <value>503, 151</value>
   </data>
-  <data name="&gt;&gt;comboBoxClasses.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;studentMenuLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

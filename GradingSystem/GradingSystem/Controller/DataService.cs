@@ -50,6 +50,7 @@ namespace GradingSystem.Services
 
         public static Teacher Teacher { get; set; }
         public static Student Student { get; set; }
+        public static Course Course { get; set; }
 
         // Add Teacher
         public static Teacher AddTeacher(string name, string email, string password)
@@ -79,6 +80,12 @@ namespace GradingSystem.Services
                 Password = password
             };
             students.Add(student);
+            foreach(Course course in DataService.Courses)
+            {
+                course.Students = new List<Student>();
+                DataService.Course = course;
+                DataService.Course.Assignments = new List<Assignment>();
+            }
             Console.WriteLine($"Student '{name}' was added with ID {student.Id}" );
             return student;
         }
@@ -94,6 +101,7 @@ namespace GradingSystem.Services
                 CourseName = courseName,
                 TeacherId = teacherId
             };
+            DataService.Courses.Add(course);
             teacher.Courses.Add(course);
             courses.Add(course);
             return course;
@@ -138,7 +146,7 @@ namespace GradingSystem.Services
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
             if (course == null) throw new Exception("Course not found.");
 
-            var assignment = new Assignment(name, weight, 0);
+            var assignment = new Assignment(name, weight);
             course.Assignments.Add(assignment);
 
             Console.WriteLine($"Assignment '{name}' added to course '{course.CourseName}'.");

@@ -1,4 +1,5 @@
-﻿using GradingSystem.Services;
+﻿using Globalization;
+using GradingSystem.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,8 +14,10 @@ namespace GradingSystem
 {
     public partial class StudentMainMenu : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         public StudentMainMenu()
         {
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
             InitializeComponent();
             foreach(int course in DataService.Student.EnrolledCourses)
             {

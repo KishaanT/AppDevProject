@@ -27,10 +27,23 @@ namespace GradingSystem
 
         private void gotoclassButton_Click(object sender, EventArgs e)
         {
-            Hide();
-            var form = new TeacherOperation();
-            form.Closed += (s, args) => Close();
-            form.Show();
+            for (int i = 0; i < DataService.Teacher.Courses.Count; i++)
+            {
+                if (comboBoxClasses.SelectedItem == null)
+                {
+                    MessageBox.Show("You must select a class before proceding", "Select Class", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    break;
+                }
+                else
+                {
+                        DataService.Course = DataService.Teacher.Courses[i];
+                        Hide();
+                        var form = new TeacherOperation();
+                        form.Closed += (s, args) => Close();
+                        form.Show();
+                        break;
+                }
+            }
         }
 
         private void signOutButton_Click(object sender, EventArgs e)

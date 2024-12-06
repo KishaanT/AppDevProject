@@ -1,15 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace GradingSystem
 {
+     [Serializable]
     internal class Course
     {
+        private List<Student> students; 
         public int CourseId { get; set; }
         public string CourseName { get; set; }
         public int TeacherId { get; set; }
         public List<Assignment> Assignments { get; set; }
+        public List<Student> Students
+        {
+            get
+            {
+                return students;
+            }
+            set
+            {
+                students = value;
+            }
+        }
+
         public Dictionary<int, double> StudentAverages { get; set; } = new Dictionary<int, double>();
 
         public Course() 
@@ -17,12 +32,13 @@ namespace GradingSystem
 
         }
 
-        public Course(int courseId, string courseName, int teacherid, List<Assignment> assignments)
+        public Course(int courseId, string courseName, int teacherid, List<Assignment> assignments, List<Student> students)
         {
             CourseId = courseId;
             CourseName = courseName;
             TeacherId = teacherid;
             Assignments = assignments;
+            Students = students;
         }
 
 
@@ -36,7 +52,7 @@ namespace GradingSystem
                 return;
             }
 
-            var assignment = new Assignment(name, weight, 0);
+            var assignment = new Assignment(name, weight);
             Assignments.Add(assignment);
             Console.WriteLine($"Assignment '{name}' added to course {CourseName}.");
         }

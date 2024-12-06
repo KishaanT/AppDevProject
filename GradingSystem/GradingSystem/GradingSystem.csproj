@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{04C54B1E-F05C-4592-931D-D8FF8F6975D4}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>GradingSystem</RootNamespace>
     <AssemblyName>GradingSystem</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -148,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\SeeStudentStatus.resx">
       <DependentUpon>SeeStudentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StudentMainMenu.fr-CA.resx">
+      <DependentUpon>StudentMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\StudentMainMenu.resx">
       <DependentUpon>StudentMainMenu.cs</DependentUpon>

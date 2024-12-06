@@ -7,24 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GradingSystem.Services;
 
 namespace GradingSystem
 {
     public partial class SeeStudentStatus : Form
     {
-        private Student student;
-        private string status;
 
         public SeeStudentStatus()
         {
             InitializeComponent();
-            //determineStanding();
-            //displayAverage();
-        }
-
-        private void loadStudent()
-        {
-            // ok basically the idea for this method is to take the item from the previous list viewer and assign the according student object based on their names and/or object reference.
+            determineStanding();
+            displayAverage();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -32,25 +26,26 @@ namespace GradingSystem
             Close();
         }
 
-        //private void determineStanding() // it works, but the students must have assigned values first
-        //{
-        //    if (student.Average >= 60)
-        //    {
-        //        status = "Passing";
-        //    }
-        //    else
-        //    {
-        //        status = "Failing";
-        //    }
-        //    passingLabel.Text = status;
-        //}
+        private void determineStanding() // it works, but the students must have assigned values first
+        {
+            if (DataService.Student.Average >= 60)
+            {
+                passingLabel.Text = "Passing";
+                passingLabel.ForeColor = Color.SpringGreen;
+            }
+            else
+            {
+                passingLabel.Text = "Failing";
+                passingLabel.ForeColor = Color.IndianRed;
+            }
+        }
 
-        //private void displayAverage()
-        //{
-        //    string averageToDisplay = student.Average.ToString();
-        //    averageToDisplay += "%";
-        //    gradeLabel.Text = averageToDisplay;
-        //}
+        private void displayAverage()
+        {
+            string averageToDisplay = DataService.Student.Average.ToString();
+            averageToDisplay += "%";
+            gradeLabel.Text = averageToDisplay;
+        }
 
     }
 }

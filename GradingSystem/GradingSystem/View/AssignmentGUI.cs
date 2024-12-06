@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GradingSystem.Services;
 
 namespace GradingSystem
 {
@@ -30,14 +31,15 @@ namespace GradingSystem
             var lvitem = new ListViewItem(nameBox.Text);
             lvitem.SubItems.Add(weightUpDownCreate.Value.ToString());
             assignmentListView.Items.Add(lvitem);
+            Assignment assignment = new Assignment(nameBox.Text, Double.Parse(weightUpDownCreate.Value.ToString()));
+            DataService.Course.Assignments.Add(assignment);
         }
 
         private void modifyButton_Click(object sender, EventArgs e)
         {
-            if (assignmentListView.SelectedItems[0].Text == null) // Handle this exception guys
+            if (assignmentListView.SelectedItems.Count == 0)
             {
-                throw new ArgumentOutOfRangeException("Must select an assignment first");
-                MessageBox.Show("You must select an assignment first");
+                MessageBox.Show("You must select an assignment before modifying it", "Select Assignment", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -46,13 +48,36 @@ namespace GradingSystem
                 var lvitem = new ListViewItem(name);
                 lvitem.SubItems.Add(weightUpDownModify.Value.ToString());
                 assignmentListView.Items.Add(lvitem);
+                foreach (Assignment assignment in DataService.Course.Assignments)
+                {
+                    if (assignment.Name == name)
+                    {
+                        assignment.Weight = Double.Parse(weightUpDownModify.Value.ToString());
+                        break;
+                    }
+                }
             }
         }
 
         private void deleteButton_Click(object sender, EventArgs e) // Gotta handle this exception too
         {
-            string name = assignmentListView.SelectedItems[0].Text;
-            assignmentListView.Items.Remove(assignmentListView.SelectedItems[0]);
+            if (assignmentListView.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("You must select an assignment before deleting it", "Select Assignment", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                string name = assignmentListView.SelectedItems[0].Text;
+                assignmentListView.Items.Remove(assignmentListView.SelectedItems[0]);
+                foreach (Assignment assignment in DataService.Course.Assignments)
+                {
+                    if (assignment.Name == name)
+                    {
+                        DataService.Course.Assignments.Remove(assignment);
+                        break;
+                    }
+                }
+            }
         }
     }
 }

@@ -125,3 +125,4 @@ C:\Users\kisha\Documents\GitHub\AppDevProject\GradingSystem\GradingSystem\obj\De
 C:\Users\kisha\Documents\GitHub\AppDevProject\GradingSystem\GradingSystem\obj\Debug\fr-CA\GradingSystem.resources.dll
 C:\Users\kisha\Documents\GitHub\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.exe
 C:\Users\kisha\Documents\GitHub\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.pdb
+C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentMainMenu.fr-CA.resources
