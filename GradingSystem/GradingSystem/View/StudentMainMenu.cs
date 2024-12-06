@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GradingSystem.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace GradingSystem
         public StudentMainMenu()
         {
             InitializeComponent();
+            foreach(int course in DataService.Student.EnrolledCourses)
+            {
+                var courseName = DataService.Courses.FirstOrDefault(s => s.CourseId == course);
+                comboBoxClasses.Items.Add(courseName.CourseName);
+            }
         }
 
         private void signOutButton_Click(object sender, EventArgs e)

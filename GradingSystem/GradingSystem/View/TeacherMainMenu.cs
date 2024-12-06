@@ -18,7 +18,11 @@ namespace GradingSystem
         public teacherMainMenu()
         {
             InitializeComponent();
-            //comboBoxClasses.Text = teacher.Courses.
+            foreach (Course course in DataService.Teacher.Courses)
+            {
+                comboBoxClasses.Items.Add(course.CourseName);
+            }
+            
         }
 
         private void gotoclassButton_Click(object sender, EventArgs e)

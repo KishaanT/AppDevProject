@@ -14,9 +14,40 @@ namespace GradingSystem.Services
         private static int nextStudentId = 1;
         private static int nextCourseId = 1;
 
-        public static List<Teacher> Teachers { get; set; }
-        public static List<Student> Students { get; set; }
-        public static List<Course> Courses { get; set; }
+        public static List<Teacher> Teachers
+        {
+            get
+            {
+                return teachers;
+            }
+            set
+            {
+                teachers = value;
+            }
+        }
+        public static List<Student> Students
+        {
+            get
+            {
+                return students;
+            }
+            set
+            {
+                students = value;
+            }
+        }
+        public static List<Course> Courses
+        {
+            get
+            {
+                return courses;
+            }
+            set
+            {
+                courses = value;
+            }
+        }
+
         public static Teacher Teacher { get; set; }
         public static Student Student { get; set; }
 
@@ -32,6 +63,7 @@ namespace GradingSystem.Services
                 Password = password
             };
             teachers.Add(teacher);
+            Console.WriteLine($"Teacher '{name}' was added with ID {teacher.Id} {password}");
             return teacher;
         }
 
@@ -47,6 +79,7 @@ namespace GradingSystem.Services
                 Password = password
             };
             students.Add(student);
+            Console.WriteLine($"Student '{name}' was added with ID {student.Id}" );
             return student;
         }
 
@@ -64,6 +97,23 @@ namespace GradingSystem.Services
             teacher.Courses.Add(course);
             courses.Add(course);
             return course;
+        }
+
+        public static void EnrollStudentInCourse(int courseId,int studentId)
+        {
+            var course = courses.FirstOrDefault(s => s.CourseId == courseId);
+            if (course == null) throw new Exception("Course not found.");
+
+            var student = students.FirstOrDefault(s => s.Id == studentId);
+
+            if (student == null) throw new Exception("Student not found.");
+            if (student.EnrolledCourses.Contains(courseId))
+            {
+                Console.WriteLine($"Already enrolled in course {courseId}.");
+                return;
+            }
+            student.EnrolledCourses.Add(courseId);
+            Console.WriteLine($"Successfully enrolled in course {courseId}.");
         }
 
         // Assign Grade

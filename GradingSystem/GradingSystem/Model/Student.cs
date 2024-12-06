@@ -87,5 +87,10 @@ namespace GradingSystem
             }
             Console.WriteLine($"Overall Average: {Average:F2}% ({GetStatus()})");
         }
+
+        public override string ToString()
+        {
+            return $"name: {Id}, Name: {Name}, Email: {Email}, Password {Password}";
+        }
     }
 }
