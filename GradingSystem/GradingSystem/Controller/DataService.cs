@@ -7,14 +7,14 @@ namespace GradingSystem.Services
 {
     internal class DataService
     {
-        private static List<Teacher> teachers = new List<Teacher>();
-        private static List<Student> students = new List<Student>();
-        private static List<Course> courses = new List<Course>();
+        private List<Teacher> teachers = new List<Teacher>();
+        private List<Student> students = new List<Student>();
+        private List<Course> courses = new List<Course>();
         private static int nextTeacherId = 1;
         private static int nextStudentId = 1;
         private static int nextCourseId = 1;
 
-        public static List<Teacher> Teachers
+        public  List<Teacher> Teachers
         {
             get
             {
@@ -25,7 +25,7 @@ namespace GradingSystem.Services
                 teachers = value;
             }
         }
-        public static List<Student> Students
+        public  List<Student> Students
         {
             get
             {
@@ -36,7 +36,7 @@ namespace GradingSystem.Services
                 students = value;
             }
         }
-        public static List<Course> Courses
+        public  List<Course> Courses
         {
             get
             {
@@ -53,7 +53,7 @@ namespace GradingSystem.Services
         public static Course Course { get; set; }
 
         // Add Teacher
-        public static Teacher AddTeacher(string name, string email, string password)
+        public Teacher AddTeacher(string name, string email, string password)
         {
             if (teachers.Any(t => t.Email == email)) throw new Exception("Teacher email already exists.");
             var teacher = new Teacher
@@ -69,7 +69,7 @@ namespace GradingSystem.Services
         }
 
         // Add Student
-        public static Student AddStudent(string name, string email, string password)
+        public Student AddStudent(string name, string email, string password)
         {
             if (students.Any(s => s.Email == email)) throw new Exception("Student email already exists.");
             var student = new Student
@@ -80,7 +80,7 @@ namespace GradingSystem.Services
                 Password = password
             };
             students.Add(student);
-            foreach(Course course in DataService.Courses)
+            foreach(Course course in Courses)
             {
                 course.Students = new List<Student>();
                 DataService.Course = course;
@@ -91,7 +91,7 @@ namespace GradingSystem.Services
         }
 
         // Add Course
-        public static Course AddCourse(string courseName, int teacherId)
+        public Course AddCourse(string courseName, int teacherId)
         {
             var teacher = teachers.FirstOrDefault(t => t.Id == teacherId);
             if (teacher == null) throw new Exception("Teacher not found.");
@@ -101,13 +101,13 @@ namespace GradingSystem.Services
                 CourseName = courseName,
                 TeacherId = teacherId
             };
-            DataService.Courses.Add(course);
+            Courses.Add(course);
             teacher.Courses.Add(course);
             courses.Add(course);
             return course;
         }
 
-        public static void EnrollStudentInCourse(int courseId,int studentId)
+        public void EnrollStudentInCourse(int courseId,int studentId)
         {
             var course = courses.FirstOrDefault(s => s.CourseId == courseId);
             if (course == null) throw new Exception("Course not found.");
@@ -115,17 +115,17 @@ namespace GradingSystem.Services
             var student = students.FirstOrDefault(s => s.Id == studentId);
 
             if (student == null) throw new Exception("Student not found.");
-            if (student.EnrolledCourses.Contains(courseId))
+            if (student.EnrolledCourses.Contains(course))
             {
                 Console.WriteLine($"Already enrolled in course {courseId}.");
                 return;
             }
-            student.EnrolledCourses.Add(courseId);
+            student.EnrolledCourses.Add(course);
             Console.WriteLine($"Successfully enrolled in course {courseId}.");
         }
 
         // Assign Grade
-        public static void AssignGrade(int studentId, int courseId, string assignmentName, double grade)
+        public void AssignGrade(int studentId, int courseId, string assignmentName, double grade)
         {
             var student = students.FirstOrDefault(s => s.Id == studentId);
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
@@ -141,7 +141,7 @@ namespace GradingSystem.Services
         }
 
         // Create Assignment
-        public static Assignment CreateAssignment(int courseId, string name, double weight)
+        public Assignment CreateAssignment(int courseId, string name, double weight)
         {
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
             if (course == null) throw new Exception("Course not found.");
@@ -154,7 +154,7 @@ namespace GradingSystem.Services
         }
 
         // Modify Assignment Weight
-        public static void ModifyAssignmentWeight(int courseId, string assignmentName, double newWeight)
+        public void ModifyAssignmentWeight(int courseId, string assignmentName, double newWeight)
         {
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
             var assignment = course?.Assignments.FirstOrDefault(a => a.Name == assignmentName);
@@ -166,14 +166,14 @@ namespace GradingSystem.Services
         }
 
         // Drop Student From Course
-        public static void DropStudentFromCourse(int studentId, int courseId)
+        public void DropStudentFromCourse(int studentId, int courseId)
         {
             var student = students.FirstOrDefault(s => s.Id == studentId);
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
 
             if (student == null || course == null) throw new Exception("Invalid data provided.");
 
-            student.EnrolledCourses.Remove(courseId);
+            student.EnrolledCourses.Remove(course);
             course.StudentAverages.Remove(studentId);
 
             foreach (var assignment in course.Assignments)
@@ -183,7 +183,7 @@ namespace GradingSystem.Services
         }
 
         // Recalculate Student Average
-        private static void RecalculateStudentAverage(int studentId, int courseId)
+        private void RecalculateStudentAverage(int studentId, int courseId)
         {
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
             if (course == null) return;
@@ -207,13 +207,13 @@ namespace GradingSystem.Services
         }
 
         // Get Courses for a Teacher
-        public static List<Course> GetCoursesForTeacher(int teacherId)
+        public List<Course> GetCoursesForTeacher(int teacherId)
         {
             return courses.Where(c => c.TeacherId == teacherId).ToList();
         }
 
         // Get Student Status
-        public static string GetStudentStatus(int studentId, int courseId)
+        public string GetStudentStatus(int studentId, int courseId)
         {
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
             if (course == null) return "Course not found.";
@@ -221,21 +221,7 @@ namespace GradingSystem.Services
             if (!course.StudentAverages.TryGetValue(studentId, out double average))
                 return "No grades available.";
 
-            return average >= 50 ? "Passing" : "Failing";
-        }
-
-        // Backup Data (Save to File)
-        public static void SaveData(string filePath)
-        {
-            // Save data to CSV (implement CSV writer logic here)
-            Console.WriteLine("Data saved successfully.");
-        }
-
-        // Load Data (From File)
-        public static void LoadData(string filePath)
-        {
-            // Load data from CSV (implement CSV reader logic here)
-            Console.WriteLine("Data loaded successfully.");
+            return average >= 60 ? "Passing" : "Failing";
         }
     }
 }

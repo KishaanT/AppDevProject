@@ -131,3 +131,9 @@ C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\Gra
 C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\aa\GradingSystem.resources.dll
 C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.SeeClassStatus.fr-CA.resources
 C:\Users\brian\Downloads\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentGrades.fr-CA.resources
+C:\Users\thaot\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.IdentifyForm.aa.resources
+C:\Users\thaot\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.SeeClassStatus.fr-CA.resources
+C:\Users\thaot\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentGrades.fr-CA.resources
+C:\Users\thaot\AppDevProject\GradingSystem\GradingSystem\obj\Debug\GradingSystem.StudentMainMenu.fr-CA.resources
+C:\Users\thaot\AppDevProject\GradingSystem\GradingSystem\bin\Debug\aa\GradingSystem.resources.dll
+C:\Users\thaot\AppDevProject\GradingSystem\GradingSystem\obj\Debug\aa\GradingSystem.resources.dll

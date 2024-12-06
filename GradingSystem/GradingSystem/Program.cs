@@ -17,52 +17,54 @@ namespace GradingSystem
         [STAThread]
         static void Main()
         {
+
+            DataService dt = new DataService();
             var language = ConfigurationManager.AppSettings["language"];
 
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
 
-            DataService.AddTeacher("Kishaan", "kishaan@gmail.com", "1234");
-            DataService.AddTeacher("Thao", "thao@gmail.com", "1234");
-            DataService.AddTeacher("Brian", "brian@gmail.com", "1234");
+            dt.AddTeacher("Kishaan", "kishaan@gmail.com", "1234");
+            dt.AddTeacher("Thao", "thao@gmail.com", "1234");
+            dt.AddTeacher("Brian", "brian@gmail.com", "1234");
 
-            DataService.AddCourse("Calculus 1", 1);
-            DataService.AddCourse("History", 3);
-            DataService.AddCourse("Chemsitry", 2);
+            dt.AddCourse("Calculus 1", 1);
+            dt.AddCourse("History", 3);
+            dt.AddCourse("Chemsitry", 2);
 
-            DataService.AddCourse("Calculus 2", 3);
-            DataService.AddCourse("English", 1);
-            DataService.AddCourse("Humanities", 2);
+            dt.AddCourse("Calculus 2", 3);
+            dt.AddCourse("English", 1);
+            dt.AddCourse("Humanities", 2);
 
-            DataService.AddCourse("Linear Algebra", 2);
-            DataService.AddCourse("Physical Education", 3);
-            DataService.AddCourse("Introduction to Programming", 1);
+            dt.AddCourse("Linear Algebra", 2);
+            dt.AddCourse("Physical Education", 3);
+            dt.AddCourse("Introduction to Programming", 1);
 
-            DataService.AddStudent("Kishaan","kishaan@gmail.com","1234");
-            DataService.AddStudent("Thao", "thao@gmail.com", "1234");
-            DataService.AddStudent("Brian", "brian@gmail.com", "1234");
-            DataService.AddStudent("Kyle", "thekyle@gmail.com", "1234");
-            DataService.AddStudent("Andrew", "theandrew@gmail.com", "1234");
-            DataService.AddStudent("Danat", "thedanat@gmail.com", "1234");
-            DataService.AddStudent("John Michael", "thejohnmichael@gmail.com", "1234");
-            DataService.AddStudent("Peenard", "thepeenard@gmail.com", "1234");
-            DataService.AddStudent("Mark", "themark@gmail.com", "1234");
-            DataService.AddStudent("Poopsie", "thepoopsie@gmail.com", "1234");
-
-
+            dt.AddStudent("Kishaan","kishaan@gmail.com","1234");
+            dt.AddStudent("Thao", "thao@gmail.com", "1234");
+            dt.AddStudent("Brian", "brian@gmail.com", "1234");
+            dt.AddStudent("Kyle", "thekyle@gmail.com", "1234");
+            dt.AddStudent("Andrew", "theandrew@gmail.com", "1234");
+            dt.AddStudent("Danat", "thedanat@gmail.com", "1234");
+            dt.AddStudent("John Michael", "thejohnmichael@gmail.com", "1234");
+            dt.AddStudent("Peenard", "thepeenard@gmail.com", "1234");
+            dt.AddStudent("Mark", "themark@gmail.com", "1234");
+            dt.AddStudent("Poopsie", "thepoopsie@gmail.com", "1234");
 
 
-            foreach (Course course in DataService.Courses)
+
+
+            foreach (Course course in dt.Courses)
             {
-                foreach (var student in DataService.Students)
+                foreach (var student in dt.Students)
                 {
-                    DataService.EnrollStudentInCourse(course.CourseId,student.Id);
+                    dt.EnrollStudentInCourse(course.CourseId,student.Id);
                     course.Students.Add(student);
                 }
             }
             
 
-            if (DataService.Students.Count == 0)
+            if (dt.Students.Count == 0)
             {
                 Console.WriteLine("Empty");
             }

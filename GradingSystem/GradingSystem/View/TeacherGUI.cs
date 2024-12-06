@@ -54,7 +54,7 @@ namespace GradingSystem
             form.Show();
         }
 
-        private void AddStudents() // normally this would retrieve the students list from the course list
+        private void AddStudents() 
         {
             List<Student> students = DataService.Course.Students;
             foreach (Student student in students)
@@ -125,6 +125,5 @@ namespace GradingSystem
             AddStudents();
             searchBox.Text = string.Empty;
         }
-
     }
 }

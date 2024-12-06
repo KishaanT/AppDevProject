@@ -19,10 +19,10 @@ namespace GradingSystem
         {
             changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
             InitializeComponent();
-            foreach(int course in DataService.Student.EnrolledCourses)
+            foreach(Course course in DataService.Student.EnrolledCourses)
             {
-                var courseName = DataService.Courses.FirstOrDefault(s => s.CourseId == course);
-                comboBoxClasses.Items.Add(courseName.CourseName);
+                //var courseName = DataService.Courses.FirstOrDefault(s => s.CourseId == course.CourseId);
+                //comboBoxClasses.Items.Add(courseName.CourseName);
             }
         }
 
@@ -45,7 +45,6 @@ namespace GradingSystem
                 }
                 else
                 {
-                    // DataService.Course = DataService.Student.EnrolledCourses.; // my advice would be to change the enrolled courses to type Course cause shit this is ass
                     Hide();
                     var form = new StudentGrades();
                     form.Closed += (s, args) => Close();

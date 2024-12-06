@@ -38,20 +38,47 @@ namespace GradingSystem
 
         private void insertButton_Click(object sender, EventArgs e)
         {
-            ListViewItem item = assignmentListView.SelectedItems[0];
-            assignmentListView.SelectedItems[0].Remove();
-            string value = item.Text;
-            var lvitem = new ListViewItem(value);
-            lvitem.SubItems.Add(""); // should be the second value
-            lvitem.SubItems.Add(gradeNumericUpDown.Text);
-            assignmentListView.Items.Add(lvitem);
-            foreach(int i in DataService.Student.EnrolledCourses)
+            try
             {
-                if (DataService.Student.EnrolledCourses.Contains(DataService.Course.CourseId))
+                if (assignmentListView.SelectedItems.Count == 0)
                 {
-                    // Yeah, fuck this model logic, take care of this feature I give up
+                    MessageBox.Show("Please select an assignment to modify.",
+                        "Select Assignment", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                ListViewItem selectedItem = assignmentListView.SelectedItems[0];
+                string assignmentName = selectedItem.Text;
+
+                if (!double.TryParse(gradeNumericUpDown.Text, out double newGrade))
+                {
+                    MessageBox.Show("Please enter a valid grade.",
+                        "Invalid Grade", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                Assignment assignmentToUpdate = DataService.Course.Assignments
+                    .FirstOrDefault(a => a.Name == assignmentName);
+
+                if (assignmentToUpdate != null)
+                {
+                    assignmentToUpdate.Grade = newGrade;
+                    selectedItem.SubItems[2].Text = newGrade.ToString();
+                    MessageBox.Show($"Grade for '{assignmentName}' updated successfully.",
+                        "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"Assignment '{assignmentName}' not found in the course.",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
     }
 }

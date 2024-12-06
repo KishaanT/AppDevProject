@@ -26,9 +26,13 @@ namespace GradingSystem
             Close();
         }
 
-        private void determineStanding() // it works, but the students must have assigned values first
+        private void determineStanding()
         {
-            if (DataService.Student.Average >= 60)
+            // Get the student's status (Passing or Failing) using the GetStatus method
+            string status = DataService.Student.GetStatus();
+
+            // Update the label text and color based on the status
+            if (status == "Passing")
             {
                 passingLabel.Text = "Passing";
                 passingLabel.ForeColor = Color.SpringGreen;

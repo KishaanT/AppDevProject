@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Globalization;
+using GradingSystem.Services;
 
 namespace GradingSystem
 {
@@ -23,6 +24,31 @@ namespace GradingSystem
         private void closeButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void determineStanding()
+        {
+            // Get the student's status (Passing or Failing) using the GetStatus method
+            string status = DataService.Student.GetStatus();
+
+            // Update the label text and color based on the status
+            if (status == "Passing")
+            {
+                passingLabel.Text = "Passing";
+                passingLabel.ForeColor = Color.SpringGreen;
+            }
+            else
+            {
+                passingLabel.Text = "Failing";
+                passingLabel.ForeColor = Color.IndianRed;
+            }
+        }
+
+        private void displayAverage()
+        {
+            string averageToDisplay = DataService.Student.Average.ToString();
+            averageToDisplay += "%";
+            gradeLabel.Text = averageToDisplay;
         }
     }
 }

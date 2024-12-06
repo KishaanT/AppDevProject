@@ -34,39 +34,39 @@ namespace GradingSystem
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Go to the Teacher GUI
-                List<Teacher> teachers = DataService.Teachers;
-                bool valid = false;
-                foreach (Teacher t in teachers)
-                {
+            //    try
+            //    {
+            //        // Go to the Teacher GUI
+            //        List<Teacher> teachers = DataService.Teachers;
+            //        bool valid = false;
+            //        foreach (Teacher t in teachers)
+            //        {
 
-                    if (t.Id == int.Parse(IDtextBox.Text) && t.Password == passwordTextBox.Text)
-                    {
-                        DataService.Teacher = t;
-                        valid = true;
+            //            if (t.Id == int.Parse(IDtextBox.Text) && t.Password == passwordTextBox.Text)
+            //            {
+            //                DataService.Teacher = t;
+            //                valid = true;
 
-                        Hide();
-                        var form = new teacherMainMenu();
-                        form.Closed += (s, args) => Close();
-                        form.Show();
-                        break;
-                    }
-                    else
-                    {
-                        // Do nothing
-                    }
-                }
-                if (!valid)
-                {
-                    MessageBox.Show("Teacher ID or Password is incorrect", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch (FormatException ex)
-            {
-                MessageBox.Show("Your ID must be composed only of numbers", "ID must be numbers", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //                Hide();
+            //                var form = new teacherMainMenu();
+            //                form.Closed += (s, args) => Close();
+            //                form.Show();
+            //                break;
+            //            }
+            //            else
+            //            {
+            //                // Do nothing
+            //            }
+            //        }
+            //        if (!valid)
+            //        {
+            //            MessageBox.Show("Teacher ID or Password is incorrect", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //        }
+            //    }
+            //    catch (FormatException ex)
+            //    {
+            //        MessageBox.Show("Your ID must be composed only of numbers", "ID must be numbers", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
         }
 
     }

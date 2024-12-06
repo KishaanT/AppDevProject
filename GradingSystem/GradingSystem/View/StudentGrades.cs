@@ -81,7 +81,7 @@ namespace GradingSystem
             {
                 MessageBox.Show("You dropped the course", "Successfully dropped out", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DataService.Course.Students.Remove(DataService.Student);
-                DataService.Student.EnrolledCourses.Remove(DataService.Course.CourseId);
+                DataService.Student.EnrolledCourses.Remove(DataService.Course);
                 Hide();
                 var form = new StudentMainMenu();
                 form.Closed += (s, args) => Close();

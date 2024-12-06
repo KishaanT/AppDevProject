@@ -35,7 +35,6 @@ namespace GradingSystem
 
         private void assignmentsButton_Click(object sender, EventArgs e)
         {
-            // change this
             Hide();
             var form = new AssignmentGUI();
             form.Closed += (s, args) => Close();
