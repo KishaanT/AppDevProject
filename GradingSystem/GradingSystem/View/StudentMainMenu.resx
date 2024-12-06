@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="studentMenuLabel.Text" xml:space="preserve">
+    <value>Student Menu</value>
+  </data>
   <data name="signOutButton.Text" xml:space="preserve">
     <value>Sign Out</value>
   </data>
@@ -126,8 +129,8 @@
   <data name="&gt;&gt;signOutButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="studentMenuLabel.Text" xml:space="preserve">
-    <value>Student Menu</value>
+  <data name="&gt;&gt;signOutButton.Name" xml:space="preserve">
+    <value>signOutButton</value>
   </data>
   <data name="&gt;&gt;gotoclassButton.Parent" xml:space="preserve">
     <value>$this</value>
@@ -142,21 +145,18 @@
   <data name="&gt;&gt;comboBoxClasses.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;signOutButton.Name" xml:space="preserve">
-    <value>signOutButton</value>
-  </data>
-  <data name="&gt;&gt;studentMenuLabel.Name" xml:space="preserve">
-    <value>studentMenuLabel</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="studentMenuLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="studentMenuLabel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;studentMenuLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboBoxClasses.Name" xml:space="preserve">
-    <value>comboBoxClasses</value>
+  <data name="&gt;&gt;studentMenuLabel.Name" xml:space="preserve">
+    <value>studentMenuLabel</value>
   </data>
   <data name="&gt;&gt;comboBoxClasses.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -170,8 +170,11 @@
   <data name="&gt;&gt;gotoclassButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="comboBoxClasses.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 32</value>
+  <data name="signOutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 39</value>
+  </data>
+  <data name="&gt;&gt;comboBoxClasses.Name" xml:space="preserve">
+    <value>comboBoxClasses</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>TKB Grading System - Student Main Menu</value>
@@ -185,9 +188,6 @@
   <data name="signOutButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>367, 5</value>
   </data>
-  <data name="signOutButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold, Italic</value>
-  </data>
   <data name="comboBoxClasses.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -197,17 +197,17 @@
   <data name="gotoclassButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 50</value>
   </data>
+  <data name="comboBoxClasses.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 32</value>
+  </data>
   <data name="&gt;&gt;studentMenuLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="studentMenuLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="signOutButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold, Italic</value>
   </data>
   <data name="comboBoxClasses.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
-  </data>
-  <data name="signOutButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 39</value>
   </data>
   <data name="gotoclassButton.Text" xml:space="preserve">
     <value>Go to class</value>

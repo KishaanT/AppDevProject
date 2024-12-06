@@ -118,55 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="studentSignInLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 22</value>
+  <data name="titleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 18</value>
   </data>
-  <data name="studentSignInLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>368, 37</value>
+  <data name="titleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 37</value>
   </data>
-  <data name="studentSignInLabel.Text" xml:space="preserve">
-    <value>Connexion des étudiants</value>
+  <data name="titleLabel.Text" xml:space="preserve">
+    <value>État de passage</value>
   </data>
-  <data name="IDtextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 106</value>
+  <data name="closeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 46</value>
   </data>
-  <data name="IDtextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 29</value>
+  <data name="closeButton.Text" xml:space="preserve">
+    <value>Fermer</value>
   </data>
-  <data name="studentIDlabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 110</value>
+  <data name="passingLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 73</value>
   </data>
-  <data name="studentIDlabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 25</value>
+  <data name="passingLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 37</value>
   </data>
-  <data name="studentIDlabel.Text" xml:space="preserve">
-    <value>Numéros d'Étudiant:</value>
+  <data name="passingLabel.Text" xml:space="preserve">
+    <value>En réussite</value>
   </data>
-  <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 182</value>
+  <data name="averageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 37</value>
   </data>
-  <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 25</value>
+  <data name="averageLabel.Text" xml:space="preserve">
+    <value>Moyenne:</value>
   </data>
-  <data name="passwordLabel.Text" xml:space="preserve">
-    <value>Mot de Passe:</value>
+  <data name="statusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 37</value>
   </data>
-  <data name="passwordTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 178</value>
+  <data name="statusLabel.Text" xml:space="preserve">
+    <value>État:</value>
   </data>
-  <data name="passwordTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>324, 29</value>
-  </data>
-  <data name="backButton.Text" xml:space="preserve">
-    <value>Retour</value>
-  </data>
-  <data name="nextButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 52</value>
-  </data>
-  <data name="nextButton.Text" xml:space="preserve">
-    <value>Se Connecter</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>TKB School Grading System - Connexion étudiant</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>289, 246</value>
   </data>
 </root>

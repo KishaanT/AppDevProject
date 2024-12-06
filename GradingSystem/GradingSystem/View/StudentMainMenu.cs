@@ -36,10 +36,23 @@ namespace GradingSystem
 
         private void gotoclassButton_Click(object sender, EventArgs e)
         {
-            Hide();
-            var form = new StudentGrades();
-            form.Closed += (s, args) => Close();
-            form.Show();
+            for (int i = 0; i < DataService.Student.EnrolledCourses.Count; i++)
+            {
+                if (comboBoxClasses.SelectedItem == null)
+                {
+                    MessageBox.Show("You must select a class before proceding", "Select Class", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    break;
+                }
+                else
+                {
+                    // DataService.Course = DataService.Student.EnrolledCourses.; // my advice would be to change the enrolled courses to type Course cause shit this is ass
+                    Hide();
+                    var form = new StudentGrades();
+                    form.Closed += (s, args) => Close();
+                    form.Show();
+                    break;
+                }
+            }
         }
     }
 }

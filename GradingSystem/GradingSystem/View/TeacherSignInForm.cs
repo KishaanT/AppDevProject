@@ -38,12 +38,14 @@ namespace GradingSystem
             {
                 // Go to the Teacher GUI
                 List<Teacher> teachers = DataService.Teachers;
+                bool valid = false;
                 foreach (Teacher t in teachers)
                 {
 
                     if (t.Id == int.Parse(IDtextBox.Text) && t.Password == passwordTextBox.Text)
                     {
                         DataService.Teacher = t;
+                        valid = true;
 
                         Hide();
                         var form = new teacherMainMenu();
@@ -53,21 +55,12 @@ namespace GradingSystem
                     }
                     else
                     {
-                        //
+                        // Do nothing
                     }
-                    if(t.Id != int.Parse(IDtextBox.Text))
-                    {
-                        MessageBox.Show("Teacher Id wrong", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else if(t.Password != passwordTextBox.Text)
-                    {
-                        MessageBox.Show("Teacher Password wrong", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Teacher Id or Password", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                   
+                }
+                if (!valid)
+                {
+                    MessageBox.Show("Teacher ID or Password is incorrect", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (FormatException ex)
@@ -75,33 +68,6 @@ namespace GradingSystem
                 MessageBox.Show("Your ID must be composed only of numbers", "ID must be numbers", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        //public void loadDataFromFile()
-        //{
-        //    // retrieves and loads data from file. For now, we will manually create the data
-        //    List<Assignment> assignments = new List<Assignment>();
-        //    Teacher teacher1 = new Teacher(1, "Name1", "Email1", "12345");
-        //    Teacher teacher2 = new Teacher(2, "Name2", "Email2", "12345");
-        //    Teacher teacher3 = new Teacher(3, "Name3", "Email3", "12345");
-        //    Course course1 = new Course(1, "Course 1", teacher1.Id, assignments);
-        //    Course course2 = new Course(2, "Course 2", teacher1.Id, assignments);
-        //    Course course3 = new Course(3, "Course 3", teacher1.Id, assignments);
-        //    Course course4 = new Course(4, "Course 4", teacher2.Id, assignments);
-        //    List<Course> courseList = new List<Course>();
-        //    courseList.Add(course1);
-        //    courseList.Add(course2);
-        //    courseList.Add(course3);
-        //    courseList.Add(course4);
-        //    teacher1.Courses = courseList;
-        //    teacher2.Courses = courseList;
-        //    teacher3.Courses = courseList;
-        //    teachers.Add(teacher1);
-        //    teachers.Add(teacher2);
-        //    teachers.Add(teacher3);
-        //    DataService.Courses = courseList;
-        //    DataService.Teachers = teachers;
-            
-        //}
 
     }
 }

@@ -50,15 +50,19 @@
             // studentButton
             // 
             resources.ApplyResources(this.studentButton, "studentButton");
+            this.studentButton.BackColor = System.Drawing.Color.SpringGreen;
+            this.studentButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.studentButton.Name = "studentButton";
-            this.studentButton.UseVisualStyleBackColor = true;
+            this.studentButton.UseVisualStyleBackColor = false;
             this.studentButton.Click += new System.EventHandler(this.studentButton_Click);
             // 
             // teacherButton
             // 
             resources.ApplyResources(this.teacherButton, "teacherButton");
+            this.teacherButton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.teacherButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.teacherButton.Name = "teacherButton";
-            this.teacherButton.UseVisualStyleBackColor = true;
+            this.teacherButton.UseVisualStyleBackColor = false;
             this.teacherButton.Click += new System.EventHandler(this.teacherButton_Click);
             // 
             // languageLabel
@@ -68,12 +72,12 @@
             // 
             // languageComboBox
             // 
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
             resources.GetString("languageComboBox.Items1"),
             resources.GetString("languageComboBox.Items2")});
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.Name = "languageComboBox";
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 

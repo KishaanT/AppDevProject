@@ -30,21 +30,17 @@ namespace GradingSystem
         }
 
         private void nextButton_Click(object sender, EventArgs e)
-        {
-            //Hide();
-            //var form = new StudentMainMenu();
-            //form.Closed += (s, args) => Close();
-            //form.Show();
-          
+        { 
             try
             {
                 List<Student> students = DataService.Students;
+                bool valid = false;
                 foreach (Student s in students)
                 {
-                    
                     if (s.Id == int.Parse(IDtextBox.Text) && s.Password == passwordTextBox.Text)
                     {
                         DataService.Student = s;
+                        valid = true;
 
                         Hide();
                         var form = new StudentMainMenu();
@@ -54,18 +50,17 @@ namespace GradingSystem
                     }
                     else
                     {
-                        //MessageBox.Show("Student Id or Password", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        // Do nothing
                     }
                 }
-                MessageBox.Show("Student Id or Password", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (!valid)
+                {
+                    MessageBox.Show("Student ID or Password is incorrect", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (FormatException ex)
             {
                 MessageBox.Show("Your ID must be composed only of numbers", "ID must be numbers", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (NullReferenceException ex) 
-            {
-                MessageBox.Show("School is empty", "NO STUDENTS", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

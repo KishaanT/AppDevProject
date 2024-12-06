@@ -54,7 +54,7 @@ namespace GradingSystem
             form.Show();
         }
 
-        public void AddStudents() // normally this would retrieve the students list from the course list
+        private void AddStudents() // normally this would retrieve the students list from the course list
         {
             List<Student> students = DataService.Course.Students;
             foreach (Student student in students)
@@ -69,7 +69,7 @@ namespace GradingSystem
         {
             if (studentListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("You must select a student before", "Select Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("You must select a student first", "Select Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -90,7 +90,7 @@ namespace GradingSystem
         {
             if (studentListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("You must select a student before", "Select Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("You must select a student first", "Select Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {

@@ -79,6 +79,7 @@
             this.assignmentListView.FullRowSelect = true;
             this.assignmentListView.HideSelection = false;
             this.assignmentListView.Location = new System.Drawing.Point(238, 73);
+            this.assignmentListView.MultiSelect = false;
             this.assignmentListView.Name = "assignmentListView";
             this.assignmentListView.Size = new System.Drawing.Size(550, 365);
             this.assignmentListView.TabIndex = 4;

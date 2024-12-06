@@ -22,7 +22,6 @@ namespace GradingSystem
             {
                 comboBoxClasses.Items.Add(course.CourseName);
             }
-            
         }
 
         private void gotoclassButton_Click(object sender, EventArgs e)

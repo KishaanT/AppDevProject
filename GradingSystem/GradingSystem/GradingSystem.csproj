@@ -133,15 +133,23 @@
     <Compile Include="Controller\DataBackupService.cs" />
     <Compile Include="Controller\DataService.cs" />
     <Compile Include="Controller\GraphDataService.cs" />
-    <Compile Include="Controller\SearchAndFilterService.cs" />
     <EmbeddedResource Include="View\AddModifyGrades.resx">
       <DependentUpon>AddModifyGrades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\AssignmentGUI.resx">
       <DependentUpon>AssignmentGUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\IdentifyForm.aa.resx">
+      <DependentUpon>IdentifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SeeClassStatus.fr-CA.resx">
+      <DependentUpon>SeeClassStatus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\SeeClassStatus.resx">
       <DependentUpon>SeeClassStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StudentGrades.fr-CA.resx">
+      <DependentUpon>StudentGrades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\StudentGrades.resx">
       <DependentUpon>StudentGrades.cs</DependentUpon>
