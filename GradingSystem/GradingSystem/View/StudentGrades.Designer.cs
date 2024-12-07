@@ -46,18 +46,19 @@
             // 
             // assignmentListView
             // 
-            resources.ApplyResources(this.assignmentListView, "assignmentListView");
             this.assignmentListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.nameColumn,
             this.weightColumn,
             this.gradeColumn,
             this.statusColumn});
+            resources.ApplyResources(this.assignmentListView, "assignmentListView");
             this.assignmentListView.FullRowSelect = true;
             this.assignmentListView.HideSelection = false;
             this.assignmentListView.MultiSelect = false;
             this.assignmentListView.Name = "assignmentListView";
             this.assignmentListView.UseCompatibleStateImageBehavior = false;
             this.assignmentListView.View = System.Windows.Forms.View.Details;
+            this.assignmentListView.SelectedIndexChanged += new System.EventHandler(this.assignmentListView_SelectedIndexChanged);
             // 
             // nameColumn
             // 
@@ -82,8 +83,8 @@
             // 
             // backButton
             // 
-            resources.ApplyResources(this.backButton, "backButton");
             this.backButton.BackColor = System.Drawing.Color.IndianRed;
+            resources.ApplyResources(this.backButton, "backButton");
             this.backButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.backButton.Name = "backButton";
             this.backButton.UseVisualStyleBackColor = false;
@@ -91,8 +92,8 @@
             // 
             // seeAverageButton
             // 
-            resources.ApplyResources(this.seeAverageButton, "seeAverageButton");
             this.seeAverageButton.BackColor = System.Drawing.Color.SteelBlue;
+            resources.ApplyResources(this.seeAverageButton, "seeAverageButton");
             this.seeAverageButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.seeAverageButton.Name = "seeAverageButton";
             this.seeAverageButton.UseVisualStyleBackColor = false;
@@ -100,8 +101,8 @@
             // 
             // clearButton
             // 
-            resources.ApplyResources(this.clearButton, "clearButton");
             this.clearButton.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.clearButton, "clearButton");
             this.clearButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.clearButton.Name = "clearButton";
             this.clearButton.UseVisualStyleBackColor = false;
@@ -109,8 +110,8 @@
             // 
             // searchButton
             // 
-            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.BackColor = System.Drawing.Color.CadetBlue;
+            resources.ApplyResources(this.searchButton, "searchButton");
             this.searchButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.searchButton.Name = "searchButton";
             this.searchButton.UseVisualStyleBackColor = false;
@@ -118,8 +119,8 @@
             // 
             // searchBox
             // 
-            resources.ApplyResources(this.searchBox, "searchBox");
             this.searchBox.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.searchBox, "searchBox");
             this.searchBox.Name = "searchBox";
             // 
             // searchLabel
@@ -129,8 +130,8 @@
             // 
             // dropOutButton
             // 
-            resources.ApplyResources(this.dropOutButton, "dropOutButton");
             this.dropOutButton.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.dropOutButton, "dropOutButton");
             this.dropOutButton.ForeColor = System.Drawing.Color.Yellow;
             this.dropOutButton.Name = "dropOutButton";
             this.dropOutButton.UseVisualStyleBackColor = false;
