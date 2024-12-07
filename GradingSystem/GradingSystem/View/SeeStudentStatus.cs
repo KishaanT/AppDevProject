@@ -7,24 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GradingSystem.Services;
 
 namespace GradingSystem
 {
     public partial class SeeStudentStatus : Form
     {
-        private Student student;
-        private string status;
 
         public SeeStudentStatus()
         {
             InitializeComponent();
-            //determineStanding();
-            //displayAverage();
-        }
-
-        private void loadStudent()
-        {
-            // ok basically the idea for this method is to take the item from the previous list viewer and assign the according student object based on their names and/or object reference.
+            determineStanding();
+            displayAverage();
+            ApplyTheme();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -32,25 +27,70 @@ namespace GradingSystem
             Close();
         }
 
-        //private void determineStanding() // it works, but the students must have assigned values first
-        //{
-        //    if (student.Average >= 60)
-        //    {
-        //        status = "Passing";
-        //    }
-        //    else
-        //    {
-        //        status = "Failing";
-        //    }
-        //    passingLabel.Text = status;
-        //}
+        private void determineStanding()
+        {
+            //// Get the student's status (Passing or Failing) using the GetStatus method
+            //string status = DataService.Student.GetStatus();
 
-        //private void displayAverage()
-        //{
-        //    string averageToDisplay = student.Average.ToString();
-        //    averageToDisplay += "%";
-        //    gradeLabel.Text = averageToDisplay;
-        //}
+            //// Update the label text and color based on the status
+            //if (status == "Passing")
+            //{
+            //    passingLabel.Text = "Passing";
+            //    passingLabel.ForeColor = Color.SpringGreen;
+            //}
+            //else
+            //{
+            //    passingLabel.Text = "Failing";
+            //    passingLabel.ForeColor = Color.IndianRed;
+            //}
+        }
+
+        private void displayAverage()
+        {
+            //string averageToDisplay = DataService.Student.Average.ToString();
+            //averageToDisplay += "%";
+            //gradeLabel.Text = averageToDisplay;
+        }
+
+        private void ApplyTheme()
+        {
+            ThemeManager.ApplyTheme(this);
+
+            if (ThemeManager.IsDarkMode)
+            {
+                this.BackColor = Color.FromArgb(18, 18, 18);
+                this.ForeColor = Color.White;
+
+                closeButton.BackColor = Color.DarkRed;
+                closeButton.ForeColor = Color.White;
+
+                if (passingLabel.Text == "Passing")
+                {
+                    passingLabel.ForeColor = Color.SpringGreen;
+                }
+                else
+                {
+                    passingLabel.ForeColor = Color.IndianRed;
+                }
+            }
+            else
+            {
+                this.BackColor = Color.White;
+                this.ForeColor = Color.Black;
+
+                closeButton.BackColor = Color.LightCoral;
+                closeButton.ForeColor = Color.Black;
+
+                if (passingLabel.Text == "Passing")
+                {
+                    passingLabel.ForeColor = Color.SpringGreen;
+                }
+                else
+                {
+                    passingLabel.ForeColor = Color.IndianRed;
+                }
+            }
+        }
 
     }
 }

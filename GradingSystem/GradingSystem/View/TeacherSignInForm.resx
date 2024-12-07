@@ -180,7 +180,7 @@
     <value>$this</value>
   </data>
   <data name="nextButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Microsoft Sans Serif, 15.75pt, style=Bold, Italic</value>
   </data>
   <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -276,7 +276,7 @@
     <value>132, 26</value>
   </data>
   <data name="backButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Microsoft Sans Serif, 15.75pt, style=Bold, Italic</value>
   </data>
   <data name="teacherIDlabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15.75pt</value>

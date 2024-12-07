@@ -66,15 +66,19 @@
             // backButton
             // 
             resources.ApplyResources(this.backButton, "backButton");
+            this.backButton.BackColor = System.Drawing.Color.IndianRed;
+            this.backButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.backButton.Name = "backButton";
-            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // nextButton
             // 
             resources.ApplyResources(this.nextButton, "nextButton");
+            this.nextButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.nextButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.nextButton.Name = "nextButton";
-            this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.UseVisualStyleBackColor = false;
             this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // TeacherSignInForm

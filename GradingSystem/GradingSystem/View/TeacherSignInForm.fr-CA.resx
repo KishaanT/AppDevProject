@@ -137,10 +137,10 @@
     <value>12, 110</value>
   </data>
   <data name="teacherIDlabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 25</value>
+    <value>223, 25</value>
   </data>
   <data name="teacherIDlabel.Text" xml:space="preserve">
-    <value>Numéros d'Enseignant:</value>
+    <value>Numéro d'Enseignant:</value>
   </data>
   <data name="passwordLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 180</value>
@@ -170,9 +170,12 @@
     <value>160, 52</value>
   </data>
   <data name="nextButton.Text" xml:space="preserve">
-    <value>Se connecter</value>
+    <value>Se connécter</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>593, 320</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TKB School Grading System - Connexion Enseignant</value>
   </data>
 </root>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace GradingSystem
 {
+     [Serializable]
     internal class Assignment
     {
         public string Name { get; set; } // The name of the assignment
@@ -23,43 +24,42 @@ namespace GradingSystem
         public Dictionary<int, double> StudentGrades { get; set; } = new Dictionary<int, double>();
 
         // Constructor
-        public Assignment(string name, double weight, double grade)
+        public Assignment(string name, double weight)
         {
             Name = name;
             Weight = weight;
-            Grade = grade;
         }
 
         // Add or update a student's grade
-        public void AddOrUpdateStudentGrade(int studentId, double grade)
+        public void AddOrUpdateStudentGrade(int studentID, double grade)
         {
             if (grade < 0 || grade > 100)
             {
                 throw new ArgumentException("Grade must be between 0 and 100.");
             }
 
-            if (StudentGrades.ContainsKey(studentId))
+            if (StudentGrades.ContainsKey(studentID))
             {
-                StudentGrades[studentId] = grade;
-                Console.WriteLine($"Updated grade for Student {studentId} to {grade}.");
+                StudentGrades[studentID] = grade;
+                Console.WriteLine($"Updated grade for Student {studentID} to {grade}.");
             }
             else
             {
-                StudentGrades.Add(studentId, grade);
-                Console.WriteLine($"Added grade for Student {studentId}: {grade}.");
+                StudentGrades.Add(studentID, grade);
+                Console.WriteLine($"Added grade for Student {studentID}: {grade}.");
             }
         }
 
         // Remove a student's grade
-        public void RemoveStudentGrade(int studentId)
+        public void RemoveStudentGrade(int studentID)
         {
-            if (StudentGrades.Remove(studentId))
+            if (StudentGrades.Remove(studentID))
             {
-                Console.WriteLine($"Removed grade for Student {studentId}.");
+                Console.WriteLine($"Removed grade for Student {studentID}.");
             }
             else
             {
-                Console.WriteLine($"No grade found for Student {studentId} to remove.");
+                Console.WriteLine($"No grade found for Student {studentID} to remove.");
             }
         }
 
@@ -77,9 +77,9 @@ namespace GradingSystem
         }
 
         // Check if a student has a grade for the assignment
-        public bool HasGrade(int studentId)
+        public bool HasGrade(int studentID)
         {
-            return StudentGrades.ContainsKey(studentId);
+            return StudentGrades.ContainsKey(studentID);
         }
     }
 }

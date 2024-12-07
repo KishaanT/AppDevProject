@@ -124,6 +124,9 @@
   <data name="&gt;&gt;nextButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="studentSignInLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 37</value>
+  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -173,9 +176,6 @@
   <data name="studentSignInLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 22</value>
   </data>
-  <data name="studentIDlabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 114</value>
-  </data>
   <data name="passwordLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -195,7 +195,7 @@
     <value>Back</value>
   </data>
   <data name="nextButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Microsoft Sans Serif, 15.75pt, style=Bold, Italic</value>
   </data>
   <data name="passwordLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -226,6 +226,9 @@
   </data>
   <data name="passwordLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>106, 25</value>
+  </data>
+  <data name="&gt;&gt;backButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>512, 320</value>
@@ -282,7 +285,7 @@
     <value>IDtextBox</value>
   </data>
   <data name="backButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Microsoft Sans Serif, 15.75pt, style=Bold, Italic</value>
   </data>
   <data name="&gt;&gt;studentIDlabel.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -311,14 +314,11 @@
   <data name="&gt;&gt;backButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;backButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;studentSignInLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;passwordLabel.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="&gt;&gt;studentSignInLabel.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;passwordTextBox.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -326,8 +326,8 @@
   <data name="&gt;&gt;nextButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="studentSignInLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 37</value>
+  <data name="studentIDlabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 114</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

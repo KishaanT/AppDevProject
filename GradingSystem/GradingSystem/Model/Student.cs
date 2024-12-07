@@ -13,27 +13,31 @@ namespace GradingSystem
         public string Password { get; set; }
 
         public double Average { get; private set; }
-        public List<int> EnrolledCourses { get; set; } = new List<int>();
+        public List<Course> EnrolledCourses { get; set; } = new List<Course>();
         public Dictionary<int, double> Grades { get; set; } = new Dictionary<int, double>();
 
         // Enroll in a course
-        public void EnrollInCourse(int courseId)
+        public void EnrollInCourse(Course course)
         {
-            if (EnrolledCourses.Contains(courseId))
+            if (EnrolledCourses.Contains(course))
             {
-                Console.WriteLine($"Already enrolled in course {courseId}.");
+                Console.WriteLine($"Already enrolled in course {course.CourseId}.");
                 return;
             }
 
-            EnrolledCourses.Add(courseId);
-            Console.WriteLine($"Successfully enrolled in course {courseId}.");
+            EnrolledCourses.Add(course);
+            Console.WriteLine($"Successfully enrolled in course {course.CourseId}.");
         }
 
         // Drop a course
         public void DropCourse(int courseId)
         {
-            if (EnrolledCourses.Remove(courseId))
+            // Find the course by its ID
+            var courseToRemove = EnrolledCourses.FirstOrDefault(course => course.CourseId == courseId);
+
+            if (courseToRemove != null)
             {
+                EnrolledCourses.Remove(courseToRemove);
                 Grades.Remove(courseId);
                 Console.WriteLine($"Successfully dropped course {courseId}.");
             }
@@ -68,7 +72,7 @@ namespace GradingSystem
         // Get pass/fail status
         public string GetStatus()
         {
-            return Average >= 50 ? "Passing" : "Failing";
+            return Average >= 60 ? "Passing" : "Failing";
         }
 
         // Fetch detailed performance per course
@@ -86,6 +90,11 @@ namespace GradingSystem
                 Console.WriteLine($"- Course {grade.Key}: {grade.Value:F2}%");
             }
             Console.WriteLine($"Overall Average: {Average:F2}% ({GetStatus()})");
+        }
+
+        public override string ToString()
+        {
+            return $"name: {Id}, Name: {Name}, Email: {Email}, Password {Password}";
         }
     }
 }

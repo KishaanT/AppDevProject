@@ -166,4 +166,7 @@
   <data name="nextButton.Text" xml:space="preserve">
     <value>Se Connecter</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TKB School Grading System - Connexion étudiant</value>
+  </data>
 </root>
