@@ -70,6 +70,7 @@ namespace GradingSystem
             }
 
             Application.Run(new IdentifyForm());
+        
 
         }
 }

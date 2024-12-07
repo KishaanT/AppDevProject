@@ -18,6 +18,7 @@ namespace GradingSystem
             InitializeComponent();
             changeStudentLabel();
             loadData();
+            ApplyTheme();
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -27,7 +28,7 @@ namespace GradingSystem
 
         private void changeStudentLabel()
         {
-            studentLabel.Text = DataService.Student.Name;
+            //studentLabel.Text = DataService.Student.Name;
         }
 
         private void loadData()
@@ -79,6 +80,41 @@ namespace GradingSystem
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void ApplyTheme()
+        {
+            ThemeManager.ApplyTheme(this);
 
+            if (ThemeManager.IsDarkMode)
+            {
+                assignmentListView.BackColor = Color.FromArgb(30, 30, 30);
+                assignmentListView.ForeColor = Color.White;
+                closeButton.BackColor = Color.IndianRed;
+                closeButton.ForeColor = Color.White;
+                promptLabel.ForeColor = Color.White;
+                titleLabel.ForeColor = Color.White;
+                insertButton.BackColor = Color.Black;
+
+                gradeNumericUpDown.BackColor = Color.FromArgb(30, 30, 30);
+                gradeNumericUpDown.ForeColor = Color.White;
+
+                studentLabel.ForeColor = Color.White;
+            }
+            else
+            {
+                assignmentListView.BackColor = Color.White;
+                assignmentListView.ForeColor = Color.Black;
+                promptLabel.ForeColor = Color.Black;
+
+                closeButton.BackColor = Color.IndianRed;
+                closeButton.ForeColor = Color.White;
+                titleLabel.ForeColor = Color.Black;
+                insertButton.BackColor = Color.White;
+
+                gradeNumericUpDown.BackColor = Color.White;
+                gradeNumericUpDown.ForeColor = Color.Black;
+
+                studentLabel.ForeColor = Color.Black;
+            }
+        }
     }
 }

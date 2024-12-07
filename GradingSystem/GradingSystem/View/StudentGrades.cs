@@ -64,6 +64,7 @@ namespace GradingSystem
             InitializeComponent();
             populatAssignmentSearch();
             AddAssignments();
+            ApplyTheme();
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -141,6 +142,72 @@ namespace GradingSystem
             }
             return status;
         }
+        private void ApplyTheme()
+        {
+            // Apply the global theme
+            ThemeManager.ApplyTheme(this);
 
+            // Additional customizations based on dark or light mode
+            if (ThemeManager.IsDarkMode)
+            {
+                // Backgrounds and text
+                this.BackColor = Color.FromArgb(18, 18, 18);
+                this.ForeColor = Color.White;
+
+                // Assignment ListView
+                assignmentListView.BackColor = Color.Black;
+                assignmentListView.ForeColor = Color.White;
+
+                // TextBox and Labels
+                searchBox.BackColor = Color.FromArgb(30, 30, 30);
+                searchBox.ForeColor = Color.White;
+
+                // Buttons
+                backButton.BackColor = Color.DarkRed;
+                backButton.ForeColor = Color.White;
+
+                seeAverageButton.BackColor = Color.DarkBlue;
+                seeAverageButton.ForeColor = Color.White;
+
+                searchButton.BackColor = Color.Teal;
+                searchButton.ForeColor = Color.White;
+
+                clearButton.BackColor = Color.DarkSlateGray;
+                clearButton.ForeColor = Color.White;
+
+                dropOutButton.BackColor = Color.Red;
+                dropOutButton.ForeColor = Color.White;
+            }
+            else
+            {
+                // Light mode defaults
+                this.BackColor = Color.White;
+                this.ForeColor = Color.Black;
+
+                // Assignment ListView
+                assignmentListView.BackColor = Color.White;
+                assignmentListView.ForeColor = Color.Black;
+
+                // TextBox and Labels
+                searchBox.BackColor = Color.LightBlue;
+                searchBox.ForeColor = Color.Black;
+
+                // Buttons
+                backButton.BackColor = Color.LightCoral;
+                backButton.ForeColor = Color.Black;
+
+                seeAverageButton.BackColor = Color.LightBlue;
+                seeAverageButton.ForeColor = Color.Black;
+
+                searchButton.BackColor = Color.PaleTurquoise;
+                searchButton.ForeColor = Color.Black;
+
+                clearButton.BackColor = Color.LightSeaGreen;
+                clearButton.ForeColor = Color.Black;
+
+                dropOutButton.BackColor = Color.Yellow;
+                dropOutButton.ForeColor = Color.Black;
+            }
+        }
     }
 }

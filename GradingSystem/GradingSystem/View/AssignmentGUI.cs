@@ -16,6 +16,7 @@ namespace GradingSystem
         public AssignmentGUI()
         {
             InitializeComponent();
+            ApplyTheme();
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -26,7 +27,7 @@ namespace GradingSystem
             form.Show();
         }
 
-        private void createButton_Click(object sender, EventArgs e) 
+        private void createButton_Click(object sender, EventArgs e)
         {
             var lvitem = new ListViewItem(nameBox.Text);
             lvitem.SubItems.Add(weightUpDownCreate.Value.ToString());
@@ -100,6 +101,69 @@ namespace GradingSystem
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void ApplyTheme()
+        {
 
+            ThemeManager.ApplyTheme(this);
+
+            if (ThemeManager.IsDarkMode)
+            {
+                this.BackColor = Color.FromArgb(18, 18, 18);
+                this.ForeColor = Color.White; 
+
+                assignmentListView.BackColor = Color.FromArgb(30, 30, 30);
+                assignmentListView.ForeColor = Color.White;
+
+                nameBox.BackColor = Color.FromArgb(30, 30, 30);
+                nameBox.ForeColor = Color.White;
+
+                weightUpDownCreate.BackColor = Color.FromArgb(30, 30, 30);
+                weightUpDownCreate.ForeColor = Color.White;
+
+                weightUpDownModify.BackColor = Color.FromArgb(30, 30, 30);
+                weightUpDownModify.ForeColor = Color.White;
+
+                createButton.BackColor = Color.Green; 
+                createButton.ForeColor = Color.White;
+
+                modifyButton.BackColor = Color.Gold; 
+                modifyButton.ForeColor = Color.White;
+
+                deleteButton.BackColor = Color.Red; 
+                deleteButton.ForeColor = Color.White;
+
+                backButton.BackColor = Color.DarkRed; 
+                backButton.ForeColor = Color.White;
+            }
+            else
+            {
+                this.BackColor = Color.White; 
+                this.ForeColor = Color.Black; 
+
+                assignmentListView.BackColor = Color.White;
+                assignmentListView.ForeColor = Color.Black;
+
+                nameBox.BackColor = Color.White;
+                nameBox.ForeColor = Color.Black;
+
+                weightUpDownCreate.BackColor = Color.White;
+                weightUpDownCreate.ForeColor = Color.Black;
+
+                weightUpDownModify.BackColor = Color.White;
+                weightUpDownModify.ForeColor = Color.Black;
+
+                createButton.BackColor = Color.Green; 
+                createButton.ForeColor = Color.White;
+
+                modifyButton.BackColor = Color.Gold; 
+                modifyButton.ForeColor = Color.White;
+
+                deleteButton.BackColor = Color.Red; 
+                deleteButton.ForeColor = Color.White;
+
+                backButton.BackColor = Color.DarkRed; 
+                backButton.ForeColor = Color.White;
+            }
+        }
     }
 }

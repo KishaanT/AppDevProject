@@ -117,198 +117,222 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="promptLabel.Text" xml:space="preserve">
-    <value>Are you a Teacher or a Student?</value>
-  </data>
-  <data name="&gt;&gt;signInLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;promptLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>381, 450</value>
-  </data>
-  <data name="&gt;&gt;promptLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="studentButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>IdentifyForm</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="teacherButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 16</value>
-  </data>
-  <data name="promptLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;studentButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 396</value>
-  </data>
-  <data name="&gt;&gt;studentButton.Name" xml:space="preserve">
-    <value>studentButton</value>
-  </data>
-  <data name="&gt;&gt;teacherButton.Name" xml:space="preserve">
-    <value>teacherButton</value>
-  </data>
-  <data name="signInLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
-  </data>
-  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;studentButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>TKB School Grading System - Identification</value>
-  </data>
-  <data name="&gt;&gt;promptLabel.Name" xml:space="preserve">
-    <value>promptLabel</value>
-  </data>
-  <data name="promptLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 24</value>
-  </data>
-  <data name="studentButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="signInLabel.Text" xml:space="preserve">
-    <value>Sign In</value>
-  </data>
-  <data name="studentButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 101</value>
-  </data>
-  <data name="promptLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 76</value>
-  </data>
-  <data name="&gt;&gt;teacherButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;promptLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="promptLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="signInLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="teacherButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 101</value>
-  </data>
-  <data name="&gt;&gt;signInLabel.Name" xml:space="preserve">
-    <value>signInLabel</value>
-  </data>
-  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
-    <value>languageLabel</value>
-  </data>
-  <data name="studentButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 136</value>
-  </data>
-  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="signInLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="signInLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 18</value>
   </data>
-  <data name="studentButton.Text" xml:space="preserve">
-    <value>Student</value>
-  </data>
-  <data name="languageLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
-  </data>
-  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 417</value>
-  </data>
-  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
-    <value>languageComboBox</value>
-  </data>
-  <data name="&gt;&gt;teacherButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="languageComboBox.Items1" xml:space="preserve">
-    <value>French</value>
-  </data>
-  <data name="&gt;&gt;signInLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
   <data name="signInLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 37</value>
-  </data>
-  <data name="languageLabel.Text" xml:space="preserve">
-    <value>Language:</value>
-  </data>
-  <data name="teacherButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 292</value>
-  </data>
-  <data name="&gt;&gt;teacherButton.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="signInLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="signInLabel.Text" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="&gt;&gt;signInLabel.Name" xml:space="preserve">
+    <value>signInLabel</value>
+  </data>
   <data name="&gt;&gt;signInLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="teacherButton.Text" xml:space="preserve">
-    <value>Teacher</value>
-  </data>
-  <data name="languageComboBox.Items2" xml:space="preserve">
-    <value>Spanish</value>
-  </data>
-  <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;signInLabel.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;signInLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="promptLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="promptLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
-  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="promptLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 76</value>
+  </data>
+  <data name="promptLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>283, 24</value>
+  </data>
+  <data name="promptLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="promptLabel.Text" xml:space="preserve">
+    <value>Are you a Teacher or a Student?</value>
+  </data>
+  <data name="&gt;&gt;promptLabel.Name" xml:space="preserve">
+    <value>promptLabel</value>
+  </data>
+  <data name="&gt;&gt;promptLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;promptLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;promptLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="studentButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="studentButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 141</value>
+  </data>
+  <data name="studentButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 101</value>
+  </data>
+  <data name="studentButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="studentButton.Text" xml:space="preserve">
+    <value>Student</value>
+  </data>
+  <data name="&gt;&gt;studentButton.Name" xml:space="preserve">
+    <value>studentButton</value>
+  </data>
+  <data name="&gt;&gt;studentButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;studentButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;studentButton.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="teacherButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15.75pt</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="teacherButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 292</value>
+  </data>
+  <data name="teacherButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 101</value>
+  </data>
+  <data name="teacherButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="teacherButton.Text" xml:space="preserve">
+    <value>Teacher</value>
+  </data>
+  <data name="&gt;&gt;teacherButton.Name" xml:space="preserve">
+    <value>teacherButton</value>
+  </data>
+  <data name="&gt;&gt;teacherButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;teacherButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;teacherButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="languageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="languageLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="languageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 396</value>
+  </data>
+  <data name="languageLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 16</value>
+  </data>
+  <data name="languageLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="languageLabel.Text" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Name" xml:space="preserve">
+    <value>languageLabel</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languageLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="languageComboBox.Items" xml:space="preserve">
     <value>English</value>
   </data>
-  <data name="&gt;&gt;studentButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="languageComboBox.Items1" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="languageComboBox.Items2" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
+  <data name="languageComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 417</value>
+  </data>
+  <data name="languageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
   </data>
   <data name="languageComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="&gt;&gt;languageComboBox.Name" xml:space="preserve">
+    <value>languageComboBox</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;languageComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="darkModeButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 417</value>
+  </data>
+  <data name="darkModeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 23</value>
+  </data>
+  <data name="darkModeButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="darkModeButton.Text" xml:space="preserve">
+    <value>Dark Mode</value>
+  </data>
+  <data name="&gt;&gt;darkModeButton.Name" xml:space="preserve">
+    <value>darkModeButton</value>
+  </data>
+  <data name="&gt;&gt;darkModeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;darkModeButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;darkModeButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>381, 450</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TKB School Grading System - Identification</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>IdentifyForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

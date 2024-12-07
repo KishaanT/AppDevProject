@@ -19,6 +19,9 @@ namespace GradingSystem
         public SeeClassStatus()
         {
             InitializeComponent();
+            displayAverage();
+            determineStanding();
+            ApplyTheme();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -28,27 +31,66 @@ namespace GradingSystem
 
         private void determineStanding()
         {
-            // Get the student's status (Passing or Failing) using the GetStatus method
-            string status = DataService.Student.GetStatus();
+            //// Get the student's status (Passing or Failing) using the GetStatus method
+            //string status = DataService.Student.GetStatus();
 
-            // Update the label text and color based on the status
-            if (status == "Passing")
-            {
-                passingLabel.Text = "Passing";
-                passingLabel.ForeColor = Color.SpringGreen;
-            }
-            else
-            {
-                passingLabel.Text = "Failing";
-                passingLabel.ForeColor = Color.IndianRed;
-            }
+            //// Update the label text and color based on the status
+            //if (status == "Passing")
+            //{
+            //    passingLabel.Text = "Passing";
+            //    passingLabel.ForeColor = Color.SpringGreen;
+            //}
+            //else
+            //{
+            //    passingLabel.Text = "Failing";
+            //    passingLabel.ForeColor = Color.IndianRed;
+            //}
         }
 
         private void displayAverage()
         {
-            string averageToDisplay = DataService.Student.Average.ToString();
-            averageToDisplay += "%";
-            gradeLabel.Text = averageToDisplay;
+            //string averageToDisplay = DataService.Student.Average.ToString();
+            //averageToDisplay += "%";
+            //gradeLabel.Text = averageToDisplay;
+        }
+        private void ApplyTheme()
+        {
+            ThemeManager.ApplyTheme(this);
+
+            if (ThemeManager.IsDarkMode)
+            {
+                this.BackColor = Color.FromArgb(18, 18, 18);
+                this.ForeColor = Color.White;
+
+                closeButton.BackColor = Color.DarkRed;
+                closeButton.ForeColor = Color.White;
+
+                if (passingLabel.Text == "Passing")
+                {
+                    passingLabel.ForeColor = Color.SpringGreen;
+                }
+                else
+                {
+                    passingLabel.ForeColor = Color.IndianRed;
+                }
+            }
+            else
+            {
+                this.BackColor = Color.White;
+                this.ForeColor = Color.Black;
+
+                closeButton.BackColor = Color.LightCoral;
+                closeButton.ForeColor = Color.Black;
+
+                if (passingLabel.Text == "Passing")
+                {
+                    passingLabel.ForeColor = Color.SpringGreen;
+                }
+                else
+                {
+                    passingLabel.ForeColor = Color.IndianRed;
+                }
+            }
         }
     }
 }

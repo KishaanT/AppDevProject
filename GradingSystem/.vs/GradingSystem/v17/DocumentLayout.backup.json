@@ -3,234 +3,78 @@
   "WorkspaceRootPath": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\studentsigninform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\studentsigninform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\teachermainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\teachermainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\teacheroperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\teacheroperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\controller\\databackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\controller\\databackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\studentmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\studentmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\teachergui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\teachergui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\seestudentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\seestudentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\teachermainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\teachermainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\seeclassstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\seeclassstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\teachergui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\teachergui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\identifyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\identifyform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\studentgrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\studentgrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\assignmentgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\assignmentgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\addmodifygrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\addmodifygrades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|c:\\users\\thaot\\appdevproject\\gradingsystem\\gradingsystem\\view\\seeclassstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{04C54B1E-F05C-4592-931D-D8FF8F6975D4}|GradingSystem\\GradingSystem.csproj|solutionrelative:gradingsystem\\view\\seeclassstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "TeacherGUI.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherGUI.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\View\\TeacherGUI.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherGUI.cs [Design]",
+              "RelativeToolTip": "GradingSystem\\View\\TeacherGUI.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T03:14:19.736Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeacherMainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherMainMenu.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\View\\TeacherMainMenu.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherMainMenu.cs [Design]",
+              "RelativeToolTip": "GradingSystem\\View\\TeacherMainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T03:08:25.185Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeeClassStatus.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\SeeClassStatus.cs",
+              "RelativeDocumentMoniker": "GradingSystem\\View\\SeeClassStatus.cs",
+              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\SeeClassStatus.cs [Design]",
+              "RelativeToolTip": "GradingSystem\\View\\SeeClassStatus.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T02:58:55.996Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Program.cs",
               "RelativeDocumentMoniker": "GradingSystem\\Program.cs",
               "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Program.cs",
               "RelativeToolTip": "GradingSystem\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAiwEIAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwEgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T22:00:04.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DataBackupService.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Controller\\DataBackupService.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\Controller\\DataBackupService.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\Controller\\DataBackupService.cs",
-              "RelativeToolTip": "GradingSystem\\Controller\\DataBackupService.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAANAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:59:36.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TeacherOperation.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherOperation.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\TeacherOperation.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherOperation.cs",
-              "RelativeToolTip": "GradingSystem\\View\\TeacherOperation.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:07:44.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeacherMainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherMainMenu.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\TeacherMainMenu.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherMainMenu.cs",
-              "RelativeToolTip": "GradingSystem\\View\\TeacherMainMenu.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAYwBwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:07:40.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentSignInForm.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\StudentSignInForm.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\StudentSignInForm.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\StudentSignInForm.cs*",
-              "RelativeToolTip": "GradingSystem\\View\\StudentSignInForm.cs*",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAiwDAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:07:26.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SeeStudentStatus.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\SeeStudentStatus.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\SeeStudentStatus.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\SeeStudentStatus.cs",
-              "RelativeToolTip": "GradingSystem\\View\\SeeStudentStatus.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwBkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:07:13.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SeeClassStatus.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\SeeClassStatus.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\SeeClassStatus.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\SeeClassStatus.cs",
-              "RelativeToolTip": "GradingSystem\\View\\SeeClassStatus.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:07:10.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TeacherGUI.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherGUI.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\TeacherGUI.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\TeacherGUI.cs",
-              "RelativeToolTip": "GradingSystem\\View\\TeacherGUI.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAswFoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T20:12:45.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IdentifyForm.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\IdentifyForm.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\IdentifyForm.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\IdentifyForm.cs",
-              "RelativeToolTip": "GradingSystem\\View\\IdentifyForm.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowAgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:07:05.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AssignmentGUI.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\AssignmentGUI.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\AssignmentGUI.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\AssignmentGUI.cs",
-              "RelativeToolTip": "GradingSystem\\View\\AssignmentGUI.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAYwCcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:06:54.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StudentMainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\StudentMainMenu.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\StudentMainMenu.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\StudentMainMenu.cs",
-              "RelativeToolTip": "GradingSystem\\View\\StudentMainMenu.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T20:47:41.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StudentGrades.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\StudentGrades.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\StudentGrades.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\StudentGrades.cs",
-              "RelativeToolTip": "GradingSystem\\View\\StudentGrades.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAcwGIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T20:19:35.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AddModifyGrades.cs",
-              "DocumentMoniker": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\AddModifyGrades.cs",
-              "RelativeDocumentMoniker": "GradingSystem\\View\\AddModifyGrades.cs",
-              "ToolTip": "C:\\Users\\thaot\\AppDevProject\\GradingSystem\\GradingSystem\\View\\AddModifyGrades.cs",
-              "RelativeToolTip": "GradingSystem\\View\\AddModifyGrades.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAWwDEAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T20:20:36.109Z",
+              "WhenOpened": "2024-12-07T01:18:15.618Z",
               "EditorCaption": ""
             }
           ]

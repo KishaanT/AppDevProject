@@ -44,6 +44,7 @@ namespace GradingSystem
             InitializeComponent();
             AddStudents();
             populateStudentSearch();
+            ApplyTheme();
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -124,6 +125,73 @@ namespace GradingSystem
             studentListView.Items.Clear();
             AddStudents();
             searchBox.Text = string.Empty;
+        }
+        private void ApplyTheme()
+        {
+            // Apply the global theme
+            ThemeManager.ApplyTheme(this);
+
+            // Additional customizations based on the active theme
+            if (ThemeManager.IsDarkMode)
+            {
+                // General form background and text
+                this.BackColor = Color.FromArgb(18, 18, 18);
+                this.ForeColor = Color.White;
+
+                // ListView
+                studentListView.BackColor = Color.FromArgb(30, 30, 30);
+                studentListView.ForeColor = Color.White;
+
+                // TextBox
+                searchBox.BackColor = Color.FromArgb(30, 30, 30);
+                searchBox.ForeColor = Color.White;
+
+                // Buttons
+                backButton.BackColor = Color.DarkRed;
+                backButton.ForeColor = Color.White;
+
+                seeStatusButton.BackColor = Color.DarkGreen;
+                seeStatusButton.ForeColor = Color.White;
+
+                addModifyGradeButton.BackColor = Color.DarkBlue;
+                addModifyGradeButton.ForeColor = Color.White;
+
+                searchButton.BackColor = Color.Teal;
+                searchButton.ForeColor = Color.White;
+
+                clearButton.BackColor = Color.DarkSlateGray;
+                clearButton.ForeColor = Color.White;
+            }
+            else
+            {
+                // General form background and text
+                this.BackColor = Color.White;
+                this.ForeColor = Color.Black;
+
+                // ListView
+                studentListView.BackColor = Color.White;
+                studentListView.ForeColor = Color.Black;
+
+                // TextBox
+                searchBox.BackColor = Color.White;
+                searchBox.ForeColor = Color.Black;
+
+                // Buttons
+                backButton.BackColor = Color.LightCoral;
+                backButton.ForeColor = Color.Black;
+
+                seeStatusButton.BackColor = Color.LightGreen;
+                seeStatusButton.ForeColor = Color.Black;
+
+                addModifyGradeButton.BackColor = Color.LightBlue;
+                addModifyGradeButton.ForeColor = Color.Black;
+
+                searchButton.BackColor = Color.PaleTurquoise;
+                searchButton.ForeColor = Color.Black;
+
+                clearButton.BackColor = Color.LightSeaGreen;
+                clearButton.ForeColor = Color.Black;
+            }
         }
     }
 }

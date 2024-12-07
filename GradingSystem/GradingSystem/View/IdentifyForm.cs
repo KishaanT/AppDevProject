@@ -15,10 +15,12 @@ namespace GradingSystem
     {
         ApplicationLanguage language = ApplicationLanguage.Instance;
         ChangeLanguage changeLanguage = new ChangeLanguage();
+        private bool isDarkMode = false;
 
         public IdentifyForm()
         {
             InitializeComponent();
+            ApplyTheme();
         }
 
         private void studentButton_Click(object sender, EventArgs e)
@@ -59,6 +61,53 @@ namespace GradingSystem
                     language.Value = "es";
                     Application.Restart();
                     break;
+            }
+        }
+
+        private void darkModeButton_Click(object sender, EventArgs e)
+        {
+            // Toggle dark mode
+            ThemeManager.IsDarkMode = !ThemeManager.IsDarkMode;
+
+            // Apply theme to all forms
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is IdentifyForm mainForm)
+                {
+                    mainForm.ApplyTheme(); // Apply local theme
+                }
+                else
+                {
+                    ThemeManager.ApplyTheme(form); // General theme application for other forms
+                }
+            }
+        }
+
+        private void ApplyTheme()
+        {
+            if (ThemeManager.IsDarkMode)
+            {
+                darkModeButton.Text = "Light Mode";
+                this.BackColor = Color.FromArgb(18, 18, 18);
+                this.ForeColor = Color.White;
+
+                studentButton.BackColor = Color.DarkBlue;
+                studentButton.ForeColor = Color.White;
+
+                teacherButton.BackColor = Color.DarkMagenta;
+                teacherButton.ForeColor = Color.White;
+            }
+            else
+            {
+                darkModeButton.Text = "Dark Mode";
+                this.BackColor = Color.White;
+                this.ForeColor = Color.Black;
+
+                studentButton.BackColor = Color.LimeGreen;
+                studentButton.ForeColor = Color.Black;
+
+                teacherButton.BackColor = Color.Orange;
+                teacherButton.ForeColor = Color.Black;
             }
         }
     }

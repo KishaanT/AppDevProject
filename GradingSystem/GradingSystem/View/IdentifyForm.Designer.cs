@@ -35,6 +35,7 @@
             this.teacherButton = new System.Windows.Forms.Button();
             this.languageLabel = new System.Windows.Forms.Label();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
+            this.darkModeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // signInLabel
@@ -49,8 +50,8 @@
             // 
             // studentButton
             // 
+            this.studentButton.BackColor = System.Drawing.Color.LawnGreen;
             resources.ApplyResources(this.studentButton, "studentButton");
-            this.studentButton.BackColor = System.Drawing.Color.SpringGreen;
             this.studentButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.studentButton.Name = "studentButton";
             this.studentButton.UseVisualStyleBackColor = false;
@@ -58,8 +59,8 @@
             // 
             // teacherButton
             // 
+            this.teacherButton.BackColor = System.Drawing.Color.Orange;
             resources.ApplyResources(this.teacherButton, "teacherButton");
-            this.teacherButton.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.teacherButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.teacherButton.Name = "teacherButton";
             this.teacherButton.UseVisualStyleBackColor = false;
@@ -72,20 +73,28 @@
             // 
             // languageComboBox
             // 
-            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.FormattingEnabled = true;
             this.languageComboBox.Items.AddRange(new object[] {
             resources.GetString("languageComboBox.Items"),
             resources.GetString("languageComboBox.Items1"),
             resources.GetString("languageComboBox.Items2")});
+            resources.ApplyResources(this.languageComboBox, "languageComboBox");
             this.languageComboBox.Name = "languageComboBox";
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
+            // 
+            // darkModeButton
+            // 
+            resources.ApplyResources(this.darkModeButton, "darkModeButton");
+            this.darkModeButton.Name = "darkModeButton";
+            this.darkModeButton.UseVisualStyleBackColor = true;
+            this.darkModeButton.Click += new System.EventHandler(this.darkModeButton_Click);
             // 
             // IdentifyForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.darkModeButton);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.languageLabel);
             this.Controls.Add(this.teacherButton);
@@ -106,6 +115,7 @@
         private System.Windows.Forms.Button teacherButton;
         private System.Windows.Forms.Label languageLabel;
         private System.Windows.Forms.ComboBox languageComboBox;
+        private System.Windows.Forms.Button darkModeButton;
     }
 }
 

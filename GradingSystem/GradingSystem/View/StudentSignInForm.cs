@@ -19,6 +19,8 @@ namespace GradingSystem
         {
             InitializeComponent();
             changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
+
+            ApplyTheme();
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -30,7 +32,7 @@ namespace GradingSystem
         }
 
         private void nextButton_Click(object sender, EventArgs e)
-        { 
+        {
             //try
             //{
             //    List<Student> students = DataService.Students;
@@ -42,10 +44,10 @@ namespace GradingSystem
             //            DataService.Student = s;
             //            valid = true;
 
-            //            Hide();
-            //            var form = new StudentMainMenu();
-            //            form.Closed += (c, args) => Close();
-            //            form.Show();
+            Hide();
+            var form = new StudentMainMenu();
+            form.Closed += (c, args) => Close();
+            form.Show();
             //            break;
             //        }
             //        else
@@ -63,7 +65,52 @@ namespace GradingSystem
             //    MessageBox.Show("Your ID must be composed only of numbers", "ID must be numbers", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //}
         }
+        private void ApplyTheme()
+        {
+            // Apply the global theme
+            ThemeManager.ApplyTheme(this);
 
+            // Additional customizations based on the active theme
+            if (ThemeManager.IsDarkMode)
+            {
+                // General form background and text color
+                this.BackColor = Color.FromArgb(18, 18, 18);
+                this.ForeColor = Color.White;
 
+                // TextBoxes
+                IDtextBox.BackColor = Color.FromArgb(30, 30, 30);
+                IDtextBox.ForeColor = Color.White;
+
+                passwordTextBox.BackColor = Color.FromArgb(30, 30, 30);
+                passwordTextBox.ForeColor = Color.White;
+
+                // Buttons
+                backButton.BackColor = Color.DarkRed;
+                backButton.ForeColor = Color.White;
+
+                nextButton.BackColor = Color.Teal;
+                nextButton.ForeColor = Color.White;
+            }
+            else
+            {
+                // General form background and text color
+                this.BackColor = Color.White;
+                this.ForeColor = Color.Black;
+
+                // TextBoxes
+                IDtextBox.BackColor = Color.White;
+                IDtextBox.ForeColor = Color.Black;
+
+                passwordTextBox.BackColor = Color.White;
+                passwordTextBox.ForeColor = Color.Black;
+
+                // Buttons
+                backButton.BackColor = Color.LightCoral;
+                backButton.ForeColor = Color.Black;
+
+                nextButton.BackColor = Color.LightSeaGreen;
+                nextButton.ForeColor = Color.Black;
+            }
+        }
     }
 }

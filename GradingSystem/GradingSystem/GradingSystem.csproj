@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="ApplicationLanguage.cs" />
     <Compile Include="ChangeLanguage.cs" />
+    <Compile Include="Controller\ThemeManager.cs" />
     <Compile Include="View\AddModifyGrades.cs">
       <SubType>Form</SubType>
     </Compile>
