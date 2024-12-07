@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{04C54B1E-F05C-4592-931D-D8FF8F6975D4}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>GradingSystem</RootNamespace>
     <AssemblyName>GradingSystem</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -132,8 +132,21 @@
     <Compile Include="Model\Teacher.cs" />
     <Compile Include="Controller\DataBackupService.cs" />
     <Compile Include="Controller\DataService.cs" />
+    <Compile Include="Controller\GraphDataService.cs" />
+    <EmbeddedResource Include="View\AddModifyGrades.es.resx">
+      <DependentUpon>AddModifyGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AddModifyGrades.fr-CA.resx">
+      <DependentUpon>AddModifyGrades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\AddModifyGrades.resx">
       <DependentUpon>AddModifyGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AssignmentGUI.es.resx">
+      <DependentUpon>AssignmentGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AssignmentGUI.fr-CA.resx">
+      <DependentUpon>AssignmentGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\AssignmentGUI.resx">
       <DependentUpon>AssignmentGUI.cs</DependentUpon>
@@ -141,11 +154,23 @@
     <EmbeddedResource Include="View\IdentifyForm.aa.resx">
       <DependentUpon>IdentifyForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\SeeClassStatus.es.resx">
+      <DependentUpon>SeeClassStatus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\SeeClassStatus.fr-CA.resx">
       <DependentUpon>SeeClassStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SeeClassStatus.resx">
       <DependentUpon>SeeClassStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SeeStudentStatus.es.resx">
+      <DependentUpon>SeeStudentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SeeStudentStatus.fr-CA.resx">
+      <DependentUpon>SeeStudentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StudentGrades.es.resx">
+      <DependentUpon>StudentGrades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\StudentGrades.fr-CA.resx">
       <DependentUpon>StudentGrades.cs</DependentUpon>
@@ -156,14 +181,29 @@
     <EmbeddedResource Include="View\SeeStudentStatus.resx">
       <DependentUpon>SeeStudentStatus.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\StudentMainMenu.es.resx">
+      <DependentUpon>StudentMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\StudentMainMenu.fr-CA.resx">
       <DependentUpon>StudentMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\StudentMainMenu.resx">
       <DependentUpon>StudentMainMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\TeacherGUI.es.resx">
+      <DependentUpon>TeacherGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TeacherGUI.fr-CA.resx">
+      <DependentUpon>TeacherGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\TeacherGUI.resx">
       <DependentUpon>TeacherGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TeacherMainMenu.es.resx">
+      <DependentUpon>TeacherMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TeacherMainMenu.fr-CA.resx">
+      <DependentUpon>TeacherMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TeacherMainMenu.resx">
       <DependentUpon>TeacherMainMenu.cs</DependentUpon>
@@ -195,6 +235,12 @@
     <EmbeddedResource Include="View\StudentSignInForm.resx">
       <DependentUpon>StudentSignInForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\TeacherOperation.es.resx">
+      <DependentUpon>TeacherOperation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TeacherOperation.fr-CA.resx">
+      <DependentUpon>TeacherOperation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\TeacherOperation.resx">
       <DependentUpon>TeacherOperation.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,8 +262,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="SavedData\StudentData.csv" />
-    <None Include="SavedData\TeachersData.csv" />
+    <None Include="SavedData\StudentsData.ser" />
+    <None Include="SavedData\TeachersData.ser" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

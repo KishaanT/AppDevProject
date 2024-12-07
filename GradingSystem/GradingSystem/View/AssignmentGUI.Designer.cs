@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AssignmentGUI));
             this.backButton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
             this.assignmentListView = new System.Windows.Forms.ListView();
@@ -50,171 +51,110 @@
             // 
             // backButton
             // 
+            resources.ApplyResources(this.backButton, "backButton");
             this.backButton.BackColor = System.Drawing.Color.Firebrick;
-            this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.backButton.Location = new System.Drawing.Point(12, 373);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(160, 65);
-            this.backButton.TabIndex = 2;
-            this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = false;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // titleLabel
             // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(300, 21);
+            resources.ApplyResources(this.titleLabel, "titleLabel");
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(201, 37);
-            this.titleLabel.TabIndex = 3;
-            this.titleLabel.Text = "Assignments";
             // 
             // assignmentListView
             // 
+            resources.ApplyResources(this.assignmentListView, "assignmentListView");
             this.assignmentListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.nameColumn,
             this.weight});
             this.assignmentListView.FullRowSelect = true;
             this.assignmentListView.HideSelection = false;
-            this.assignmentListView.Location = new System.Drawing.Point(238, 73);
             this.assignmentListView.MultiSelect = false;
             this.assignmentListView.Name = "assignmentListView";
-            this.assignmentListView.Size = new System.Drawing.Size(550, 365);
-            this.assignmentListView.TabIndex = 4;
             this.assignmentListView.UseCompatibleStateImageBehavior = false;
             this.assignmentListView.View = System.Windows.Forms.View.Details;
             // 
             // nameColumn
             // 
-            this.nameColumn.Text = "Assignment Name";
-            this.nameColumn.Width = 494;
+            resources.ApplyResources(this.nameColumn, "nameColumn");
             // 
             // weight
             // 
-            this.weight.Text = "Weight";
-            this.weight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.weight.Width = 50;
+            resources.ApplyResources(this.weight, "weight");
             // 
             // createAssignmentLabel
             // 
-            this.createAssignmentLabel.AutoSize = true;
-            this.createAssignmentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createAssignmentLabel.Location = new System.Drawing.Point(13, 73);
+            resources.ApplyResources(this.createAssignmentLabel, "createAssignmentLabel");
             this.createAssignmentLabel.Name = "createAssignmentLabel";
-            this.createAssignmentLabel.Size = new System.Drawing.Size(200, 25);
-            this.createAssignmentLabel.TabIndex = 5;
-            this.createAssignmentLabel.Text = "Create Assignment:";
             // 
             // nameBox
             // 
-            this.nameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameBox.Location = new System.Drawing.Point(63, 110);
+            resources.ApplyResources(this.nameBox, "nameBox");
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(154, 22);
-            this.nameBox.TabIndex = 6;
             // 
             // nameLabel
             // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.Location = new System.Drawing.Point(9, 113);
+            resources.ApplyResources(this.nameLabel, "nameLabel");
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(44, 16);
-            this.nameLabel.TabIndex = 8;
-            this.nameLabel.Text = "Name";
             // 
             // weightLabelCreate
             // 
-            this.weightLabelCreate.AutoSize = true;
-            this.weightLabelCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightLabelCreate.Location = new System.Drawing.Point(9, 155);
+            resources.ApplyResources(this.weightLabelCreate, "weightLabelCreate");
             this.weightLabelCreate.Name = "weightLabelCreate";
-            this.weightLabelCreate.Size = new System.Drawing.Size(49, 16);
-            this.weightLabelCreate.TabIndex = 9;
-            this.weightLabelCreate.Text = "Weight";
             // 
             // weightUpDownCreate
             // 
-            this.weightUpDownCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightUpDownCreate.Location = new System.Drawing.Point(63, 153);
+            resources.ApplyResources(this.weightUpDownCreate, "weightUpDownCreate");
             this.weightUpDownCreate.Name = "weightUpDownCreate";
-            this.weightUpDownCreate.Size = new System.Drawing.Size(154, 22);
-            this.weightUpDownCreate.TabIndex = 10;
             // 
             // createButton
             // 
+            resources.ApplyResources(this.createButton, "createButton");
             this.createButton.BackColor = System.Drawing.Color.LimeGreen;
-            this.createButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.createButton.Location = new System.Drawing.Point(12, 185);
             this.createButton.Name = "createButton";
-            this.createButton.Size = new System.Drawing.Size(103, 43);
-            this.createButton.TabIndex = 11;
-            this.createButton.Text = "Create";
             this.createButton.UseVisualStyleBackColor = false;
             this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
             // weightUpDownModify
             // 
-            this.weightUpDownModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightUpDownModify.Location = new System.Drawing.Point(63, 281);
+            resources.ApplyResources(this.weightUpDownModify, "weightUpDownModify");
             this.weightUpDownModify.Name = "weightUpDownModify";
-            this.weightUpDownModify.Size = new System.Drawing.Size(154, 22);
-            this.weightUpDownModify.TabIndex = 12;
             // 
             // selectAndModifyLabel
             // 
-            this.selectAndModifyLabel.AutoSize = true;
-            this.selectAndModifyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectAndModifyLabel.Location = new System.Drawing.Point(13, 243);
+            resources.ApplyResources(this.selectAndModifyLabel, "selectAndModifyLabel");
             this.selectAndModifyLabel.Name = "selectAndModifyLabel";
-            this.selectAndModifyLabel.Size = new System.Drawing.Size(189, 25);
-            this.selectAndModifyLabel.TabIndex = 13;
-            this.selectAndModifyLabel.Text = "Select and modify:";
             // 
             // weightLabelModify
             // 
-            this.weightLabelModify.AutoSize = true;
-            this.weightLabelModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightLabelModify.Location = new System.Drawing.Point(8, 283);
+            resources.ApplyResources(this.weightLabelModify, "weightLabelModify");
             this.weightLabelModify.Name = "weightLabelModify";
-            this.weightLabelModify.Size = new System.Drawing.Size(49, 16);
-            this.weightLabelModify.TabIndex = 14;
-            this.weightLabelModify.Text = "Weight";
             // 
             // modifyButton
             // 
+            resources.ApplyResources(this.modifyButton, "modifyButton");
             this.modifyButton.BackColor = System.Drawing.Color.Gold;
-            this.modifyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modifyButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.modifyButton.Location = new System.Drawing.Point(12, 309);
             this.modifyButton.Name = "modifyButton";
-            this.modifyButton.Size = new System.Drawing.Size(103, 43);
-            this.modifyButton.TabIndex = 15;
-            this.modifyButton.Text = "Modify";
             this.modifyButton.UseVisualStyleBackColor = false;
             this.modifyButton.Click += new System.EventHandler(this.modifyButton_Click);
             // 
             // deleteButton
             // 
+            resources.ApplyResources(this.deleteButton, "deleteButton");
             this.deleteButton.BackColor = System.Drawing.Color.OrangeRed;
-            this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deleteButton.Location = new System.Drawing.Point(121, 309);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(103, 43);
-            this.deleteButton.TabIndex = 16;
-            this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = false;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // AssignmentGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.modifyButton);
             this.Controls.Add(this.weightLabelModify);
@@ -230,7 +170,6 @@
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.backButton);
             this.Name = "AssignmentGUI";
-            this.Text = "TKB Grading System - Assignments GUI";
             ((System.ComponentModel.ISupportInitialize)(this.weightUpDownCreate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weightUpDownModify)).EndInit();
             this.ResumeLayout(false);

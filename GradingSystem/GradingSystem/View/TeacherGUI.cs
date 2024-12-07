@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Globalization;
 using GradingSystem.Services;
 
 namespace GradingSystem
 {
     public partial class TeacherGUI : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         private StudentSearch[] studentSearch;
         private class StudentSearch
         {
             public string StudentName { get; set; }
-            public string StudentID {  get; set; } 
+            public string StudentID { get; set; }
 
             public StudentSearch(string name, string id)
             {
@@ -41,6 +43,7 @@ namespace GradingSystem
 
         public TeacherGUI()
         {
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
             InitializeComponent();
             AddStudents();
             populateStudentSearch();
@@ -54,7 +57,7 @@ namespace GradingSystem
             form.Show();
         }
 
-        private void AddStudents() 
+        private void AddStudents() // normally this would retrieve the students list from the course list
         {
             List<Student> students = DataService.Course.Students;
             foreach (Student student in students)
@@ -109,12 +112,12 @@ namespace GradingSystem
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            studentListView.Items.Clear(); 
-            foreach(StudentSearch s in studentSearch)
+            studentListView.Items.Clear();
+            foreach (StudentSearch s in studentSearch)
             {
                 if (s.StudentName.ToLower().Contains(searchBox.Text.ToLower()) || s.StudentID.ToLower().Contains(searchBox.Text.ToLower()))
                 {
-                    studentListView.Items.Add(new ListViewItem(new[] {s.StudentName, s.StudentID}));
+                    studentListView.Items.Add(new ListViewItem(new[] { s.StudentName, s.StudentID }));
                 }
             }
         }
@@ -125,5 +128,7 @@ namespace GradingSystem
             AddStudents();
             searchBox.Text = string.Empty;
         }
+
+
     }
 }

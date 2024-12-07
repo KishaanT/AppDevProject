@@ -14,11 +14,11 @@ namespace GradingSystem
 {
     public partial class SeeClassStatus : Form
     {
-        ApplicationLanguage language = ApplicationLanguage.Instance;
         ChangeLanguage changeLanguage = new ChangeLanguage();
         public SeeClassStatus()
         {
             InitializeComponent();
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
         }
 
         private void closeButton_Click(object sender, EventArgs e)

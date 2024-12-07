@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Globalization;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,10 @@ namespace GradingSystem
 {
     public partial class TeacherOperation : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         public TeacherOperation()
         {
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
             InitializeComponent();
         }
 

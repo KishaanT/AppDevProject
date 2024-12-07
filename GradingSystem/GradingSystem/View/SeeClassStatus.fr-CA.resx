@@ -140,7 +140,8 @@
     <value>176, 37</value>
   </data>
   <data name="passingLabel.Text" xml:space="preserve">
-    <value>En réussite</value>
+    <value>En réussite
+</value>
   </data>
   <data name="averageLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 37</value>

@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Globalization;
 using GradingSystem.Services;
 
 namespace GradingSystem
 {
     public partial class AssignmentGUI : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
         public AssignmentGUI()
-        {
+        {            
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
             InitializeComponent();
         }
 
@@ -26,7 +29,7 @@ namespace GradingSystem
             form.Show();
         }
 
-        private void createButton_Click(object sender, EventArgs e) 
+        private void createButton_Click(object sender, EventArgs e) // Method has to add the Asssignment to the Teacher's assignment list, and also the student's assignment list.
         {
             var lvitem = new ListViewItem(nameBox.Text);
             lvitem.SubItems.Add(weightUpDownCreate.Value.ToString());
@@ -59,47 +62,27 @@ namespace GradingSystem
             }
         }
 
-        private void deleteButton_Click(object sender, EventArgs e)
+        private void deleteButton_Click(object sender, EventArgs e) // Gotta handle this exception too
         {
-            try
+            if (assignmentListView.SelectedItems.Count == 0)
             {
-                if (assignmentListView.SelectedItems.Count == 0)
-                {
-                    MessageBox.Show("You must select an assignment before deleting it.",
-                        "Select Assignment", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                string name = assignmentListView.SelectedItems[0].Text;
-
-                assignmentListView.Items.Remove(assignmentListView.SelectedItems[0]);
-
-                if (DataService.Course == null || DataService.Course.Assignments == null)
-                {
-                    MessageBox.Show("Course assignments data is missing.",
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                Assignment assignmentToRemove = DataService.Course.Assignments.FirstOrDefault(a => a.Name == name);
-                if (assignmentToRemove != null)
-                {
-                    DataService.Course.Assignments.Remove(assignmentToRemove);
-                    MessageBox.Show($"Assignment '{name}' deleted successfully.",
-                        "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show($"Assignment '{name}' not found in the course.",
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MessageBox.Show("You must select an assignment before deleting it", "Select Assignment", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show($"An error occurred while deleting the assignment: {ex.Message}",
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string name = assignmentListView.SelectedItems[0].Text;
+                assignmentListView.Items.Remove(assignmentListView.SelectedItems[0]);
+                foreach (Assignment assignment in DataService.Course.Assignments)
+                {
+                    if (assignment.Name == name)
+                    {
+                        DataService.Course.Assignments.Remove(assignment);
+                        break;
+                    }
+                }
             }
         }
 
+        
     }
 }

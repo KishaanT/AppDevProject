@@ -7,18 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Globalization;
 using GradingSystem.Services;
 
 namespace GradingSystem
 {
     public partial class SeeStudentStatus : Form
     {
+        ChangeLanguage changeLanguage = new ChangeLanguage();
 
         public SeeStudentStatus()
         {
             InitializeComponent();
             determineStanding();
             displayAverage();
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
         }
 
         private void closeButton_Click(object sender, EventArgs e)

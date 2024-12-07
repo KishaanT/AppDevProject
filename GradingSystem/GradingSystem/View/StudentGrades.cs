@@ -16,6 +16,7 @@ namespace GradingSystem
     {
         ChangeLanguage changeLanguage = new ChangeLanguage();
         private AssignmentSearch[] assignmentSearch;
+
         private class AssignmentSearch
         {
             public string Name { get; set; }
