@@ -21,8 +21,8 @@ namespace GradingSystem
             InitializeComponent();
             foreach(Course course in DataService.Student.EnrolledCourses)
             {
-                //var courseName = DataService.Courses.FirstOrDefault(s => s.CourseId == course.CourseId);
-                //comboBoxClasses.Items.Add(courseName.CourseName);
+                var courseName = course.CourseName;
+                comboBoxClasses.Items.Add(courseName);
             }
         }
 
@@ -45,6 +45,9 @@ namespace GradingSystem
                 }
                 else
                 {
+                    var coursName = comboBoxClasses.SelectedItem.ToString();
+                    DataService.Course = DataService.Student.EnrolledCourses.FirstOrDefault(t => t.CourseName == coursName);
+                    Console.WriteLine(DataService.Course.CourseName);
                     Hide();
                     var form = new StudentGrades();
                     form.Closed += (s, args) => Close();
@@ -54,6 +57,6 @@ namespace GradingSystem
             }
         }
 
-       
+        
     }
 }

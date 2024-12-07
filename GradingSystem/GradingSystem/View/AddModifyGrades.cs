@@ -14,13 +14,16 @@ namespace GradingSystem
 {
     public partial class AddModifyGrades : Form
     {
-        ChangeLanguage changeLanguage;
+        ChangeLanguage changeLanguage = new ChangeLanguage();
+
         public AddModifyGrades()
         {
+            
             InitializeComponent();
-            changeStudentLabel();
-            loadData();
             changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
+            loadData();
+            changeStudentLabel();
+
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -36,26 +39,67 @@ namespace GradingSystem
 
         private void loadData()
         {
-            // load the data here, whoever knows this model system can take care of this
-            // should be retrieved from the student object
+            List<Assignment> assignments = DataService.Student.EnrolledCourses.FirstOrDefault(c => c.CourseId == DataService.Course.CourseId).Assignments;
+            foreach(Assignment assignment in assignments)
+            {
+                var lvitem = new ListViewItem(assignment.Name);
+                lvitem.SubItems.Add(assignment.Weight.ToString());
+                lvitem.SubItems.Add(assignment.Grade.ToString());
+                assignmentListView.Items.Add(lvitem);
+
+            }          
         }
 
         private void insertButton_Click(object sender, EventArgs e)
         {
-            ListViewItem item = assignmentListView.SelectedItems[0];
-            assignmentListView.SelectedItems[0].Remove();
-            string value = item.Text;
-            var lvitem = new ListViewItem(value);
-            lvitem.SubItems.Add(""); // should be the second value
-            lvitem.SubItems.Add(gradeNumericUpDown.Text);
-            assignmentListView.Items.Add(lvitem);
-            foreach(int i in DataService.Student.EnrolledCourses)
+    
+            try
             {
-                if (DataService.Student.EnrolledCourses.Contains(DataService.Course.CourseId))
+                // Ensure an assignment is selected
+                if (assignmentListView.SelectedItems.Count == 0)
                 {
-                    // Yeah, fuck this model logic, take care of this feature I give up
+                    MessageBox.Show("Please select an assignment to modify.",
+                        "Select Assignment", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Get the selected item
+                ListViewItem selectedItem = assignmentListView.SelectedItems[0];
+                string assignmentName = selectedItem.Text;
+
+                // Validate and parse the new grade
+                if (!double.TryParse(gradeNumericUpDown.Text, out double newGrade))
+                {
+                    MessageBox.Show("Please enter a valid grade.",
+                        "Invalid Grade", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Update the grade in the data model
+                Assignment assignmentToUpdate = DataService.Course.Assignments
+                    .FirstOrDefault(a => a.Name == assignmentName);
+
+                if (assignmentToUpdate != null)
+                {
+                    assignmentToUpdate.Grade = newGrade;
+
+                    // Update the UI
+                    selectedItem.SubItems[2].Text = newGrade.ToString();
+                    MessageBox.Show($"Grade for '{assignmentName}' updated successfully.",
+                        "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"Assignment '{assignmentName}' not found in the course.",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
        

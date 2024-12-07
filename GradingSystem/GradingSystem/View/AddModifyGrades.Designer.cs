@@ -49,13 +49,13 @@
             // 
             // assignmentListView
             // 
-            resources.ApplyResources(this.assignmentListView, "assignmentListView");
             this.assignmentListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.nameColumn,
             this.weightColumn,
             this.gradeColumn});
             this.assignmentListView.FullRowSelect = true;
             this.assignmentListView.HideSelection = false;
+            resources.ApplyResources(this.assignmentListView, "assignmentListView");
             this.assignmentListView.MultiSelect = false;
             this.assignmentListView.Name = "assignmentListView";
             this.assignmentListView.UseCompatibleStateImageBehavior = false;
@@ -75,8 +75,8 @@
             // 
             // closeButton
             // 
-            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.BackColor = System.Drawing.Color.IndianRed;
+            resources.ApplyResources(this.closeButton, "closeButton");
             this.closeButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.closeButton.Name = "closeButton";
             this.closeButton.UseVisualStyleBackColor = false;

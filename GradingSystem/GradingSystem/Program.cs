@@ -23,7 +23,6 @@ namespace GradingSystem
 
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
             Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
-
             dt.AddTeacher("Kishaan", "kishaan@gmail.com", "1234");
             dt.AddTeacher("Thao", "thao@gmail.com", "1234");
             dt.AddTeacher("Brian", "brian@gmail.com", "1234");
@@ -32,8 +31,8 @@ namespace GradingSystem
             dt.AddCourse("History", 3);
             dt.AddCourse("Chemsitry", 2);
 
-            dt.AddCourse("Calculus 2", 3);
-            dt.AddCourse("English", 1);
+            dt.AddCourse("Calculus 2", 1);
+            dt.AddCourse("English", 3);
             dt.AddCourse("Humanities", 2);
 
             dt.AddCourse("Linear Algebra", 2);
@@ -68,9 +67,13 @@ namespace GradingSystem
             {
                 Console.WriteLine("Empty");
             }
+            DataBackupService.BackupTeacherData(dt.Teachers);
+            DataBackupService.BackupStudentData(dt.Students);
+            DataBackupService.BackupCoursesData(dt.Courses);
 
-            DataBackupService.BackupTeacherData(DataService.Teachers);
-            
+
+
+
 
             Application.Run(new IdentifyForm());
 

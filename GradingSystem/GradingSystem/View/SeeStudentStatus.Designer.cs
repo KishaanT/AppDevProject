@@ -83,8 +83,8 @@
             // 
             // closeButton
             // 
-            this.closeButton.BackColor = System.Drawing.Color.IndianRed;
             resources.ApplyResources(this.closeButton, "closeButton");
+            this.closeButton.BackColor = System.Drawing.Color.IndianRed;
             this.closeButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.closeButton.Name = "closeButton";
             this.closeButton.UseVisualStyleBackColor = false;
@@ -92,8 +92,8 @@
             // 
             // SeeStudentStatus
             // 
-            this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
+            this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.tempLabel);

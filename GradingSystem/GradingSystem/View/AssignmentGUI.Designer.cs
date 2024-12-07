@@ -51,8 +51,8 @@
             // 
             // backButton
             // 
-            resources.ApplyResources(this.backButton, "backButton");
             this.backButton.BackColor = System.Drawing.Color.Firebrick;
+            resources.ApplyResources(this.backButton, "backButton");
             this.backButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.backButton.Name = "backButton";
             this.backButton.UseVisualStyleBackColor = false;
@@ -65,12 +65,12 @@
             // 
             // assignmentListView
             // 
-            resources.ApplyResources(this.assignmentListView, "assignmentListView");
             this.assignmentListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.nameColumn,
             this.weight});
             this.assignmentListView.FullRowSelect = true;
             this.assignmentListView.HideSelection = false;
+            resources.ApplyResources(this.assignmentListView, "assignmentListView");
             this.assignmentListView.MultiSelect = false;
             this.assignmentListView.Name = "assignmentListView";
             this.assignmentListView.UseCompatibleStateImageBehavior = false;
@@ -111,8 +111,8 @@
             // 
             // createButton
             // 
-            resources.ApplyResources(this.createButton, "createButton");
             this.createButton.BackColor = System.Drawing.Color.LimeGreen;
+            resources.ApplyResources(this.createButton, "createButton");
             this.createButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.createButton.Name = "createButton";
             this.createButton.UseVisualStyleBackColor = false;
@@ -135,8 +135,8 @@
             // 
             // modifyButton
             // 
-            resources.ApplyResources(this.modifyButton, "modifyButton");
             this.modifyButton.BackColor = System.Drawing.Color.Gold;
+            resources.ApplyResources(this.modifyButton, "modifyButton");
             this.modifyButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.modifyButton.Name = "modifyButton";
             this.modifyButton.UseVisualStyleBackColor = false;
@@ -144,8 +144,8 @@
             // 
             // deleteButton
             // 
-            resources.ApplyResources(this.deleteButton, "deleteButton");
             this.deleteButton.BackColor = System.Drawing.Color.OrangeRed;
+            resources.ApplyResources(this.deleteButton, "deleteButton");
             this.deleteButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.UseVisualStyleBackColor = false;

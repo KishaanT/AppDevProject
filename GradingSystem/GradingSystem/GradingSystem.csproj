@@ -132,7 +132,6 @@
     <Compile Include="Model\Teacher.cs" />
     <Compile Include="Controller\DataBackupService.cs" />
     <Compile Include="Controller\DataService.cs" />
-    <Compile Include="Controller\GraphDataService.cs" />
     <EmbeddedResource Include="View\AddModifyGrades.es.resx">
       <DependentUpon>AddModifyGrades.cs</DependentUpon>
     </EmbeddedResource>

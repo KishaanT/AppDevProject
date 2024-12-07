@@ -31,37 +31,32 @@ namespace GradingSystem
 
         private void nextButton_Click(object sender, EventArgs e)
         { 
-            //try
-            //{
-            //    List<Student> students = DataService.Students;
-            //    bool valid = false;
-            //    foreach (Student s in students)
-            //    {
-            //        if (s.Id == int.Parse(IDtextBox.Text) && s.Password == passwordTextBox.Text)
-            //        {
-            //            DataService.Student = s;
-            //            valid = true;
+         
+            try
+            {
 
-            //            Hide();
-            //            var form = new StudentMainMenu();
-            //            form.Closed += (c, args) => Close();
-            //            form.Show();
-            //            break;
-            //        }
-            //        else
-            //        {
-            //            // Do nothing
-            //        }
-            //    }
-            //    if (!valid)
-            //    {
-            //        MessageBox.Show("Student ID or Password is incorrect", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //}
-            //catch (FormatException ex)
-            //{
-            //    MessageBox.Show("Your ID must be composed only of numbers", "ID must be numbers", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+                bool check = DataBackupService.CheckStudent(int.Parse(IDtextBox.Text), passwordTextBox.Text);
+                if (check)
+                {
+                    int id = int.Parse(IDtextBox.Text);
+                    DataService.Student = DataBackupService.RestoreStudentData().FirstOrDefault(t => t.Id == id);
+
+                    Hide();
+                    var form = new StudentMainMenu();
+                    form.Closed += (c, args) => Close();
+                    form.Show();
+                    return;
+
+                }
+                else
+                {
+                    MessageBox.Show("Student ID or Password is incorrect", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Your ID must be composed only of numbers", "ID must be numbers", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 

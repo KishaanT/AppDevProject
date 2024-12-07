@@ -42,8 +42,8 @@
             // 
             // signOutButton
             // 
-            resources.ApplyResources(this.signOutButton, "signOutButton");
             this.signOutButton.BackColor = System.Drawing.Color.IndianRed;
+            resources.ApplyResources(this.signOutButton, "signOutButton");
             this.signOutButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.signOutButton.Name = "signOutButton";
             this.signOutButton.UseVisualStyleBackColor = false;
@@ -51,8 +51,8 @@
             // 
             // gotoclassButton
             // 
-            resources.ApplyResources(this.gotoclassButton, "gotoclassButton");
             this.gotoclassButton.BackColor = System.Drawing.Color.LimeGreen;
+            resources.ApplyResources(this.gotoclassButton, "gotoclassButton");
             this.gotoclassButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.gotoclassButton.Name = "gotoclassButton";
             this.gotoclassButton.UseVisualStyleBackColor = false;

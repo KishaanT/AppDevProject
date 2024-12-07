@@ -42,7 +42,10 @@ namespace GradingSystem
         }
 
 
-
+        public void addStudent(Student student)
+        {
+            Students.Add(student);
+        }
         // Add a new assignment to the course
         public void AddAssignment(string name, double weight)
         {

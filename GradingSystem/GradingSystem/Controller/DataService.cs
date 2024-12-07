@@ -9,7 +9,7 @@ namespace GradingSystem.Services
     {
         private List<Teacher> teachers = new List<Teacher>();
         private List<Student> students = new List<Student>();
-        private List<Course> courses = new List<Course>();
+        private List<Course> coursess = new List<Course>();
         private static int nextTeacherId = 1;
         private static int nextStudentId = 1;
         private static int nextCourseId = 1;
@@ -40,11 +40,11 @@ namespace GradingSystem.Services
         {
             get
             {
-                return courses;
+                return coursess;
             }
             set
             {
-                courses = value;
+                coursess = value;
             }
         }
 
@@ -103,13 +103,13 @@ namespace GradingSystem.Services
             };
             Courses.Add(course);
             teacher.Courses.Add(course);
-            courses.Add(course);
+            coursess.Add(course);
             return course;
         }
 
-        public void EnrollStudentInCourse(int courseId,int studentId)
+        public  void EnrollStudentInCourse(int courseId,int studentId)
         {
-            var course = courses.FirstOrDefault(s => s.CourseId == courseId);
+            var course = coursess.FirstOrDefault(s => s.CourseId == courseId);
             if (course == null) throw new Exception("Course not found.");
 
             var student = students.FirstOrDefault(s => s.Id == studentId);
@@ -120,78 +120,138 @@ namespace GradingSystem.Services
                 Console.WriteLine($"Already enrolled in course {courseId}.");
                 return;
             }
+
             student.EnrolledCourses.Add(course);
+            course.addStudent(student);
+
+
             Console.WriteLine($"Successfully enrolled in course {courseId}.");
         }
 
         // Assign Grade
-        public void AssignGrade(int studentId, int courseId, string assignmentName, double grade)
+        public static void AssignGrade(int studentId, int courseId, string assignmentName, double grade)
         {
+            List<Student> students = DataBackupService.RestoreStudentData();
+            List<Course> courses = DataBackupService.RestoreCourseData();
+            List<Assignment> assignments = DataBackupService.RestoreAssignmentsData();
+
             var student = students.FirstOrDefault(s => s.Id == studentId);
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
-            var assignment = course?.Assignments.FirstOrDefault(a => a.Name == assignmentName);
 
-            if (student == null || course == null || assignment == null)
+            if (student == null || course == null ||courses.FirstOrDefault(c => c.CourseId == courseId).Assignments.FirstOrDefault(a => a.Name == assignmentName) == null)
+            {
                 throw new Exception("Invalid data provided.");
+            }
 
-            assignment.StudentGrades[studentId] = grade;
+            for(int i = 0; i < course.Assignments.Count; i++)
+            {
+                if(course.Assignments[i] == course.Assignments.FirstOrDefault(a => a.Name == assignmentName))
+                {
+                    
+                    
+                    course.Assignments[i].StudentGrades[studentId] = grade;
+                    assignments.FirstOrDefault(a => a.Name == assignmentName).StudentGrades[studentId] = grade;
+                }
+            }
+            DataBackupService.BackupCoursesData(courses);
+            DataBackupService.BackupAssignmentData(assignments);
+
 
             // Recalculate student's average for the course
             RecalculateStudentAverage(studentId, courseId);
         }
 
         // Create Assignment
-        public Assignment CreateAssignment(int courseId, string name, double weight)
+        public static Assignment CreateAssignment(int courseId, string name, double weight)
         {
-            var course = courses.FirstOrDefault(c => c.CourseId == courseId);
-            if (course == null) throw new Exception("Course not found.");
-
-            var assignment = new Assignment(name, weight);
-            course.Assignments.Add(assignment);
-
-            Console.WriteLine($"Assignment '{name}' added to course '{course.CourseName}'.");
-            return assignment;
+            List<Assignment> assignments = DataBackupService.RestoreAssignmentsData();
+            List<Course> courses = DataBackupService.RestoreCourseData();
+            for(int i =0; i < courses.Count; i++)
+            {
+                if(courses[i].CourseId == courseId)
+                {
+                    if (courses[i] == null) throw new Exception("Course not found.");
+                    var assignment = new Assignment(name, weight);
+                    assignments.Add(assignment);
+                    courses[i].Assignments.Add(assignment);
+                    DataBackupService.BackupCoursesData(courses);
+                    DataBackupService.BackupAssignmentData(assignments);
+                    Console.WriteLine($"Assignment '{name}' added to course '{courses[i].CourseName}'.");
+                    return assignment;
+                }
+            }
+            return null;
         }
 
         // Modify Assignment Weight
-        public void ModifyAssignmentWeight(int courseId, string assignmentName, double newWeight)
+        public static void ModifyAssignmentWeight(int courseId, string assignmentName, double newWeight)
         {
-            var course = courses.FirstOrDefault(c => c.CourseId == courseId);
-            var assignment = course?.Assignments.FirstOrDefault(a => a.Name == assignmentName);
+            List<Assignment> assignments = DataBackupService.RestoreAssignmentsData();
+            List<Course> courses = DataBackupService.RestoreCourseData();
+
+            var course = DataBackupService.RestoreCourseData().FirstOrDefault(c => c.CourseId == courseId);
+            var assignment = course.Assignments.FirstOrDefault(a => a.Name == assignmentName);
 
             if (assignment == null) throw new Exception("Assignment not found.");
 
-            assignment.Weight = newWeight;
             Console.WriteLine($"Assignment '{assignmentName}' weight updated to {newWeight}%.");
+
+            for (int i = 0; i < courses.Count; i++)
+            {
+                if (courses[i] == course)
+                {
+                    courses[i].Assignments.FirstOrDefault(a => a.Name == assignmentName).Weight = newWeight;
+                    assignments.FirstOrDefault(a => a.Name == assignmentName).Weight = newWeight;
+                }
+            }
+            Console.WriteLine($"Assignment '{assignmentName}' weight updated to {newWeight}%.");
+            DataBackupService.BackupCoursesData(courses);
+            DataBackupService.BackupAssignmentData(assignments);
+
+
         }
 
         // Drop Student From Course
-        public void DropStudentFromCourse(int studentId, int courseId)
+        public static void DropStudentFromCourse(int studentId, int courseId)
         {
-            var student = students.FirstOrDefault(s => s.Id == studentId);
-            var course = courses.FirstOrDefault(c => c.CourseId == courseId);
+            List<Course> courses = DataBackupService.RestoreCourseData();
+            List<Student> students = DataBackupService.RestoreStudentData();
+            List<Assignment> assignments = DataBackupService.RestoreAssignmentsData();
+
+
+            var student = DataBackupService.RestoreStudentData().FirstOrDefault(s => s.Id == studentId);
+            var course = DataBackupService.RestoreCourseData().FirstOrDefault(c => c.CourseId == courseId);
 
             if (student == null || course == null) throw new Exception("Invalid data provided.");
 
-            student.EnrolledCourses.Remove(course);
-            course.StudentAverages.Remove(studentId);
+            students.FirstOrDefault(s => s.Id == studentId).EnrolledCourses.Remove(course);
+            courses.FirstOrDefault(c => c.CourseId == courseId).StudentAverages.Remove(studentId);
 
-            foreach (var assignment in course.Assignments)
+            
+
+            for (int i = 0; i < assignments.Count; i++)
             {
-                assignment.StudentGrades.Remove(studentId);
+                assignments[i].StudentGrades.Remove(studentId);
             }
+            DataBackupService.BackupCoursesData(courses);
+            DataBackupService.BackupAssignmentData(assignments);
+            DataBackupService.BackupStudentData(students);
         }
 
         // Recalculate Student Average
-        private void RecalculateStudentAverage(int studentId, int courseId)
+        private static void RecalculateStudentAverage(int studentId, int courseId)
         {
+            List<Course> courses = DataBackupService.RestoreCourseData();
+            List<Student> students = DataBackupService.RestoreStudentData();
+            List<Assignment> assignments = DataBackupService.RestoreAssignmentsData();
+
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
             if (course == null) return;
 
             var totalWeight = 0.0;
             var weightedSum = 0.0;
 
-            foreach (var assignment in course.Assignments)
+            foreach (var assignment in assignments)
             {
                 if (assignment.StudentGrades.TryGetValue(studentId, out double grade))
                 {
@@ -203,18 +263,30 @@ namespace GradingSystem.Services
             if (Math.Abs(totalWeight - 100) > 0.01)
                 throw new Exception("Course weighting does not sum to 100%.");
 
-            course.StudentAverages[studentId] = weightedSum;
+            for(int i = 0; i < courses.Count;i++) 
+            {
+                if (courses[i] == course)
+                {
+                    courses[i].StudentAverages[studentId] = weightedSum;
+                }
+            }
+            DataBackupService.BackupCoursesData(courses);
+            DataBackupService.BackupAssignmentData(assignments);
+            DataBackupService.BackupStudentData(students);
+
         }
 
         // Get Courses for a Teacher
-        public List<Course> GetCoursesForTeacher(int teacherId)
+        public static List<Course> GetCoursesForTeacher(int teacherId)
         {
-            return courses.Where(c => c.TeacherId == teacherId).ToList();
+            return DataBackupService.RestoreCourseData().Where(c => c.TeacherId == teacherId).ToList();
         }
 
         // Get Student Status
         public string GetStudentStatus(int studentId, int courseId)
         {
+            List<Course> courses = DataBackupService.RestoreCourseData();
+
             var course = courses.FirstOrDefault(c => c.CourseId == courseId);
             if (course == null) return "Course not found.";
 

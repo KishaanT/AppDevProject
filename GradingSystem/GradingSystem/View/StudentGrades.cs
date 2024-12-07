@@ -16,7 +16,15 @@ namespace GradingSystem
     {
         ChangeLanguage changeLanguage = new ChangeLanguage();
         private AssignmentSearch[] assignmentSearch;
-
+        
+        public StudentGrades()
+        {
+            populatAssignmentSearch();
+            AddAssignments();
+            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
+            InitializeComponent();
+          
+        }
         private class AssignmentSearch
         {
             public string Name { get; set; }
@@ -48,24 +56,38 @@ namespace GradingSystem
 
         private void AddAssignments() // normally this would retrieve the students list from the course list
         {
+            // Ensure course and assignments data is available
+            if (DataService.Course == null || DataService.Course.Assignments == null)
+            {
+                MessageBox.Show("Course or assignments data is missing.",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Clear existing items to avoid duplication
+       
+
+            // Retrieve assignments
             List<Assignment> assignments = DataService.Course.Assignments;
+
+            // Populate the ListView with assignments
             foreach (Assignment assignment in assignments)
             {
                 var lvitem = new ListViewItem(assignment.Name);
-                lvitem.SubItems.Add(assignment.Weight.ToString());
-                lvitem.SubItems.Add(assignment.Grade.ToString());
-                lvitem.SubItems.Add(returnStatus(assignment.Grade).ToString());
+                lvitem.SubItems.Add(assignment.Weight.ToString("F2")); // Format weight as needed
+                lvitem.SubItems.Add(assignment.Grade.ToString("F2"));  // Format grade as needed
+                lvitem.SubItems.Add(returnStatus(assignment.Grade));   // Add the calculated status
                 assignmentListView.Items.Add(lvitem);
             }
         }
 
-        public StudentGrades()
-        {
-            changeLanguage.UpdateConfig(ApplicationLanguage.Instance.Key, ApplicationLanguage.Instance.Value);
-            InitializeComponent();
-            populatAssignmentSearch();
-            AddAssignments();
-        }
+        // Helper method to calculate the status of an assignment
+        //private string returnStatus(double grade)
+        //{
+        //    return grade >= 60 ? "Passing" : "Failing";
+        //}
+
+        
 
         private void backButton_Click(object sender, EventArgs e)
         {
@@ -81,8 +103,7 @@ namespace GradingSystem
             if (answer == DialogResult.Yes)
             {
                 MessageBox.Show("You dropped the course", "Successfully dropped out", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                DataService.Course.Students.Remove(DataService.Student);
-                DataService.Student.EnrolledCourses.Remove(DataService.Course);
+                DataService.DropStudentFromCourse(DataService.Student.Id,DataService.Course.CourseId);
                 Hide();
                 var form = new StudentMainMenu();
                 form.Closed += (s, args) => Close();

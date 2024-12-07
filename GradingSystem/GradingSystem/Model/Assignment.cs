@@ -21,8 +21,9 @@ namespace GradingSystem
             }
         }
         public double Grade { get; set; } // The grade assigned to the assignment (if applicable)
-        public Dictionary<int, double> StudentGrades { get; set; } = new Dictionary<int, double>();
+        public Dictionary<int, double> StudentGrades { get; set; }
 
+       
         // Constructor
         public Assignment(string name, double weight)
         {
